@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="94px" viewBox="0 0 144 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="32" height="32" x="944" y="151" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.25,0.25)"></use>
+        </pattern>
+        <image id="image-2" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAgKADAAQAAAABAAAAgAAAAABrRiZNAAAEZUlEQVR4Ae2dTY7TQBCFbYOGfdbcgStwIbbDGZgth+AaXIE7ILHLnhEodNspFAX7PUtmpP75Is104tdl2V9XHGded804pMfl04e3w+/np+FyeZ9fD+P4dXj18Dh+/Px9fm1+EV8vv3EevF8/v6UxPt2N83l4/eadSwLi0+BXzG+a3/n/Dn7OhdNVu8uLu5f5ykH8/ZsnQ6qC3/T3sn83rvPL+EhY02Kb6qM04hcCipHS/hO/KfZD2yeBab7h2zr3fDPoHqqP0mK/qo/SiF8IKEZKu/Kb8t1+en4Onjft+ardbFp5SnzV/Kb5Lj/d7acrwZc0vD/mn/x8xzeAnA7Ep6/KFfPLY8gDAhCAAAQgAAEIQAACEIAABCAAgT4IjHtOE7+/Xr8/j68aP5sA+P11+/1u/LwbiN/f9HwHnwDKk1ZafLaoPkojfiGgGCltJz+fALEj2iYJ+ARQnrLSApfqozTiFwKKkdJ28vMJgN9ftd/v5nvYBMDvr9vvPzp+cSGhhQAEIAABCEAAAhCAAAQgAAEIQKB+ArMdrPziPadIfL3zBagPkItjVLy+3/n9818CxbuY+gCdz3egPoDy1JUW7yrVR2mFxFszKI6Ttk0C1AdQnrrSIh9UH6UVEk99gM7nO1AfIJfCq3h9P35/XEppIQABCEAAAhCAAAQgAAEIQAACEHAE7PLwvAP8/nr9fjd+NgGO+s3Elz3fwLuBnfvlrf8/BZ8AytNWWnz4qD5KI34hoBgpbSc/nwCxI9omCfgEUJ620gKX6qM04hcCipHSdvLzCdC5X+7W1wfnzbZwfjYBjvrNxNc932AzsREgAAEIQAACEIAABCAAAQhAAAIQqI4A9QHSkPU834H6ANQHeG66Hr69Jnc+34H6AMpTV1pkluqjtELirRkUx0nbJgHqAyhPXWmRD6qP0gqJpz5A4X595Mlme/D4qQ9AfYDN3EKAAAQgAAEIQAACEIAABCAAAQhAoC0Cdnl4Pt2e/fLWz98mAOv7y17f7/4fgBs/7wZ27pdTH0B52kqLj0rVR2nELwQUI6Xt5OevALEj2iYJ+ARQnrbSApfqozTiFwKKkdJ28vMJcNBvbn19fXDebAvnZxOA9f11r+8/On6biY0AAQhAAAIQgAAEIAABCEAAAhCAQHUEqA+Qhqzn+Q7UB6A+APUB0kXgtHLtPl3nAqxIN5sqny9BfQDlqSstckD1UVoh8dYMiuOkbZMA9QGUp660yAfVR2mFxFMfoHC/PvJksz14/NQHoD7AZm4hQAACEIAABCAAAQhAAAIQgAAEINAWAbs8PJ9uz3556+dvE8CtLz+6Pp34tPJIPF6av3cDK/e7W1/fL3Jnkcz4+QRQnrbS4shUH6URvxBQjJS2k59PgNgRbZMEfAIoT1tpgUv1URrxCwHFSGk7+fkEOOg3Ux/g4TGNxTnG46Y9X9ncbFp5+sL8bQIcXV9OfN31BVZSkk0QgAAEIAABCEAAAhCAAAQgAAEIVErgD0ZB1byUrjDjAAAAAElFTkSuQmCC"></image>
+    </defs>
+    <g id="01-Finals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-/-General" transform="translate(-976.000000, -183.000000)" fill="url(#pattern-1)">
+            <rect id="Rectangle" x="976" y="183" width="144" height="96"></rect>
+        </g>
+    </g>
+</svg>

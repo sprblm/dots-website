@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="263px" height="46px" viewBox="0 0 263 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="16" height="16" x="776" y="560" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.5,0.5)"></use>
+        </pattern>
+        <image id="image-2" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACPTkDJAAAAeUlEQVRYCWNgGOmAERYAmsbW/2FsEH397FG4HLI4Lja5+plwGUgv8VEH0CukR+0ZvCFAdF4nN5/DvI5L/2g2HPAQgEXRKD1yQwBeDuDKp8QGDbn6BzwXjDqA2CgeVTd8QwBeDhDyIrn5HGYuLv2j2XDAQwAWRSOXBgDBbiAd8ombIQAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="01-Finals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Guide-/-Illustration-System" transform="translate(-793.000000, -577.000000)" fill="url(#pattern-1)">
+            <rect id="Rectangle" x="792" y="576" width="264" height="48" rx="2"></rect>
+        </g>
+    </g>
+</svg>
