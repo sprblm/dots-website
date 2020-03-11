@@ -1,0 +1,43 @@
+
+//==========  Typography ==========//
+// headings
+h1, h2, h3 {
+    @apply leading-tight mt-0 mb-6 font-serif text-orangee;
+}
+
+.page-title {
+	@apply text-5xl font-serif text-orangee;
+}
+
+
+body, p, ul, li {
+    @apply font-sans text-offwhite;
+}
+
+// content
+.content {
+
+	// paragraph
+	p {
+		@apply mb-8;
+
+        // // intro paragraph
+		// &:first-child {
+		// 	@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-gray-600;
+        // 
+		// 	@screen md {
+        //         @apply text-3xl;
+            // }
+		// }
+    }
+    a {
+        color: #ECF0F8;
+        border-bottom-width: 2px;
+        border-color: #ECF0F8;
+    }
+    a:hover {
+        color: #FF8566;
+        border-bottom-width: 2px;
+        border-color: #FF8566;
+    }
+}

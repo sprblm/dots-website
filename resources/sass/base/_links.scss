@@ -1,0 +1,15 @@
+
+//==========  Links ==========//
+
+a {
+    @apply text-orangee no-underline transition-all duration-300 ease-out;
+
+    &:not([class]) {
+        border-bottom-width: 2px;
+        border-color: orangee;
+
+        &:hover {
+            @apply text-cyan;
+        }
+    }
+}
