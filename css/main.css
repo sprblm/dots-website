@@ -682,7 +682,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Thin.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Thin.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Thin.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Thin.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -694,7 +694,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-ThinItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-ThinItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-ThinItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-ThinItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -706,7 +706,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-ExtraLight.woff2?v=3.12) format("woff2"), url(/fonts/Inter-ExtraLight.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-ExtraLight.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-ExtraLight.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -718,7 +718,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-ExtraLightItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-ExtraLightItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-ExtraLightItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-ExtraLightItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -730,7 +730,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Light.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Light.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Light.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Light.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -742,7 +742,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-LightItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-LightItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-LightItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-LightItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -754,7 +754,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Regular.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Regular.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Regular.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Regular.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -766,7 +766,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Italic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Italic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Italic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Italic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -778,7 +778,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Medium.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Medium.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Medium.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Medium.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -790,7 +790,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-MediumItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-MediumItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-MediumItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-MediumItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -802,7 +802,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-SemiBold.woff2?v=3.12) format("woff2"), url(/fonts/Inter-SemiBold.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-SemiBold.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-SemiBold.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -814,7 +814,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-SemiBoldItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-SemiBoldItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-SemiBoldItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-SemiBoldItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -826,7 +826,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Bold.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Bold.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Bold.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Bold.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -838,7 +838,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-BoldItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-BoldItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-BoldItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-BoldItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -850,7 +850,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-ExtraBold.woff2?v=3.12) format("woff2"), url(/fonts/Inter-ExtraBold.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-ExtraBold.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-ExtraBold.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -862,7 +862,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-ExtraBoldItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-ExtraBoldItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-ExtraBoldItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-ExtraBoldItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -874,7 +874,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-Black.woff2?v=3.12) format("woff2"), url(/fonts/Inter-Black.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-Black.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-Black.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -886,7 +886,7 @@ body, p, ul, li {
 
   font-display: swap;
 
-  src: url(/fonts/Inter-BlackItalic.woff2?v=3.12) format("woff2"), url(/fonts/Inter-BlackItalic.woff?v=3.12) format("woff");
+  src: url(/css/fonts/Inter-BlackItalic.woff2?v=3.12) format("woff2"), url(/css/fonts/Inter-BlackItalic.woff?v=3.12) format("woff");
 }
 
 @font-face {
@@ -896,7 +896,7 @@ body, p, ul, li {
 
   font-weight: 300;
 
-  src: url(/fonts/SpaceGrotesk-Light.woff2) format("woff2"), url(/fonts/SpaceGrotesk-Light.woff) format("woff");
+  src: url(/css/fonts/SpaceGrotesk-Light.woff2) format("woff2"), url(/css/fonts/SpaceGrotesk-Light.woff) format("woff");
 }
 
 @font-face {
@@ -906,7 +906,7 @@ body, p, ul, li {
 
   font-weight: 400;
 
-  src: url(/fonts/SpaceGrotesk-Regular.woff2) format("woff2"), url(/fonts/SpaceGrotesk-Regular.woff) format("woff");
+  src: url(/css/fonts/SpaceGrotesk-Regular.woff2) format("woff2"), url(/css/fonts/SpaceGrotesk-Regular.woff) format("woff");
 }
 
 @font-face {
@@ -916,7 +916,7 @@ body, p, ul, li {
 
   font-weight: 500;
 
-  src: url(/fonts/SpaceGrotesk-Medium.woff2) format("woff2"), url(/fonts/SpaceGrotesk-Medium.woff) format("woff");
+  src: url(/css/fonts/SpaceGrotesk-Medium.woff2) format("woff2"), url(/css/fonts/SpaceGrotesk-Medium.woff) format("woff");
 }
 
 @font-face {
@@ -926,7 +926,7 @@ body, p, ul, li {
 
   font-weight: 600;
 
-  src: url(/fonts/SpaceGrotesk-SemiBold.woff2) format("woff2"), url(/fonts/SpaceGrotesk-SemiBold.woff) format("woff");
+  src: url(/css/fonts/SpaceGrotesk-SemiBold.woff2) format("woff2"), url(/css/fonts/SpaceGrotesk-SemiBold.woff) format("woff");
 }
 
 @font-face {
@@ -936,7 +936,7 @@ body, p, ul, li {
 
   font-weight: 700;
 
-  src: url(/fonts/SpaceGrotesk-Bold.woff2) format("woff2"), url(/fonts/SpaceGrotesk-Bold.woff) format("woff");
+  src: url(/css/fonts/SpaceGrotesk-Bold.woff2) format("woff2"), url(/css/fonts/SpaceGrotesk-Bold.woff) format("woff");
 }
 
 .container{
