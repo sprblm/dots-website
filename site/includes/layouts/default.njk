@@ -11,6 +11,9 @@
         <meta name="robots" content="index,follow" />
     {% endif %}
 
+    {# include analytics #}
+    <script async defer data-domain="decentpatterns.xyz" src="https://plausible.io/js/plausible.js"></script>
+
     {# if your site's entire CSS comes in under 14kb, you may want to inline in the head #}
     {# include main.css if in development mode #}
     {% if helpers.environment === "development" %}
