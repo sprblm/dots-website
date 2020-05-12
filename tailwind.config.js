@@ -15,10 +15,12 @@ module.exports = {
       cyan: '#32C8B2',
       dark: '#131F26',
       darkgray: '#29333B',
+      mediumgray: '#A0ADC0',
+      lightgray: '#CAD3DF',
       offwhite: '#ECF0F8',
 
       black: '#000',
-      white: '#fff',
+      white: '#EFF1F5',
 
       gray: {
         100: '#f7fafc',

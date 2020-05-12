@@ -1,20 +1,20 @@
 {
     "main": [
         {
-            "label": "Home",
+            "label": "home",
             "url": "/"
         },
         {
-            "label": "About",
+            "label": "our work",
+            "url": "/our-work/"
+        },
+        {
+            "label": "community",
+            "url": "/community/"
+        },
+        {
+            "label": "about",
             "url": "/about/"
-        },
-        {
-            "label": "Blog",
-            "url": "/blog/"
-        },
-        {
-            "label": "Contact",
-            "url": "/contact/"
         }
     ]
 }
