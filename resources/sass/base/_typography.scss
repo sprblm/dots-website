@@ -1,53 +1,78 @@
-
 //==========  Typography ==========//
 // headings
-h1, h2, h3 {
-    @apply leading-tight mt-0 mb-6 font-serif text-orangee;
+h1,
+h2,
+h3 {
+  @apply leading-tight mt-10 mb-6 font-serif text-orangee;
+}
+
+h1 {
+  @apply text-4xl leading-tight;
+
+  @screen md {
+    @apply text-5xl mb-16;
+  }
+}
+
+#work-with-us h1 {
+  @apply text-4xl mb-10;
 }
 
 h2 {
-    @apply text-3xl;
+  @apply text-3xl;
 }
 
 .page-title {
-    @apply text-3xl font-serif text-orangee font-bold;
-    
-    @screen md {
-        @apply text-5xl;
-    }
+  @apply text-3xl font-serif text-orangee font-bold;
+
+  @screen md {
+    @apply text-6xl;
+  }
 }
 
+body,
+p,
+ul,
+li {
+  @apply font-sans text-offwhite;
+}
 
-body, p, ul, li {
-    @apply font-sans text-offwhite;
+ol {
+  @apply list-decimal;
+}
+
+li {
+  @apply mb-2;
 }
 
 // content
 .content {
+  // paragraph
+  p {
+    @apply mb-8;
+  }
 
-	// paragraph
-	p {
-		@apply mb-8;
+  a {
+    color: #ecf0f8;
+    border-bottom-width: 2px;
+    border-color: #ecf0f8;
+  }
 
-        // // intro paragraph
-		// &:first-child {
-		// 	@apply border-b border-gray-200 text-2xl pb-10 mb-10 font-light leading-snug text-gray-600;
-        // 
-		// 	@screen md {
-        //         @apply text-3xl;
-            // }
-		// }
+  a:hover {
+    color: #ff8566;
+    border-bottom-width: 2px;
+    border-color: #ff8566;
+  }
+}
+
+.markdown {
+  ol {
+    p {
+      @apply mb-2;
     }
+  }
 
-    a {
-        color: #ECF0F8;
-        border-bottom-width: 2px;
-        border-color: #ECF0F8;
-    }
-
-    a:hover {
-        color: #FF8566;
-        border-bottom-width: 2px;
-        border-color: #FF8566;
-    }
+  ul {
+    @apply list-inside;
+  }
 }

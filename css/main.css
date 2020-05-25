@@ -618,8 +618,37 @@ video {
   .inner {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
+}
+
+@media (min-width: 1280px) {
+  .inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offers section {
+  max-width: 28rem;
+  padding-right: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.offers section p {
+  padding-bottom: 1rem;
+}
+
+.offers section ul {
+  list-style-type: disc;
 }
 
 html {
@@ -647,14 +676,33 @@ a:not([class]):hover {
   color: rgba(50, 200, 178, var(--text-opacity));
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.25;
-  margin-top: 0;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   font-family: "Space Grotesk", "Noto Sans", Lato, serif;
   --text-opacity: 1;
   color: #FF8566;
   color: rgba(255, 133, 102, var(--text-opacity));
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+#work-with-us h1 {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -672,15 +720,26 @@ h2 {
 
 @media (min-width: 768px) {
   .page-title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
-body, p, ul, li {
+body,
+p,
+ul,
+li {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --text-opacity: 1;
   color: #ECF0F8;
   color: rgba(236, 240, 248, var(--text-opacity));
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 .content p {
@@ -688,15 +747,23 @@ body, p, ul, li {
 }
 
 .content a {
-  color: #ECF0F8;
+  color: #ecf0f8;
   border-bottom-width: 2px;
-  border-color: #ECF0F8;
+  border-color: #ecf0f8;
 }
 
 .content a:hover {
-  color: #FF8566;
+  color: #ff8566;
   border-bottom-width: 2px;
-  border-color: #FF8566;
+  border-color: #ff8566;
+}
+
+.markdown ol p {
+  margin-bottom: 0.5rem;
+}
+
+.markdown ul {
+  list-style-position: inside;
 }
 
 @font-face {
@@ -1462,19 +1529,50 @@ body, p, ul, li {
   transition-delay: 6.75s;
 }
 
-a.button {
+a.button,
+.buttons a {
   display: inline-block;
   border-width: 2px;
   --border-opacity: 1;
   border-color: #fff;
   border-color: rgba(255, 255, 255, var(--border-opacity));
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
   --text-opacity: 1;
   color: #FF8566;
   color: rgba(255, 133, 102, var(--text-opacity));
   font-weight: bold;
+  border-width: 1px;
+}
+
+@media (min-width: 768px) {
+  a.button,
+.buttons a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons a {
+  margin-right: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .buttons a {
+    margin-right: 0.5rem;
+  }
 }
 
 .form .row {

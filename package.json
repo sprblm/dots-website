@@ -22,5 +22,9 @@
     "sass-loader": "^8.0.0",
     "tailwindcss": "^1.2.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "markdown-it": "^11.0.0",
+    "markdown-it-footnote": "^3.0.2"
   }
 }

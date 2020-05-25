@@ -16,6 +16,26 @@
   @apply max-w-6xl mr-auto p-8;
 
   @screen md {
-    @apply px-6 ml-40;
+    @apply px-6 mx-20;
+  }
+
+  @screen xl {
+    @apply px-6 mx-40;
+  }
+}
+
+.offers {
+  @apply flex flex-wrap;
+
+  section {
+    @apply max-w-md pr-10 mb-20;
+
+    p {
+      @apply pb-4;
+    }
+
+    ul {
+      @apply list-disc;
+    }
   }
 }
