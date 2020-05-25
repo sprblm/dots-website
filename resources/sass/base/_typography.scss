@@ -5,8 +5,16 @@ h1, h2, h3 {
     @apply leading-tight mt-0 mb-6 font-serif text-orangee;
 }
 
+h2 {
+    @apply text-3xl;
+}
+
 .page-title {
-	@apply text-5xl font-serif text-orangee;
+    @apply text-3xl font-serif text-orangee font-bold;
+    
+    @screen md {
+        @apply text-5xl;
+    }
 }
 
 
@@ -30,11 +38,13 @@ body, p, ul, li {
             // }
 		// }
     }
+
     a {
         color: #ECF0F8;
         border-bottom-width: 2px;
         border-color: #ECF0F8;
     }
+
     a:hover {
         color: #FF8566;
         border-bottom-width: 2px;

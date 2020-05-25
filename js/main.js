@@ -274,8 +274,8 @@ var $$ = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/bumble/Sites/dots/resources/js/main.js */"./resources/js/main.js");
-module.exports = __webpack_require__(/*! /Users/bumble/Sites/dots/resources/sass/main.scss */"./resources/sass/main.scss");
+__webpack_require__(/*! /Users/pv/projects/simplySecure/dots/resources/js/main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! /Users/pv/projects/simplySecure/dots/resources/sass/main.scss */"./resources/sass/main.scss");
 
 
 /***/ })
