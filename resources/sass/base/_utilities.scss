@@ -13,9 +13,9 @@
 
 // 'container' helper class
 .inner {
-  @apply w-full max-w-6xl ml-auto mr-auto p-8;
+  @apply max-w-6xl mr-auto p-8;
 
   @screen md {
-    @apply px-6;
+    @apply px-6 ml-40;
   }
 }

@@ -1,20 +1,20 @@
 {
-    "main": [
-        {
-            "label": "Home",
-            "url": "/"
-        },
-        {
-            "label": "About",
-            "url": "/about/"
-        },
-        {
-            "label": "Blog",
-            "url": "/blog/"
-        },
-        {
-            "label": "Contact",
-            "url": "/contact/"
-        }
-    ]
+  "main": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Report",
+      "url": "/report/"
+    },
+    {
+      "label": "Community",
+      "url": "/community/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    }
+  ]
 }
