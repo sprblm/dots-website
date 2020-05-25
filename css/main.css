@@ -597,21 +597,6 @@ video {
   height: auto;
 }
 
-.content button, .content a.button {
-  display: inline-block;
-  border-width: 2px;
-  --border-opacity: 1;
-  border-color: #fff;
-  border-color: rgba(255, 255, 255, var(--border-opacity));
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0.5rem;
-  --text-opacity: 1;
-  color: #FF8566;
-  color: rgba(255, 133, 102, var(--text-opacity));
-  font-weight: bold;
-}
-
 [data-lazy] {
   opacity: 0;
   width: 100%;
@@ -628,8 +613,14 @@ video {
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 html {
@@ -1450,6 +1441,22 @@ body, p, ul, li {
 
 .mobile-nav .item:nth-child(100) {
   transition-delay: 6.75s;
+}
+
+button,
+a.button {
+  display: inline-block;
+  border-width: 2px;
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  --text-opacity: 1;
+  color: #FF8566;
+  color: rgba(255, 133, 102, var(--text-opacity));
+  font-weight: bold;
 }
 
 .form .row {
