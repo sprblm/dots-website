@@ -6,7 +6,7 @@
 
             <li class="level-1 mb-4 md:mr-4 md:mb-0">
 
-                <a href="{{ item.url | safe }}" class="link font-bold hover:text-orangee hover:text-bold active:text-orangee hover:text-bold {% if page.url == item.url %}active text-orangee text-bold{% endif %}text-white 
+                <a href="{{ item.url | safe }}" class="link font-bold hover:text-highlight hover:text-bold active:text-highlight hover:text-bold {% if page.url == item.url %}active text-highlight text-bold{% endif %}text-white
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
             </li>

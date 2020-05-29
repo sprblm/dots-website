@@ -13,7 +13,7 @@ $transition-length: 0.5s;
   &.menu-toggle-active {
     @apply bg-transparent;
     .mobile-nav-icon-bg {
-      @apply bg-orangee rounded-full;
+      @apply bg-highlight rounded-full;
       width: 40px;
       height: 40px;
       position: absolute;

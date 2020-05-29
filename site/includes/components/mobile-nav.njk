@@ -6,7 +6,7 @@
 
             <li class="item relative opacity-0">
 
-                <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-orangee text-3xl hover:text-pink-500 {% if page.url == item.url %}active text-offwhite {% endif %}
+                <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-highlight text-3xl hover:text-pink-500 {% if page.url == item.url %}active text-body {% endif %}
             "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
 
             </li>
@@ -17,7 +17,7 @@
 
 </nav>
 
-<button id="mobile-nav-toggle" class="mobile-nav-toggle block fixed h-16 w-full bottom-0 flex items-center justify-center font-bold border-none bg-orangee text-white z-50 focus:outline-none md:hidden" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
+<button id="mobile-nav-toggle" class="mobile-nav-toggle block fixed h-16 w-full bottom-0 flex items-center justify-center font-bold border-none bg-highlight text-white z-50 focus:outline-none md:hidden" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
 
     <span class="mobile-nav-label mr-2 font-medium">Menu</span>
 

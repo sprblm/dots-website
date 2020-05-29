@@ -3,7 +3,7 @@
 h1,
 h2,
 h3 {
-  @apply leading-tight mt-10 mb-6 font-serif text-orangee;
+  @apply leading-tight mt-10 mb-6 font-serif text-highlight;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h2 {
 }
 
 .page-title {
-  @apply text-3xl font-serif text-orangee font-bold;
+  @apply text-3xl font-serif text-highlight font-bold;
 
   @screen md {
     @apply text-6xl;
@@ -34,7 +34,7 @@ body,
 p,
 ul,
 li {
-  @apply font-sans text-offwhite;
+  @apply font-sans text-body;
 }
 
 ol {
