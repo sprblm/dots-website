@@ -1,5 +1,5 @@
 ---
-layout: report
+layout: article
 meta_title: Report
 meta_description: About page description
 body_class: about

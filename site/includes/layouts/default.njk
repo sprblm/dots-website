@@ -12,7 +12,10 @@
     {% endif %}
 
     {# include analytics #}
+
+    {% if helpers.environment !== "development" %}
     <script async defer data-domain="decentpatterns.xyz" src="https://plausible.io/js/plausible.js"></script>
+    {% endif %}
 
     {# if your site's entire CSS comes in under 14kb, you may want to inline in the head #}
     {# include main.css if in development mode #}
