@@ -8,11 +8,14 @@ title: Report
 
 # Decentralization Off The Shelf: 7 Maxims
 
+<div class="authors">
+
 **Authors**
 
 - Eileen Wagner (Simply Secure)
 - Karissa McKelvey (Digital Democracy)
 - Kelsie Nabben (RMIT University)
+  </div>
 
 _With funding support from SamsungNEXT, DxOS, and the Shuttleworth
 Foundation._
