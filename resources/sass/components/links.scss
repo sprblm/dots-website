@@ -1,0 +1,55 @@
+.link-reference {
+  @apply text-base;
+
+  &::after {
+    content: url("/images/icons/arrow-right.svg");
+    vertical-align: top;
+    margin-left: 2rem;
+    transition-property: margin-left;
+    transition-duration: 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.link-next {
+  @apply flex flex-row h-12 max-w-xl pr-4 items-center;
+  @apply text-base;
+
+  @screen md {
+    @apply h-16;
+  }
+
+  @screen lg {
+    max-width: 24rem;
+  }
+
+  div:first-child {
+    @apply pr-4 inline;
+  }
+
+  div:last-child {
+    @apply flex-shrink-0 ml-auto flex justify-center content-center;
+    @apply w-12 h-12 rounded-full;
+    @apply bg-highlight text-white text-h3;
+    line-height: 1;
+
+    @screen md {
+      @apply w-16 h-16;
+      line-height: 1.5;
+    }
+
+    transition-property: padding-left;
+    transition-duration: 0.3s;
+  }
+
+  &:hover {
+    div:last-child {
+      @apply pl-2;
+    }
+  }
+}

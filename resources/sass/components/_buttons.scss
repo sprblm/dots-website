@@ -2,12 +2,12 @@
 a.button,
 .buttons a {
   display: inline-block;
-  @apply border-2 border-white py-1 px-2 mb-4 rounded-lg text-highlight;
+  @apply border-2 border-white py-1 px-2 rounded-lg text-highlight;
   font-weight: bold;
   border-width: 1px;
 
   @screen md {
-    @apply py-2 px-4 mb-6;
+    @apply py-2 px-4;
   }
 }
 

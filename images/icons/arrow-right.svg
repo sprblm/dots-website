@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Web / Orange / Arrow Right</title>
+    <g id="---Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-Web-/-Orange-/-Arrow-Right">
+            <rect id="backing" x="0" y="0" width="24" height="24"></rect>
+            <g id="Icon" transform="translate(4.000000, 8.000000)" stroke="#FF8566" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                <polyline id="Line" points="12 0 16 4 12 8"></polyline>
+                <line x1="16" y1="4" x2="3.55271368e-15" y2="4" id="Line-4"></line>
+            </g>
+        </g>
+    </g>
+</svg>

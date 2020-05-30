@@ -259,17 +259,20 @@ module.exports = {
       ]
     },
     fontSize: {
-      xs: "0.75rem",
-      sm: "0.875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "4rem",
-      xxs: "0.65rem"
+      caption: ["12px", "2rem"],
+      base: ["15px", "2rem"],
+      h4: ["20px", "2rem"],
+      h3: ["30px", "3rem"],
+      h2: ["40px", "4rem"],
+      h1: ["60px", "6rem"],
+      hero: ["80px", "8rem"]
+      // sm: ["14px", "29px"],
+      // base: ["18px", "29px"],
+      // lg: ["24px", "29px"],
+      // xl: ["36px", "43px"],
+      // "2xl": ["48px", "58px"],
+      // "3xl": ["72px", "86px"],
+      // "4xl": ["96px", "115px"]
     },
     fontWeight: {
       hairline: "100",

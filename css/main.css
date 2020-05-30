@@ -609,9 +609,13 @@ video {
 }
 
 .inner {
-  max-width: 72rem;
-  margin-right: auto;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -653,6 +657,7 @@ video {
 
 html {
   background-color: #131F26;
+  font-size: 12px;
 }
 
 a {
@@ -678,92 +683,82 @@ a:not([class]):hover {
 
 h1,
 h2,
-h3 {
-  line-height: 1.25;
+h3,
+h4 {
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   font-family: "Space Grotesk", "Noto Sans", Lato, serif;
   --text-opacity: 1;
   color: #FF8566;
   color: rgba(255, 133, 102, var(--text-opacity));
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 h1 {
-  font-size: 2.25rem;
-  line-height: 1.25;
+  font-size: 40px;
+  line-height: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 60px;
+    line-height: 6rem;
+  }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 3rem;
+  --text-opacity: 1;
+  color: #CAD3DF;
+  color: rgba(202, 211, 223, var(--text-opacity));
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 40px;
+    line-height: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 36rem;
+}
+
+@media (min-width: 1024px) {
+  p {
     margin-bottom: 4rem;
   }
 }
 
-#work-with-us h1 {
-  font-size: 2.25rem;
-  margin-bottom: 2.5rem;
+p + p {
+  margin-top: 1.5rem;
 }
 
-h2 {
-  font-size: 1.875rem;
-}
-
-.page-title {
-  font-size: 1.875rem;
-  font-family: "Space Grotesk", "Noto Sans", Lato, serif;
-  --text-opacity: 1;
-  color: #FF8566;
-  color: rgba(255, 133, 102, var(--text-opacity));
-  font-weight: 700;
-}
-
-@media (min-width: 768px) {
-  .page-title {
-    font-size: 4rem;
+@media (min-width: 1024px) {
+  p + p {
+    margin-top: 4rem;
   }
-}
-
-body,
-p,
-ul,
-li {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --text-opacity: 1;
-  color: #EFF1F5;
-  color: rgba(239, 241, 245, var(--text-opacity));
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-.content p {
-  margin-bottom: 2rem;
-}
-
-.content a {
-  color: #ecf0f8;
-  border-bottom-width: 2px;
-  border-color: #ecf0f8;
-}
-
-.content a:hover {
-  color: #ff8566;
-  border-bottom-width: 2px;
-  border-color: #ff8566;
-}
-
-.markdown ol p {
-  margin-bottom: 0.5rem;
-}
-
-.markdown ul {
-  list-style-position: inside;
 }
 
 @font-face {
@@ -1540,7 +1535,6 @@ a.button,
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-bottom: 1rem;
   border-radius: 0.5rem;
   --text-opacity: 1;
   color: #FF8566;
@@ -1556,7 +1550,6 @@ a.button,
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -1588,7 +1581,8 @@ a.button,
 }
 
 .form .row label:after {
-  font-size: 0.875rem;
+  font-size: 12px;
+  line-height: 2rem;
   --text-opacity: 1;
   color: #718096;
   color: rgba(113, 128, 150, var(--text-opacity));
@@ -1630,6 +1624,85 @@ a.button,
 
 .form .textarea {
   height: 6rem;
+}
+
+.link-reference {
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+.link-reference::after {
+  content: url("/images/icons/arrow-right.svg");
+  vertical-align: top;
+  margin-left: 2rem;
+  transition-property: margin-left;
+  transition-duration: 0.3s;
+}
+
+.link-reference:hover::after {
+  margin-left: 3rem;
+}
+
+.link-next {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  max-width: 36rem;
+  padding-right: 1rem;
+  align-items: center;
+  font-size: 15px;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .link-next {
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .link-next {
+    max-width: 24rem;
+  }
+}
+
+.link-next div:first-child {
+  padding-right: 1rem;
+  display: inline;
+}
+
+.link-next div:last-child {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: #FF8566;
+  background-color: rgba(255, 133, 102, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-size: 30px;
+  line-height: 3rem;
+  line-height: 1;
+  transition-property: padding-left;
+  transition-duration: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .link-next div:last-child {
+    width: 4rem;
+    height: 4rem;
+    line-height: 1.5;
+  }
+}
+
+.link-next:hover div:last-child {
+  padding-left: 0.5rem;
 }
 
 .space-y-0 > :not(template) ~ :not(template){
@@ -7580,48 +7653,39 @@ a.button,
   height: 100vh;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
+.text-caption{
+  font-size: 12px;
+  line-height: 2rem;
 }
 
 .text-base{
-  font-size: 1rem;
+  font-size: 15px;
+  line-height: 2rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
+.text-h4{
+  font-size: 20px;
+  line-height: 2rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
+.text-h3{
+  font-size: 30px;
+  line-height: 3rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
+.text-h2{
+  font-size: 40px;
+  line-height: 4rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
+.text-h1{
+  font-size: 60px;
+  line-height: 6rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-}
-
-.text-6xl{
-  font-size: 4rem;
-}
-
-.text-xxs{
-  font-size: 0.65rem;
+.text-hero{
+  font-size: 80px;
+  line-height: 8rem;
 }
 
 .leading-none{
@@ -27458,48 +27522,39 @@ a.button,
     height: 100vh;
   }
 
-  .sm\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .sm\:text-sm{
-    font-size: 0.875rem;
+  .sm\:text-caption{
+    font-size: 12px;
+    line-height: 2rem;
   }
 
   .sm\:text-base{
-    font-size: 1rem;
+    font-size: 15px;
+    line-height: 2rem;
   }
 
-  .sm\:text-lg{
-    font-size: 1.125rem;
+  .sm\:text-h4{
+    font-size: 20px;
+    line-height: 2rem;
   }
 
-  .sm\:text-xl{
-    font-size: 1.25rem;
+  .sm\:text-h3{
+    font-size: 30px;
+    line-height: 3rem;
   }
 
-  .sm\:text-2xl{
-    font-size: 1.5rem;
+  .sm\:text-h2{
+    font-size: 40px;
+    line-height: 4rem;
   }
 
-  .sm\:text-3xl{
-    font-size: 1.875rem;
+  .sm\:text-h1{
+    font-size: 60px;
+    line-height: 6rem;
   }
 
-  .sm\:text-4xl{
-    font-size: 2.25rem;
-  }
-
-  .sm\:text-5xl{
-    font-size: 3rem;
-  }
-
-  .sm\:text-6xl{
-    font-size: 4rem;
-  }
-
-  .sm\:text-xxs{
-    font-size: 0.65rem;
+  .sm\:text-hero{
+    font-size: 80px;
+    line-height: 8rem;
   }
 
   .sm\:leading-none{
@@ -47337,48 +47392,39 @@ a.button,
     height: 100vh;
   }
 
-  .md\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .md\:text-sm{
-    font-size: 0.875rem;
+  .md\:text-caption{
+    font-size: 12px;
+    line-height: 2rem;
   }
 
   .md\:text-base{
-    font-size: 1rem;
+    font-size: 15px;
+    line-height: 2rem;
   }
 
-  .md\:text-lg{
-    font-size: 1.125rem;
+  .md\:text-h4{
+    font-size: 20px;
+    line-height: 2rem;
   }
 
-  .md\:text-xl{
-    font-size: 1.25rem;
+  .md\:text-h3{
+    font-size: 30px;
+    line-height: 3rem;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
+  .md\:text-h2{
+    font-size: 40px;
+    line-height: 4rem;
   }
 
-  .md\:text-3xl{
-    font-size: 1.875rem;
+  .md\:text-h1{
+    font-size: 60px;
+    line-height: 6rem;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-  }
-
-  .md\:text-6xl{
-    font-size: 4rem;
-  }
-
-  .md\:text-xxs{
-    font-size: 0.65rem;
+  .md\:text-hero{
+    font-size: 80px;
+    line-height: 8rem;
   }
 
   .md\:leading-none{
@@ -67216,48 +67262,39 @@ a.button,
     height: 100vh;
   }
 
-  .lg\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .lg\:text-sm{
-    font-size: 0.875rem;
+  .lg\:text-caption{
+    font-size: 12px;
+    line-height: 2rem;
   }
 
   .lg\:text-base{
-    font-size: 1rem;
+    font-size: 15px;
+    line-height: 2rem;
   }
 
-  .lg\:text-lg{
-    font-size: 1.125rem;
+  .lg\:text-h4{
+    font-size: 20px;
+    line-height: 2rem;
   }
 
-  .lg\:text-xl{
-    font-size: 1.25rem;
+  .lg\:text-h3{
+    font-size: 30px;
+    line-height: 3rem;
   }
 
-  .lg\:text-2xl{
-    font-size: 1.5rem;
+  .lg\:text-h2{
+    font-size: 40px;
+    line-height: 4rem;
   }
 
-  .lg\:text-3xl{
-    font-size: 1.875rem;
+  .lg\:text-h1{
+    font-size: 60px;
+    line-height: 6rem;
   }
 
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-  }
-
-  .lg\:text-6xl{
-    font-size: 4rem;
-  }
-
-  .lg\:text-xxs{
-    font-size: 0.65rem;
+  .lg\:text-hero{
+    font-size: 80px;
+    line-height: 8rem;
   }
 
   .lg\:leading-none{
@@ -87095,48 +87132,39 @@ a.button,
     height: 100vh;
   }
 
-  .xl\:text-xs{
-    font-size: 0.75rem;
-  }
-
-  .xl\:text-sm{
-    font-size: 0.875rem;
+  .xl\:text-caption{
+    font-size: 12px;
+    line-height: 2rem;
   }
 
   .xl\:text-base{
-    font-size: 1rem;
+    font-size: 15px;
+    line-height: 2rem;
   }
 
-  .xl\:text-lg{
-    font-size: 1.125rem;
+  .xl\:text-h4{
+    font-size: 20px;
+    line-height: 2rem;
   }
 
-  .xl\:text-xl{
-    font-size: 1.25rem;
+  .xl\:text-h3{
+    font-size: 30px;
+    line-height: 3rem;
   }
 
-  .xl\:text-2xl{
-    font-size: 1.5rem;
+  .xl\:text-h2{
+    font-size: 40px;
+    line-height: 4rem;
   }
 
-  .xl\:text-3xl{
-    font-size: 1.875rem;
+  .xl\:text-h1{
+    font-size: 60px;
+    line-height: 6rem;
   }
 
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-  }
-
-  .xl\:text-5xl{
-    font-size: 3rem;
-  }
-
-  .xl\:text-6xl{
-    font-size: 4rem;
-  }
-
-  .xl\:text-xxs{
-    font-size: 0.65rem;
+  .xl\:text-hero{
+    font-size: 80px;
+    line-height: 8rem;
   }
 
   .xl\:leading-none{

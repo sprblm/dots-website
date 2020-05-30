@@ -1,78 +1,113 @@
-//==========  Typography ==========//
+// //==========  Typography ==========//
 // headings
 h1,
 h2,
-h3 {
-  @apply leading-tight mt-10 mb-6 font-serif text-highlight;
+h3,
+h4 {
+  @apply mt-10 mb-6 font-serif text-highlight break-words;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 h1 {
-  @apply text-4xl leading-tight;
+  @apply text-h2 mt-6 mb-2;
+
+  @screen sm {
+    @apply text-h1;
+  }
 
   @screen md {
-    @apply text-5xl mb-16;
+    @apply my-32;
   }
 }
 
-#work-with-us h1 {
-  @apply text-4xl mb-10;
-}
+// h1.page-title {
+//   @apply my-12
+
+//   @screen md {
+//     @apply my-24;
+//   }
+// }
 
 h2 {
-  @apply text-3xl;
-}
+  @apply text-h3 text-light font-light my-6;
 
-.page-title {
-  @apply text-3xl font-serif text-highlight font-bold;
-
-  @screen md {
-    @apply text-6xl;
+  @screen sm {
+    @apply text-h2 my-12;
   }
 }
 
-body,
-p,
-ul,
-li {
-  @apply font-sans text-body;
-}
+p {
+  @apply text-base mb-6 max-w-xl;
 
-ol {
-  @apply list-decimal;
-}
-
-li {
-  @apply mb-2;
-}
-
-// content
-.content {
-  // paragraph
-  p {
-    @apply mb-8;
-  }
-
-  a {
-    color: #ecf0f8;
-    border-bottom-width: 2px;
-    border-color: #ecf0f8;
-  }
-
-  a:hover {
-    color: #ff8566;
-    border-bottom-width: 2px;
-    border-color: #ff8566;
+  @screen lg {
+    @apply mb-16;
   }
 }
 
-.markdown {
-  ol {
-    p {
-      @apply mb-2;
-    }
-  }
+p + p {
+  @apply mt-6;
 
-  ul {
-    @apply list-inside;
+  @screen lg {
+    @apply mt-16;
   }
 }
+
+// h2 {
+//   @apply text-3xl;
+// }
+
+// .page-title {
+//   @apply text-3xl font-serif text-highlight font-bold;
+
+//   // @screen md {
+//   //   @apply text-6xl;
+//   // }
+// }
+
+// body,
+// p,
+// ul,
+// li {
+//   @apply font-sans text-body;
+// }
+
+// ol {
+//   @apply list-decimal;
+// }
+
+// li {
+//   @apply mb-2;
+// }
+
+// // content
+// .content {
+//   // paragraph
+//   p {
+//     @apply mb-8;
+//   }
+
+//   a {
+//     color: #ecf0f8;
+//     border-bottom-width: 2px;
+//     border-color: #ecf0f8;
+//   }
+
+//   a:hover {
+//     color: #ff8566;
+//     border-bottom-width: 2px;
+//     border-color: #ff8566;
+//   }
+// }
+
+// .markdown {
+//   ol {
+//     p {
+//       @apply mb-2;
+//     }
+//   }
+
+//   ul {
+//     @apply list-inside;
+//   }
+// }
