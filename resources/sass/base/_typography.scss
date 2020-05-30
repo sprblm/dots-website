@@ -13,21 +13,13 @@ h1 {
   @apply text-h2 mt-6 mb-2;
 
   @screen sm {
-    @apply text-h1;
+    @apply text-h1 my-16;
   }
 
   @screen md {
     @apply my-32;
   }
 }
-
-// h1.page-title {
-//   @apply my-12
-
-//   @screen md {
-//     @apply my-24;
-//   }
-// }
 
 h2 {
   @apply text-h3 text-light font-light my-6;
@@ -50,6 +42,20 @@ p + p {
 
   @screen lg {
     @apply mt-16;
+  }
+}
+
+.content {
+  ul {
+    @apply text-body text-base pl-6;
+
+    @screen md {
+      @apply pl-0;
+    }
+
+    li + li {
+      @apply mt-4;
+    }
   }
 }
 

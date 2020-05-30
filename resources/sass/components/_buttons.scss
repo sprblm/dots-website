@@ -1,24 +1,65 @@
 //==========  Buttons ==========//
-a.button,
-.buttons a {
-  display: inline-block;
-  @apply border-2 border-white py-1 px-2 rounded-lg text-highlight;
-  font-weight: bold;
-  border-width: 1px;
+// a.button,
+// .buttons a {
+//   display: inline-block;
+//   @apply border-2 border-white py-1 px-2 rounded-lg text-highlight;
+//   font-weight: bold;
+//   border-width: 1px;
 
-  @screen md {
-    @apply py-2 px-4;
+//   @screen md {
+//     @apply py-2 px-4;
+//   }
+// }
+
+// .buttons {
+//   @apply my-6;
+
+//   a {
+//     @apply mr-1;
+
+//     @screen md {
+//       @apply mr-2;
+//     }
+//   }
+// }
+
+a.btn {
+  @apply rounded font-bold p-4 text-center;
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 10rem;
+  display: inline-table;
+  margin: 10px 0;
+
+  @apply border border-light text-light bg-transparent;
+  &:hover {
+    @apply bg-dark;
   }
-}
 
-.buttons {
-  @apply my-6;
+  &.btn-primary {
+    @apply border-0 bg-secondary text-dark;
 
-  a {
-    @apply mr-1;
-
-    @screen md {
-      @apply mr-2;
+    &:hover {
+      background-color: #65fbe5;
     }
+  }
+
+  &.btn-secondary {
+    @apply border-0 bg-light text-dark;
+
+    &:hover {
+      @apply bg-white;
+    }
+  }
+
+  &.btn-sm {
+    @apply p-2;
+    font-size: 12px;
+    min-width: 7rem;
+  }
+
+  &.btn-lg {
+    min-width: 12rem;
+    @apply p-6;
   }
 }

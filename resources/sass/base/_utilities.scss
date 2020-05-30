@@ -13,7 +13,7 @@
 
 // 'container' helper class
 .inner {
-  @apply p-6;
+  @apply px-6 py-8;
 
   @screen sm {
     @apply p-8;
@@ -29,13 +29,34 @@
 }
 
 .offers {
-  @apply flex flex-wrap;
+  @apply flex;
+
+  p,
+  ul {
+    @apply max-w-lg;
+  }
+
+  @screen md {
+    @apply flex-wrap;
+  }
+
+  @screen lg {
+    @apply mt-16;
+  }
 
   section {
-    @apply max-w-md pr-10 mb-20;
+    @apply max-w-md mb-16;
 
-    p {
-      @apply pb-4;
+    @screen md {
+      @apply mb-32;
+    }
+
+    @screen lg {
+      @apply mr-32;
+    }
+
+    @screen xl {
+      @apply mr-48 max-w-lg;
     }
 
     ul {
