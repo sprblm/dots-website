@@ -402,7 +402,7 @@ __Research Participants__
 *   Matthew Wild, XMPP Standards Foundation / Modern XMPP
 *   Michael Rogers, Briar
 *   Michel Bauwens, P2P Foundation
-*   Nadir Chishtie, Matrix.org / Riot
+*   Nadir Chishtie, Matrix / Riot
 *   Niels ten Oever, University of Amsterdam and Texas A&M University
 *   Paolo, Optool / DTN Conference
 *   Paul Frazee, Beaker Browser
@@ -416,7 +416,7 @@ __Research Participants__
 *   Roel Roscam Abbing, Malmo University / XMPP
 *   Sadie Doreen, I2P
 *   Scott Moore, Gitcoin
-*   substack, bits.coop
+*   substack, bits coop
 *   Tiberius Brastaviceanu, Sensorica
 *   Wendy Hanamura, Internet Archive
 *   Zak Cole, Whiteblock
