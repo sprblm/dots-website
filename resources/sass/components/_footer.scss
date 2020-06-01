@@ -1,0 +1,9 @@
+footer {
+  > hr {
+    @apply w-24 mb-16 border-highlight;
+  }
+
+  a {
+    @apply border-medium;
+  }
+}

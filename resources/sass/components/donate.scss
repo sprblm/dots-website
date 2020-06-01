@@ -2,7 +2,11 @@
   @apply flex flex-col mb-10;
 
   @screen sm {
-    @apply flex-row justify-between max-w-xl;
+    @apply flex-row flex-wrap max-w-3xl;
+
+    a {
+      @apply mr-4;
+    }
   }
 
   @screen lg {
