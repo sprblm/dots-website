@@ -112,7 +112,7 @@ footer {
 }
 
 .content.markdown .aside {
-  @apply py-8 px-6 pr-6 my-16 border-dotted border-2 border-secondary;
+  @apply py-8 px-6 my-16 border-dotted border-2 border-secondary;
 
   @screen md {
     @apply py-16 px-12;
@@ -123,7 +123,11 @@ footer {
   }
 
   ul {
-    @apply mb-0 pl-8;
+    @apply mb-0 pl-0;
+
+    @screen md {
+      @apply pl-8;
+    }
   }
 
   ul li {
