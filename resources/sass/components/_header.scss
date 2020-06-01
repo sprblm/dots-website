@@ -1,0 +1,12 @@
+.company-logo-link {
+  @apply text-white hidden w-8;
+
+  @screen lg {
+    @apply block -ml-24 mr-16;
+  }
+
+  @screen xl {
+    @apply w-16 mr-20;
+    margin-left: -9rem;
+  }
+}

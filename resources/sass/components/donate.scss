@@ -1,0 +1,11 @@
+.content .donation-options {
+  @apply flex flex-col mb-10;
+
+  @screen sm {
+    @apply flex-row justify-between max-w-xl;
+  }
+
+  @screen lg {
+    @apply mb-16;
+  }
+}

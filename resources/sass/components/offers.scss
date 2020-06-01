@@ -1,0 +1,33 @@
+// Styles for the grid listing at /work-with-us
+
+.offers {
+  @apply flex flex-col;
+
+  @screen md {
+    @apply flex-row flex-wrap;
+  }
+
+  @screen lg {
+    @apply ml-0 mr-0  mt-16;
+  }
+
+  section {
+    @apply max-w-sm mb-16;
+
+    @screen md {
+      @apply mb-32 mr-16;
+    }
+
+    @screen lg {
+      @apply mr-32 max-w-md;
+    }
+
+    @screen xl {
+      @apply mr-48;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+  }
+}
