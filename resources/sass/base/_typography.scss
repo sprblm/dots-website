@@ -104,49 +104,6 @@ ol {
   @apply list-decimal;
 }
 
-// h2 {
-//   @apply text-3xl;
-// }
-
-// .page-title {
-//   @apply text-3xl font-serif text-highlight font-bold;
-
-//   // @screen md {
-//   //   @apply text-6xl;
-//   // }
-// }
-
-// body,
-// p,
-// ul,
-// li {
-//   @apply font-sans text-body;
-// }
-
-// li {
-//   @apply mb-2;
-// }
-
-// // content
-// .content {
-//   // paragraph
-//   p {
-//     @apply mb-8;
-//   }
-
-//   a {
-//     color: #ecf0f8;
-//     border-bottom-width: 2px;
-//     border-color: #ecf0f8;
-//   }
-
-//   a:hover {
-//     color: #ff8566;
-//     border-bottom-width: 2px;
-//     border-color: #ff8566;
-//   }
-// }
-
 .content.markdown {
   @apply max-w-3xl;
 
@@ -191,4 +148,8 @@ ol {
       @apply text-h4;
     }
   }
+}
+
+.footnote-item {
+  word-break: break-all;
 }

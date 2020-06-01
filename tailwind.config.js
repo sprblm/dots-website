@@ -497,5 +497,8 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [],
-  purge: { enabled: true, content: ["./site/**/*.njk", "./site/**/*.md"] }
+  purge: {
+    enabled: process.env.NODE_ENV === "production",
+    content: ["./site/**/*.njk", "./site/**/*.md"]
+  }
 };

@@ -1,7 +1,7 @@
 //========== Mobile Navigation ==========//
 
 $transition-easing: cubic-bezier(0.77, 0, 0.175, 1);
-$transition-length: 0.5s;
+$transition-length: 0.25s;
 
 // menu toggle button
 .mobile-nav-toggle {
@@ -61,7 +61,7 @@ $transition-length: 0.5s;
   }
 
   .item {
-    transition: opacity 0.5s ease,
+    transition: opacity 0.4s ease,
       transform $transition-length $transition-easing;
     transform: translate3d(-50%, 0, 0);
     transition-delay: $transition-length;

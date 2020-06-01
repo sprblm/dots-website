@@ -12,51 +12,68 @@
 }
 
 // 'container' helper class
-.inner {
-  @apply px-6 py-8;
+header,
+.inner,
+footer {
+  @apply px-6;
 
   @screen sm {
-    @apply p-8;
+    @apply px-8;
   }
-
   @screen md {
     @apply px-6 mx-20;
   }
 
+  @screen lg {
+    @apply mx-32;
+  }
+
   @screen xl {
-    @apply px-6 mx-40;
+    @apply mx-48;
+  }
+}
+
+.inner {
+  @apply py-8;
+}
+
+.company-logo-link {
+  @apply text-white hidden w-8;
+
+  @screen lg {
+    @apply block -ml-24 mr-16;
+  }
+
+  @screen xl {
+    @apply w-16 mr-20;
+    margin-left: -9rem;
   }
 }
 
 .offers {
-  @apply flex;
-
-  p,
-  ul {
-    @apply max-w-lg;
-  }
+  @apply flex flex-col;
 
   @screen md {
-    @apply flex-wrap;
+    @apply flex-row flex-wrap;
   }
 
   @screen lg {
-    @apply mt-16;
+    @apply ml-0 mr-0  mt-16;
   }
 
   section {
-    @apply max-w-md mb-16;
+    @apply max-w-sm mb-16;
 
     @screen md {
-      @apply mb-32;
+      @apply mb-32 mr-16;
     }
 
     @screen lg {
-      @apply mr-32;
+      @apply mr-32 max-w-md;
     }
 
     @screen xl {
-      @apply mr-48 max-w-lg;
+      @apply mr-48;
     }
 
     ul {

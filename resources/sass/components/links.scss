@@ -17,7 +17,7 @@
 }
 
 .link-next {
-  @apply flex flex-row h-12 max-w-xl pr-4 items-center;
+  @apply flex flex-row h-12 max-w-2xl pr-4 items-center;
   @apply text-base text-highlight;
 
   @screen md {
@@ -25,11 +25,11 @@
   }
 
   @screen lg {
-    max-width: 24rem;
+    max-width: 28rem;
   }
 
   div:first-child {
-    @apply pr-4 inline;
+    @apply pr-16 inline;
   }
 
   div:last-child {
@@ -38,10 +38,10 @@
     @apply bg-highlight text-white text-h3;
     line-height: 1;
 
-    @screen md {
-      @apply w-16 h-16;
-      line-height: 1.5;
-    }
+    // @screen md {
+    //   @apply w-16 h-16;
+    //   line-height: 1.5;
+    // }
 
     transition-property: padding-left;
     transition-duration: 0.3s;
