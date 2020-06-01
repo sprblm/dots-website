@@ -14,6 +14,7 @@ Karissa McKelvey (Digital Democracy)
 Kelsie Nabben (RMIT University)
 
 <a class="link-reference" href="/">Download as PDF</a>
+<a class="link-reference" href="/site/report.md">Open as a markdown file</a>
 
 _With funding support from SamsungNEXT, DxOS, and the Shuttleworth Foundation._
 
