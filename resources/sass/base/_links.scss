@@ -5,10 +5,10 @@ a {
 
   &:not([class]) {
     border-bottom-width: 1px;
-    border-color: highlight;
+    border-color: #ecf0f8;
 
     &:hover {
-      @apply text-secondary text-highlight;
+      @apply text-highlight border-black;
     }
   }
 }
