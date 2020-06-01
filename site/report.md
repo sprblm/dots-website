@@ -51,8 +51,7 @@ This research is part of [Decentralization Off The Shelf](https://decentpatterns
   6. [**Sustainability.** Attracting and retaining talent.](#6.-sustainability.-attracting-and-retaining-talent.)
   7. [**Governance.** Decision-making and stability.](#7.-governance.-decision-making-and-stability.)
 - [Appendix.](#appendix)
-  - Research Participants.
-  - Further Reading.
+  - Research Participants
 - [Notes](#notes)
 
 ## Introduction
@@ -117,7 +116,7 @@ This work was funded by SamsungNEXT and DxOS, with organizational support from S
 
 <div class="take-aways">
 
-Take-aways
+
 
 1. **Decide on whether and how to communicate your values**; a value proposition can be political, too.
 2. **Collaborate with other projects** that are targeting the same users and use cases, and pattern match with regard to design and architecture choices.
@@ -139,7 +138,7 @@ A stronger, galvanizing narrative for the decentralization space is needed. This
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Apply best practices in human-centered design**, and **test early and often** with end users--even when you are not developing an end user-facing product.
 - **Use accessible and commonly used language and interfaces** in the ecosystem to reduce necessity for re-explanation of familiar and common patterns.
@@ -208,7 +207,7 @@ By having an in-house, go-to client that is being co-developed with the protocol
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Fund research & development** for resilient infrastructure, including connectivity, hardware, storage, and end-to-end protocol testing.
 - **Design** **infrastructure layers** with modular interfaces to enable the reusability of components across protocols.
@@ -236,7 +235,7 @@ Where popular browsers like Google Chrome, Apple Safari, Microsoft’s Edge (IE)
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Provide better user experience for application developers** with a focus on toolkits, query languages, and modular libraries that are designed with minimal assumptions.
 - **Describe and specify** how protocols are supposed to perform and what they are designed to do, in terms of trade-offs and target use cases.
@@ -300,7 +299,7 @@ Because of this, projects have developed many diverse and creative UX solutions 
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Train more developers and designers on privacy and security** approaches and skills, and include threat modelling in protocol design.
 - **Move from threat models to trust models**; understand that every network makes assumptions about trust, and trust may not necessarily scale with the network.
@@ -327,7 +326,7 @@ Projects either run default public infrastructure or force users to supply their
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Research and develop community-driven funding models** as they relate to sustainability of people, projects, and protocols.
 - **Utilize bounty platforms and microgrants** as an experimental funding mechanism to test appetite and support innovation in this area.
@@ -349,7 +348,7 @@ Sustainable funding is the biggest factor in the delivery and maintenance of pro
 
 <div class="take-aways">
 
-Take-aways
+
 
 - **Include diverse voices** on the core team and within the community to make sure that technology works for more than those who develop it.
 - **Innovate on community-centered funding strategies** to improve the health of the open source ecosystem.
@@ -373,44 +372,83 @@ Decentralized protocols require special attention to governance. No single party
 
 **Research Participants**
 
-- [name], [affiliation]
-- ...
 
-**Further Reading**
+*   Antoine Toulme, Whiteblock
+*   Antonela Debiasi, Tor Project
+*   Benedict Lau, Hypha Worker Co-operative
+*   Chris Waclawek, DxOS
+*   Dan Hassan and Kieran Gibb, Magma Collective
+*   Darius Kazemi, runyourown.social
+*   Dean Eigermann and Dmitriy Ryajov, Status
+*   Eletherios Diakomichalis, Alexis Sellier, Abbey Titcomb, Radicle
+*   Emaline Friedman, Commons Engine
+*   Fatemeh Shirazi, Web3 Foundation
+*   Feross, WebTorrent
+*   Franz Heinzmann, Sonar 
+*   Harry Halpin, Nym
+*   Harry Lachenmayer, independent
+*   Holger Krekel, Delta.Chat
+*   Ira Bolychevsky, Redecentralize
+*   Iryna Nezhynska, Jolocom / DWeb.Design
+*   Jay Graber, independent
+*   Kenneth Ng, Ethereum Foundation
+*   Kira Oakley, Digital Democracy
+*   Lars Eggert, IRTF
+*   Mai Sutton, disaster.radio
+*   Mark Nadal, gun.eco
+*   Mathias Buus, Dat / Hyperdivision
+*   Matthew Slipper, Kyokan
+*   Matthew Wild, XMPP Standards Foundation / Modern XMPP
+*   Michael Rogers, Briar
+*   Michel Bauwens, P2P Foundation
+*   Nadir Chishtie, Matrix.org / Riot
+*   Niels ten Oever, University of Amsterdam and Texas A&M University
+*   Paolo, Optool / DTN Conference
+*   Paul Frazee, Beaker Browser
+*   Paul Gardner-Stephen, Serval / MEGA65
+*   Peter Czaban, Web3 Foundation
+*   Peter van Hardenberg, Ink & Switch
+*   Pospi, Holochain
+*   Przemyslaw Rekucki, Golem
+*   pukkamustard, openEngiadina
+*   Rich Burdon, Wireline
+*   Roel Roscam Abbing, Malmo University / XMPP
+*   Sadie Doreen, I2P
+*   Scott Moore, Gitcoin
+*   substack, bits.coop
+*   Tiberius Brastaviceanu, Sensorica
+*   Wendy Hanamura, Internet Archive
+*   Zak Cole, Whiteblock
+*   Zelf and Mix, Secure Scuttlebutt
 
-Bauwens, M., Kostakis, V. and Pazaitis, A. (2019) _Peer to Peer: The Commons Manifesto_. London: University of Westminster Press. DOI: https://doi.org/10.16997/book33
-
-Article 19. (2019) _Blockchain and Freedom of Expression._ [https://www.article19.org/wp-content/uploads/2019/07/Blockchain-and-FOE-v4.pdf](https://www.article19.org/wp-content/uploads/2019/07/Blockchain-and-FOE-v4.pdf)
-
-IETF, What makes a successful protocol [https://tools.ietf.org/html/rfc5218#page-3](https://tools.ietf.org/html/rfc5218#page-3)
 
 ## Notes
 
 [^1]: Rüdiger Schollmeier, _A Definition of Peer-to-Peer Networking for the Classification of Peer-to-Peer Architectures and Applications_, Proceedings of the First International Conference on Peer-to-Peer Computing, IEEE (2002).
-[^2]: Sheth and Larson (1990).[ "Federated Database Systems for Managing Distributed, Heterogeneous, and Autonomous Databases"](http://dl.acm.org/citation.cfm?id=96604). _ACM Computing Surveys, Vol. 22, No.3_. pp. 183–236.
-[^3]: Iansiti, Marco; Lakhani, Karim R. (January 2017).[ "The Truth About Blockchain"](https://hbr.org/2017/01/the-truth-about-blockchain).[ Harvard Business Review](https://en.wikipedia.org/wiki/Harvard_Business_Review).[ Harvard University](https://en.wikipedia.org/wiki/Harvard_University).[ Archived](https://web.archive.org/web/20170118052537/https://hbr.org/2017/01/the-truth-about-blockchain) from the original on 18 January 2017. Retrieved 17 January 2017
+[^2]: Sheth and Larson (1990). ["Federated Database Systems for Managing Distributed, Heterogeneous, and Autonomous Databases"](http://dl.acm.org/citation.cfm?id=96604). _ACM Computing Surveys, Vol. 22, No.3_. pp. 183–236.
+[^3]: Iansiti, Marco; Lakhani, Karim R. (January 2017). ["The Truth About Blockchain"](https://hbr.org/2017/01/the-truth-about-blockchain). [Harvard Business Review](https://en.wikipedia.org/wiki/Harvard_Business_Review). [Harvard University](https://en.wikipedia.org/wiki/Harvard_University). [Archived](https://web.archive.org/web/20170118052537/https://hbr.org/2017/01/the-truth-about-blockchain) from the original on 18 January 2017. Retrieved 17 January 2017
 [^4]: [https://blog.torproject.org/take-back-internet-us](https://blog.torproject.org/take-back-internet-us)
 [^5]: Frazee, Paul. Information Civics: Deconstructing the power structures of large-scale social computing networks. [https://infocivics.com/](https://infocivics.com/)
 [^6]: [https://www.oreilly.com/content/ux-for-beginners-key-ideas/](https://www.oreilly.com/content/ux-for-beginners-key-ideas/)
 [^7]: [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/)
 [^8]: [https://trac.tools.ietf.org/html/rfc8280](https://trac.tools.ietf.org/html/rfc8280)
-[^9]: https://scuttlebutt.nz/
+[^9]: [https://scuttlebutt.nz/](https://scuttlebutt.nz/)
 [^10]: Such as IPFS, Filecoin, Dat, DDRP, and Swarm
-[^11]: https://beakerbrowser.com/
-[^12]: https://brave.com/
-[^13]: https://discourse.wicg.io/t/filling-the-remaining-gap-between-websocket-webrtc-and-webtranspor/4366
-[^14]: https://www.theverge.com/2020/3/6/21167782/intel-processor-flaw-root-of-trust-csme-security-vulnerability
+[^11]: [https://beakerbrowser.com/](https://beakerbrowser.com/)
+[^12]: [https://brave.com/](https://brave.com/)
+[^13]: [https://discourse.wicg.io/t/filling-the-remaining-gap-between-websocket-webrtc-and-webtranspor/4366](https://discourse.wicg.io/t/filling-the-remaining-gap-between-websocket-webrtc-and-webtranspor/4366)
+[^14]: [https://www.theverge.com/2020/3/6/21167782/intel-processor-flaw-root-of-trust-csme-security-vulnerability](https://www.theverge.com/2020/3/6/21167782/intel-processor-flaw-root-of-trust-csme-security-vulnerability)
 [^15]: [https://discuss.libp2p.io/t/report-a-study-of-libp2p-and-eth2/229](https://discuss.libp2p.io/t/report-a-study-of-libp2p-and-eth2/229)
 [^16]: Shapiro, Marc; Preguiça, Nuno; Baquero, Carlos; Zawirski, Marek (2011), Conflict-Free Replicated Data Types (PDF), Lecture Notes in Computer Science, 6976, Grenoble, France: Springer Berlin Heidelberg, pp. 386–400, doi:10.1007/978-3-642-24550-3_29, ISBN 978-3-642-24549-7
-[^17]: “open specification maintenance is not important to initial success... and standardized later.” https://tools.ietf.org/html/rfc5218#page-3
+[^17]: “open specification maintenance is not important to initial success... and standardized later.” [https://tools.ietf.org/html/rfc5218#page-3](https://tools.ietf.org/html/rfc5218#page-3)
 [^18]: Zuboff, Shoshana (2019). _The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power_. New York: PublicAffairs.
-[^19]: Claudio A. Ardagna; et al. (2009).[ "Privacy Preservation over Untrusted Mobile Networks"](https://books.google.com/books?id=F1fKbX2hhFMC&pg=PA88). In Bettini, Claudio et al. (eds.). _Privacy In Location-Based Applications: Research Issues and Emerging Trends_. Springer. p. 88.[ ISBN](<https://en.wikipedia.org/wiki/ISBN_(identifier)>) [9783642035111](https://en.wikipedia.org/wiki/Special:BookSources/9783642035111)
-[^20]: https://www.torproject.org/
-[^21]: https://ipfs.io/
+[^19]: Claudio A. Ardagna; et al. (2009).["Privacy Preservation over Untrusted Mobile Networks"](https://books.google.com/books?id=F1fKbX2hhFMC&pg=PA88). In Bettini, Claudio et al. (eds.). _Privacy In Location-Based Applications: Research Issues and Emerging Trends_. Springer. p. 88.
+[^20]: [https://www.torproject.org/](https://www.torproject.org/)
+[^21]: [https://ipfs.io/](https://ipfs.io/)
 [^22]: Troncoso, Carmela, et al. "Systematizing decentralization and privacy: Lessons from 15 years of research and deployments." _Proceedings on Privacy Enhancing Technologies_ 2017.4 (2017): 404-426.
 [^23]: Diehm, Cade (2020). This Is Fine: Optimism and Danger in the Decentralised Network, New Design Congress.
-[^24]: https://_runyourown.social_
+[^24]: [https://runyourown.social](https://runyourown.social)
 [^25]: Eghbal, Nadia. _Roads and bridges: The unseen labor behind our digital infrastructure_. Ford Foundation, 2016. [https://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf](https://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf)
-[^26]: https://web.archive.org/web/20200311162809/https://electriccoin.co/blog/funding/
-[^27]: See also https://opentechstrategies.com/files/pub/MZ+OTS_OS_Archetypes_report_ext_scr.pdf
+[^26]: [https://web.archive.org/web/20200311162809/https://electriccoin.co/blog/funding/](https://web.archive.org/web/20200311162809/https://electriccoin.co/blog/funding/)
+[^27]: See also [https://opentechstrategies.com/files/pub/MZ+OTS_OS_Archetypes_report_ext_scr.pdf](https://opentechstrategies.com/files/pub/MZ+OTS_OS_Archetypes_report_ext_scr.pdf)
 [^28]: Eghbal, Nadia. _Roads and Bridges._
