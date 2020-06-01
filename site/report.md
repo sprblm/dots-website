@@ -1,7 +1,6 @@
 ---
 layout: article
 meta_title: Report
-meta_description: About page description
 body_class: about
 title: Report
 ---
