@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.3.0",
     "markdown-it-footnote": "^3.0.2"
   }
 }

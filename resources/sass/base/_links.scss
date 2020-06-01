@@ -1,14 +1,29 @@
 //==========  Links ==========//
 
 a {
-  @apply text-highlight no-underline transition-all duration-300 ease-out;
+  @apply no-underline transition-all duration-300 ease-out;
 
   &:not([class]) {
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-color: highlight;
 
     &:hover {
-      @apply text-secondary;
+      @apply text-secondary text-highlight;
+    }
+  }
+}
+
+.markdown {
+  .header-anchor {
+    @apply text-dark  transition-all duration-300 ease-out;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    &:hover .header-anchor {
+      @apply text-white;
     }
   }
 }

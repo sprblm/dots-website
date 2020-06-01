@@ -24,7 +24,7 @@ module.exports = {
       light: "#CAD3DF",
 
       black: "#000",
-      white: "#fff",
+      white: "#ECF0F8",
 
       gray: {
         100: "#f7fafc",
@@ -496,5 +496,6 @@ module.exports = {
     zIndex: ["responsive"]
   },
   corePlugins: {},
-  plugins: []
+  plugins: [],
+  purge: { enabled: true, content: ["./site/**/*.njk", "./site/**/*.md"] }
 };

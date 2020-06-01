@@ -1,6 +1,7 @@
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = eleventyConfig => {
   // Add a readable date formatter filter to Nunjucks
@@ -42,7 +43,9 @@ module.exports = eleventyConfig => {
     typographer: true
   };
 
-  const markdownLib = markdownIt(options).use(markdownItFootnote);
+  const markdownLib = markdownIt(options)
+    .use(markdownItFootnote)
+    .use(markdownItAnchor, { permalink: true, level: 2 });
 
   eleventyConfig.setLibrary("md", markdownLib);
 

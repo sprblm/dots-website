@@ -64,3 +64,60 @@
     }
   }
 }
+
+.content.markdown .take-aways {
+  @apply mb-16;
+
+  @screen md {
+    @apply mb-24;
+  }
+
+  p {
+    @apply text-base my-8;
+
+    @screen md {
+      @apply text-h4 my-16;
+    }
+  }
+
+  ul,
+  ol {
+    @apply pl-0 list-none;
+
+    @screen md {
+      @apply pl-8 list-none;
+
+      li {
+        @apply mb-8;
+      }
+    }
+  }
+}
+
+.content.markdown .aside {
+  @apply py-8 px-6 pr-6 my-16 border-dotted border-2 border-secondary;
+
+  @screen md {
+    @apply py-16 px-12;
+
+    p {
+      @apply mb-16;
+    }
+  }
+
+  ul {
+    @apply mb-0 pl-8;
+  }
+
+  ul li {
+    @apply list-none font-bold mb-8;
+
+    &:last-child {
+      @apply mb-0;
+    }
+
+    ul li {
+      @apply list-disc font-normal mt-0 mb-0;
+    }
+  }
+}

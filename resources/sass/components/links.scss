@@ -1,5 +1,5 @@
 .link-reference {
-  @apply text-base;
+  @apply text-base text-highlight;
 
   &::after {
     content: url("/images/icons/arrow-right.svg");
@@ -18,7 +18,7 @@
 
 .link-next {
   @apply flex flex-row h-12 max-w-xl pr-4 items-center;
-  @apply text-base;
+  @apply text-base text-highlight;
 
   @screen md {
     @apply h-16;
