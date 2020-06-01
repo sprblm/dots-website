@@ -58,6 +58,11 @@ $transition-length: 0.25s;
       @apply opacity-100;
       transform: translate3d(0, 0, 0);
     }
+
+    .footer {
+      @apply opacity-100 duration-300;
+      transition-delay: 1s;
+    }
   }
 
   .item {
@@ -71,6 +76,15 @@ $transition-length: 0.25s;
       &:nth-child(#{$i}) {
         transition-delay: $transition-length * $i / 8 + 0.5;
       }
+    }
+  }
+
+  .footer {
+    @apply p-6 fixed left-0 w-full z-50 overflow-y-auto;
+    bottom: 4rem;
+
+    @screen md {
+      @apply hidden;
     }
   }
 }
