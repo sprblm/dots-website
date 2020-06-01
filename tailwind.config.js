@@ -496,9 +496,5 @@ module.exports = {
     zIndex: ["responsive"]
   },
   corePlugins: {},
-  plugins: [],
-  purge: {
-    enabled: process.env.NODE_ENV === "production",
-    content: ["./site/**/*.njk", "./site/**/*.md"]
-  }
+  plugins: []
 };
