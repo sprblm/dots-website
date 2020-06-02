@@ -5,7 +5,7 @@ body_class: governance
 title: Governance
 ---
 
-# Governance
+# Our Governance Structure
 
 ### Basics
 
