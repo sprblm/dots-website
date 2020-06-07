@@ -1,20 +1,15 @@
 ---
-layout: article
-meta_title: Report
-body_class: about
-title: Report
+permalink: "files/report.txt"
 ---
 
-# Decentralization Off The Shelf: 7 Maxims
+Decentralization Off The Shelf: 7 Maxims
+===
 
 __Authors__
 
 Eileen Wagner (Simply Secure)  
 Karissa McKelvey (Digital Democracy)  
 Kelsie Nabben (RMIT University)
-
-<a class="link-reference" href="/">Download as PDF</a>
-<a class="link-reference" href="/site/report.md">Open as a markdown file</a>
 
 _With funding support from SamsungNEXT, DxOS, and the Shuttleworth Foundation._
 

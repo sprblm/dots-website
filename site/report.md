@@ -13,9 +13,9 @@ Eileen Wagner (Simply Secure)
 Karissa McKelvey (Digital Democracy)  
 Kelsie Nabben (RMIT University)
 
-<a class="link-reference" href="/">Download as PDF</a>
+<a class="link-reference" href="/files/DOTS_Report.pdf">Download as PDF</a>
 <br>
-<a class="link-reference" href="/report.md">Open as a markdown file</a>
+<a class="link-reference" href="/files/report.md">Open as a text file</a>
 
 _With funding support from SamsungNEXT, DxOS, and the Shuttleworth Foundation._
 
