@@ -40,7 +40,7 @@ module.exports = eleventyConfig => {
   let options = {
     html: true,
     breaks: false,
-    linkify: true,
+    linkify: false,
     typographer: true
   };
 

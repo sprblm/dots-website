@@ -9,15 +9,15 @@ title: Report
 
 __Authors__
 
-Eileen Wagner (Simply Secure)  
-Karissa McKelvey (Digital Democracy)  
-Kelsie Nabben (RMIT University)
+Eileen Wagner (Simply Secure)
+Karissa McKelvey (Digital Democracy)
+Kelsie Nabben (RMIT University / DXOS.org) 
 
 <a class="link-reference" href="/files/DOTS_Report.pdf">Download as PDF</a>
 <br>
-<a class="link-reference" href="/files/report.md">Open as a text file</a>
+<a class="link-reference" href="/files/report.txt">Open as a text file</a>
 
-_With funding support from SamsungNEXT, DxOS, and the Shuttleworth Foundation._
+_With funding support from SamsungNEXT, DXOS.org, and the Shuttleworth Foundation._
 
 ## Executive Summary
 
@@ -110,15 +110,13 @@ The methodology of this research is qualitative, involving focus groups, intervi
 
 All quotations in this report are anonymous and attributed to our research participants.
 
-This work was funded by SamsungNEXT and DxOS, with organizational support from Simply Secure and Digital Democracy. A Shuttleworth Flash Grant also enabled some travel.
+This work was funded by SamsungNEXT and DXOS.org, with organizational support from Simply Secure and Digital Democracy. A Shuttleworth Flash Grant also enabled some travel.
 
 # Maxims
 
 ## 1. Collaboration. _Recognize the context._
 
 <div class="take-aways">
-
-
 
 1. __Decide on whether and how to communicate your values__; a value proposition can be political, too.
 2. __Collaborate with other projects__ that are targeting the same users and use cases, and pattern match with regard to design and architecture choices.
@@ -378,7 +376,7 @@ __Research Participants__
 *   Antoine Toulme, Whiteblock
 *   Antonela Debiasi, Tor Project
 *   Benedict Lau, Hypha Worker Co-operative
-*   Chris Waclawek, DxOS
+*   Chris Waclawek and Rich Burdon, DXOS.org
 *   Dan Hassan and Kieran Gibb, Magma Collective
 *   Darius Kazemi, runyourown.social
 *   Dean Eigermann and Dmitriy Ryajov, Status
@@ -403,7 +401,7 @@ __Research Participants__
 *   Matthew Wild, XMPP Standards Foundation / Modern XMPP
 *   Michael Rogers, Briar
 *   Michel Bauwens, P2P Foundation
-*   Nadir Chishtie, Matrix / Riot
+*   Nadir Chishtie, Matrix.org / Riot
 *   Niels ten Oever, University of Amsterdam and Texas A&M University
 *   Paolo, Optool / DTN Conference
 *   Paul Frazee, Beaker Browser
@@ -413,7 +411,6 @@ __Research Participants__
 *   Pospi, Holochain
 *   Przemyslaw Rekucki, Golem
 *   pukkamustard, openEngiadina
-*   Rich Burdon, Wireline
 *   Roel Roscam Abbing, Malmo University / XMPP
 *   Sadie Doreen, I2P
 *   Scott Moore, Gitcoin
@@ -422,6 +419,19 @@ __Research Participants__
 *   Wendy Hanamura, Internet Archive
 *   Zak Cole, Whiteblock
 *   Zelf and Mix, Secure Scuttlebutt
+
+## Attributions
+Thanks for helpful comments on the draft to Niels ten Oever, Dan Hassan, Peter van Hardenberg, Antonela Debiasi, Ricardo J. Méndez, Iryna Nezhynska, Gerben, Benedict Lau, Paul d'Aoust, Jan Dittrich, Jay Graber, Ross Schulman, Abbey Titcomb, Scott Moore, James Halliday, Paul Frazee, Betsy Cooper, Matthew Slipper, Darius Kazemi, Matthew Wild, Dietrich Ayala, Przemysław Idzkiewicz, Harry Lachenmayer, Chris Adams, Paul Gardner-Stephen, Mark Nadal, Pospi, Vincent Ahrend and Allon Bar.
+
+Thanks to Georgia Bullen for strategy and fundraising support.
+
+Thanks to Cade Diehm, Kira Oakley, Jay Graber, Irina Bolychevsky for continued camaraderie.
+
+Thanks to Ignatius Gilfedder for a stunning visual design, and Ngọc Triệu and Vincent Ahrend for laying it out in print and web.
+
+Thanks to Allon Bar for the name “off the shelf”.
+
+Thanks to DXOS.org for initiating the P2P Summit, arranging some interviews and financial support. Additional thanks to SamsungNEXT and the Shuttleworth Foundation for financial support.
 
 
 ## Notes
