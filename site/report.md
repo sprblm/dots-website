@@ -9,11 +9,11 @@ title: Report
 
 __Authors__
 
-Eileen Wagner (Simply Secure)
-Karissa McKelvey (Digital Democracy)
-Kelsie Nabben (RMIT University / DXOS.org)
+Eileen Wagner (Simply Secure)  
+Karissa McKelvey (Digital Democracy)  
+Kelsie Nabben (RMIT University / DXOS.org)  
 
-<a class="link-reference" href="/files/DOTS_Report.pdf">Download as PDF</a>
+<a class="link-reference" href="/files/DOTS_Report_7Maxims.pdf">Download as PDF</a>
 <br>
 <a class="link-reference" href="/files/report.txt">Open as a text file</a>
 
