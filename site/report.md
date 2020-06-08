@@ -411,7 +411,7 @@ __Research Participants__
 *   Pospi, Holochain
 *   Przemyslaw Rekucki, Golem
 *   pukkamustard, openEngiadina
-*   Roel Roscam Abbing, Malmo University / XMPP
+*   Roel Roscam Abbing, Malmö University
 *   Sadie Doreen, I2P
 *   Scott Moore, Gitcoin
 *   substack, bits coop
