@@ -11,7 +11,7 @@ __Authors__
 
 Eileen Wagner (Simply Secure)
 Karissa McKelvey (Digital Democracy)
-Kelsie Nabben (RMIT University / DXOS.org) 
+Kelsie Nabben (RMIT University / DXOS.org)
 
 <a class="link-reference" href="/files/DOTS_Report.pdf">Download as PDF</a>
 <br>
@@ -66,16 +66,16 @@ While the motivations for decentralization are heterogenous, the goal, however, 
 
 ### Key Terms
 
-- __Decentralization__ \
+* __Decentralization__ \
   Network architecture that avoids reliance on a single party. Encompasses peer-to-peer, blockchain, federated, and distributed technologies that involve many individual users.
 
-- __Peer-to-Peer (p2p)__ \
+* __Peer-to-Peer (p2p)__ \
   Peers make a portion of their resources, such as processing power, disk storage or network bandwidth, directly available to other network participants, without the need for central coordination by servers or stable hosts. Popularized by BitTorrent, Napster, and Bitcoin.[^1]
 
 * __Federated__ \
   Federation allows separate deployments of a service to communicate with each other through a common protocol, for instance a mail server run by Google federates with a mail server run by Microsoft when you send an email from @gmail.com to @hotmail.com.[^2] Each deployment may host multiple users.
 
-- __Blockchain__ \
+* __Blockchain__ \
   A distributed ledger that can record transactions between multiple parties efficiently and in a verifiable and permanent way.[^3]
 
 * __Distributed systems__ \
@@ -384,7 +384,7 @@ __Research Participants__
 *   Emaline Friedman, Commons Engine
 *   Fatemeh Shirazi, Web3 Foundation
 *   Feross, WebTorrent
-*   Franz Heinzmann, Sonar 
+*   Franz Heinzmann, Sonar
 *   Harry Halpin, Nym
 *   Harry Lachenmayer, independent
 *   Holger Krekel, Delta.Chat
