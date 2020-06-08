@@ -5,7 +5,7 @@ __Authors__
 
 Eileen Wagner (Simply Secure)
 Karissa McKelvey (Digital Democracy)
-Kelsie Nabben (RMIT University)
+Kelsie Nabben (RMIT University / DXOS.org)
 
 _With funding support from SamsungNEXT, DXOS.org, and the Shuttleworth Foundation._
 
