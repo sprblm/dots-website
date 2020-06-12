@@ -373,6 +373,7 @@ __Blockchains.__ Governance models that include a blockchain as a primary compon
 __Research Participants__
 
 
+*   Alexander Cobleigh, Cabal 
 *   Antoine Toulme, Whiteblock
 *   Antonela Debiasi, Tor Project
 *   Benedict Lau, Hypha Worker Co-operative
@@ -383,7 +384,7 @@ __Research Participants__
 *   Eletherios Diakomichalis, Alexis Sellier, Abbey Titcomb, Radicle
 *   Emaline Friedman, Commons Engine
 *   Fatemeh Shirazi, Web3 Foundation
-*   Feross, WebTorrent
+*   Feross Aboukhadijeh, WebTorrent
 *   Franz Heinzmann, Sonar
 *   Harry Halpin, Nym
 *   Harry Lachenmayer, independent
@@ -411,7 +412,7 @@ __Research Participants__
 *   Pospi, Holochain
 *   Przemyslaw Rekucki, Golem
 *   pukkamustard, openEngiadina
-*   Roel Roscam Abbing, Malmö University
+*   Roel Roscam Abbing, Malmo University / XMPP
 *   Sadie Doreen, I2P
 *   Scott Moore, Gitcoin
 *   substack, bits coop
@@ -421,7 +422,7 @@ __Research Participants__
 *   Zelf and Mix, Secure Scuttlebutt
 
 ## Attributions
-Thanks for helpful comments on the draft to Niels ten Oever, Dan Hassan, Peter van Hardenberg, Antonela Debiasi, Ricardo J. Méndez, Iryna Nezhynska, Gerben, Benedict Lau, Paul d'Aoust, Jan Dittrich, Jay Graber, Ross Schulman, Abbey Titcomb, Scott Moore, James Halliday, Paul Frazee, Betsy Cooper, Matthew Slipper, Darius Kazemi, Matthew Wild, Dietrich Ayala, Przemysław Idzkiewicz, Harry Lachenmayer, Chris Adams, Paul Gardner-Stephen, Mark Nadal, Pospi, Vincent Ahrend and Allon Bar.
+Thanks for helpful comments on the draft to Niels ten Oever, Dan Hassan, Peter van Hardenberg, Antonela Debiasi, Ricardo J. Méndez, Iryna Nezhynska, Gerben, Benedict Lau, Paul d'Aoust, Jan Dittrich, Jay Graber, Ross Schulman, Abbey Titcomb, Scott Moore, substack, Paul Frazee, Betsy Cooper, Matthew Slipper, Darius Kazemi, Matthew Wild, Dietrich Ayala, Przemysław Idzkiewicz, Harry Lachenmayer, Chris Adams, Paul Gardner-Stephen, Mark Nadal, Pospi, Vincent Ahrend and Allon Bar.
 
 Thanks to Georgia Bullen for strategy and fundraising support.
 
