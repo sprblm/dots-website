@@ -126,10 +126,10 @@ ol {
 
   ul,
   ol {
-    @apply list-inside;
+    @apply list-outside;
 
     @screen md {
-      @apply list-outside pl-12;
+      @apply pl-12;
     }
   }
 
