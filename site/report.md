@@ -373,7 +373,7 @@ __Blockchains.__ Governance models that include a blockchain as a primary compon
 __Research Participants__
 
 
-*   Alexander Cobleigh, Cabal 
+*   Alexander Cobleigh, Cabal
 *   Antoine Toulme, Whiteblock
 *   Antonela Debiasi, Tor Project
 *   Benedict Lau, Hypha Worker Co-operative
@@ -409,7 +409,7 @@ __Research Participants__
 *   Paul Gardner-Stephen, Serval / MEGA65
 *   Peter Czaban, Web3 Foundation
 *   Peter van Hardenberg, Ink & Switch
-*   Pospi, Holochain
+*   Pospi, Economikit
 *   Przemyslaw Rekucki, Golem
 *   pukkamustard, openEngiadina
 *   Roel Roscam Abbing, Malmo University / XMPP
