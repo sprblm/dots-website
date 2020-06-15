@@ -1,10 +1,6 @@
 # Decentral Patterns Website
 
-This repository holds the sources for the [decentpatterns.xyz](https://decentpatterns.xyz) website. It's built using Skeleventy.
-
-## Skeleventy
-
-A skeleton boilerplate built with Eleventy and TailwindCSS. Check out [Skeleventy](https://skeleventy.netlify.com/)!
+This repository holds the sources for the [decentpatterns.xyz](https://decentpatterns.xyz) website. It's built using [Skeleventy](https://skeleventy.netlify.com/), a skeleton boilerplate built with Eleventy and TailwindCSS.
 
 ### Requirements
 
