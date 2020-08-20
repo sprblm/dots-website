@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<main class="inner"> 
+  <article class="content">
+    <div class="timeline">
+    {% for item in timeline %}
+      <div class="timeline__item">
+        <div class="timeline__item--{{item.state}}"></div>
+        <div class="timeline__item__description {{item.state}}">
+        {{item.description}}
+        </div>
+        <div class="timeline__item__date">{{item.date}}</div>
+      </div>
+    {% endfor %}
+    </div>
+  </article>
+</main>
