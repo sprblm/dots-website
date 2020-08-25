@@ -4,18 +4,15 @@
     position: relative;
     @apply mb-16 ml-16;
     &--progress {
-      &::before {
-       height: 200%;
-       width: 8px;
-       top: 4px;
-       left: -40px;
-       position: absolute;
-       content: '';
-       background-color: theme('colors.highlight');
-      }
+        height: 200%;
+        width: 8px;
+        top: 4px;
+        left: -40px;
+        position: absolute;
+        content: '';
+        background-color: theme('colors.highlight');
     }
     &--done {
-      &::before {
         height: 30px;
         width: 30px;
         left: -40px;
@@ -24,10 +21,8 @@
         content: "";
         background-color: theme('colors.secondary');
         clip-path: path('M20.285,2l-11.285,11.567-5.286-5.011-3.714,3.716,9,8.728,15-15.285');
-      }
     }
     &--idle {
-      &::before {
         height: 200%;
         width: 8px;
         content: '';
@@ -35,7 +30,6 @@
         top: 4px;
         left: -40px;
         background-color: theme('colors.gray.400');
-      }
     }
     &__description {
       @apply text-highlight text-h3;
