@@ -15,6 +15,10 @@
     {
       "label": "About",
       "url": "/about/"
+    },
+    {
+      "label": "Roadmap",
+      "url": "/roadmap/"
     }
   ]
 }
