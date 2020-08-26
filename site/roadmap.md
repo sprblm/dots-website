@@ -4,19 +4,19 @@ meta_title: Roadmap
 body_class: governance
 title: Roadmap
 timeline:
-  - description: Project scope & research 
+  - description: Project scope and research design
     date: Summer 2019
     state: done
   - description: Workshops and interviews
-    date: Winter 2019/20
+    date: Winter 2019
     state: done
-  - description: Publish report
+  - description: Publish research report
     date: Spring 2020
     state: done
-  - description: Design patterns (user experience and architecture) 
+  - description: Design patterns (user experience and architecture)
     date: Summer 2020
     state: progress
-  - description: Shared decentralization glossary 
+  - description: Shared decentralization glossary
     date: Fall 2020
     state: progress
   - description: Pattern library for developers (v1)
