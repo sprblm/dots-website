@@ -1,8 +1,8 @@
 ---
 layout: article
-meta_title: Virtual Workshop (Blue)
+meta_title: DOTS Workshop Invitation
 body_class: workshop
-title: Virtual Design Workshop Invitation
+title: Virtual Workshop (Cyan)
 ---
 # Invitation: Virtual Design Workshop
 
