@@ -6,12 +6,7 @@ title: Virtual Design Workshop Invitation
 ---
 # Invitation: Virtual Design Workshop
 
-Join our virtual design workshop this fall!
-
-<img
-      alt="Design sprint illustration"
-      src="/images/illustrations/Design_Sprint.png"
-/>
+## Join our virtual design workshop this fall!
 
 Decentralization is full of hard UX problems waiting for talented designers to tackle. This fall, we invite you to collaborate with a community of designers interested in building a library of design patterns for decentralization.
 
@@ -63,6 +58,12 @@ Our workshops will take place on the internet on the following dates:
 <a class="link-reference" href="https://airtable.com/shrsskUpdymmbCS3d">
   Register to attend our design workshop!
 </a>
+
 Participation is free-of-charge.
+
+<img
+      alt="Design sprint illustration"
+      src="/images/illustrations/Design_Sprint.png"
+/>
 
 This workshop series will be facilitated by Lola Oyelayo-Pearson, Eileen Wagner, and Karissa McKelvey.
