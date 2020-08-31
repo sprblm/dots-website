@@ -2,7 +2,7 @@
 layout: article
 meta_title: Virtual Workshop (Blue)
 body_class: workshop
-title: Invitation: Virtual Design Workshop
+title: Virtual Design Workshop Invitation
 ---
 # Invitation: Virtual Design Workshop
 
