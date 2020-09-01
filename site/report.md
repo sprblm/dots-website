@@ -171,7 +171,7 @@ __Onboarding and explanations__. It is difficult to onboard and manage expectati
   - What does it mean to optionally use the Internet?
   - Will my content be available at all times? How reliable is this service?
 - Licensing & intellectual property
-  - What do es it mean to have other people's data on my machine?
+  - What does it mean to have other people's data on my machine?
 - Governance & content moderation
   - Who has control over shared content and infrastructure?
   - How can I block someone?
