@@ -4,11 +4,15 @@ meta_title: DOTS Workshop Invitation
 body_class: workshop
 title: Virtual Workshop (Cyan)
 ---
-# Invitation: Virtual Design Workshop
+# Invitation
 
 ## Join our virtual design workshop this fall!
 
 Decentralization is full of hard UX problems waiting for talented designers to tackle. This fall, we invite you to collaborate with a community of designers interested in building a library of design patterns for decentralization.
+
+<a class="link-reference" href="https://airtable.com/shrsskUpdymmbCS3d">
+  Register to attend our design workshop!
+</a>
 
 ### Topics we will cover
 
@@ -50,20 +54,22 @@ By participating in this workshop series, you get to:
 - develop completely new and ground-breaking designs;
 - meet other like-minded folks in this area.
 
+<img
+      alt="Design sprint illustration"
+      src="/images/illustrations/Design_Sprint.png"
+/>
+
 Our workshops will take place on the internet on the following dates:
 
-- Part 1 Wednesday, Sep 23 12pm ET / 6pm CET / 9am PT for 2.5 hours and
-- Part 2 Wednesday, Sep 30 12pm ET / 6pm CET / 9am PT for 2.5 hours
+- Part 1: Wednesday, Sep 23 12pm ET / 6pm CET / 9am PT for 2.5 hours and
+- Part 2: Wednesday, Sep 30 12pm ET / 6pm CET / 9am PT for 2.5 hours
+
+Not a designer? We'd still like to invite you to participate. Sign up and we will be in touch!
 
 <a class="link-reference" href="https://airtable.com/shrsskUpdymmbCS3d">
   Register to attend our design workshop!
 </a>
 
 Participation is free-of-charge.
-
-<img
-      alt="Design sprint illustration"
-      src="/images/illustrations/Design_Sprint.png"
-/>
 
 This workshop series will be facilitated by Lola Oyelayo-Pearson, Eileen Wagner, and Karissa McKelvey.
