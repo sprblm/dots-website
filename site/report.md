@@ -118,9 +118,9 @@ This work was funded by SamsungNEXT and DXOS.org, with organizational support fr
 
 <div class="take-aways">
 
-1. __Decide on whether and how to communicate your values__; a value proposition can be political, too.
-2. __Collaborate with other projects__ that are targeting the same users and use cases, and pattern match with regard to design and architecture choices.
-3. __Learn from adjacent movements__; work with community organizers, coalition builders, and campaigners.
+- __Decide on whether and how to communicate your values__; a value proposition can be political, too.
+- __Collaborate with other projects__ that are targeting the same users and use cases, and pattern match with regard to design and architecture choices.
+- __Learn from adjacent movements__; work with community organizers, coalition builders, and campaigners.
 
 </div>
 
