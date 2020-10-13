@@ -13,13 +13,13 @@ timeline:
   - description: Publish research report
     date: Spring 2020
     state: done
-  - description: Design patterns (user experience and architecture)
+  - description: Design patterns 
     date: Summer 2020
     state: progress
   - description: Shared decentralization glossary
     date: Fall 2020
     state: progress
-  - description: Pattern library for developers (v1)
+  - description: Pattern library for developers
     date: Winter 2020
     state: idle
   - description: Explanatory resources about decentralization
