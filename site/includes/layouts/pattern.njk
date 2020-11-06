@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<main class="inner">
+  <h1>{{ title }}</h1>
+  <article class="content markdown">
+    {{ content | safe }}
+  </article>
+  <nav>
+    <h2>Tags</h2>
+    <ul>
+    {% for tag in tags %}
+      {% if tag !== 'pattern' %}
+        <li><a href="/topics/{{ tag | urlencode }}">{{ tag | capitalize }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </nav>
+</main>

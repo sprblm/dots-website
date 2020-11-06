@@ -30,6 +30,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
   eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
   eleventyConfig.addLayoutAlias("timeline", "layouts/timeline.njk");
+  eleventyConfig.addLayoutAlias("pattern", "layouts/pattern.njk");
 
   // Include our static assets
   eleventyConfig.addPassthroughCopy("css");
