@@ -76,7 +76,14 @@ if (mix.inProduction()) {
         "footnote-item",
         "aside",
         "take-aways",
-        "offers"
+        "offers",
+        "timeline",
+        "timeline__item",
+        "timeline__item__description",
+        "timeline__item__date",
+        "progress",
+        "done",
+        "idle"
       ]
     })
 
