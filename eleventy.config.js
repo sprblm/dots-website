@@ -26,11 +26,18 @@ module.exports = eleventyConfig => {
     return content;
   });
 
+  // Collections
+  const byTitle = (a, b) => a.data.title.localeCompare(b.data.title, "en");
+  eleventyConfig.addCollection("patternsByTitle", collection =>
+    collection.getFilteredByTag("pattern").sort(byTitle)
+  );
+
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
   eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
   eleventyConfig.addLayoutAlias("timeline", "layouts/timeline.njk");
   eleventyConfig.addLayoutAlias("pattern", "layouts/pattern.njk");
+  eleventyConfig.addLayoutAlias("topic", "layouts/topic.njk");
 
   // Include our static assets
   eleventyConfig.addPassthroughCopy("css");
