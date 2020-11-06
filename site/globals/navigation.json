@@ -9,6 +9,10 @@
       "url": "/patterns/"
     },
     {
+      "label": "Topics",
+      "url": "/topics/"
+    },
+    {
       "label": "Report",
       "url": "/report/"
     },

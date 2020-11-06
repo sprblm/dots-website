@@ -31,6 +31,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection("patternsByTitle", collection =>
     collection.getFilteredByTag("pattern").sort(byTitle)
   );
+  eleventyConfig.addCollection("topicsByTitle", collection =>
+    collection.getFilteredByTag("topic").sort(byTitle)
+  );
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
