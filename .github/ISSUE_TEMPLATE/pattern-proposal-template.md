@@ -3,8 +3,7 @@ name: Pattern proposal template
 about: Propose a new pattern to be added to the library.
 title: "[submission]"
 labels: pattern-submission
-assignees: ''
-
+assignees: ""
 ---
 
 ## The Design Problem

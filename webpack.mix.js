@@ -1,18 +1,18 @@
-let mix = require("laravel-mix");
-let tailwindcss = require("tailwindcss");
+const mix = require("laravel-mix");
+const tailwindcss = require("tailwindcss");
 require("laravel-mix-purgecss");
 
 // Paths
 const paths = {
   sass: {
     source: "./resources/sass/main.scss",
-    dest: "css/"
+    dest: "css/",
   },
   javascript: {
     source: "./resources/js/main.js",
     singles: "./resources/js/singles/*",
-    dest: "js/"
-  }
+    dest: "js/",
+  },
 };
 
 // Run mix
@@ -22,9 +22,9 @@ mix
     resolve: {
       alias: {
         "@utilities": path.resolve(__dirname, "resources/js/utilities"),
-        "@modules": path.resolve(__dirname, "resources/js/modules")
-      }
-    }
+        "@modules": path.resolve(__dirname, "resources/js/modules"),
+      },
+    },
   })
 
   // Concatenate & Compile Javascript
@@ -37,7 +37,7 @@ mix
   .sass(paths.sass.source, paths.sass.dest)
   .options({
     processCssUrls: false,
-    postCss: [tailwindcss("tailwind.config.js")]
+    postCss: [tailwindcss("tailwind.config.js")],
   });
 
 // Production only
@@ -83,11 +83,11 @@ if (mix.inProduction()) {
         "timeline__item__date",
         "progress",
         "done",
-        "idle"
-      ]
+        "idle",
+      ],
     })
 
     // Minifies CSS & JS files
-    .minify(paths.sass.dest + "main.css")
-    .minify(paths.javascript.dest + "main.js");
+    .minify(`${paths.sass.dest}main.css`)
+    .minify(`${paths.javascript.dest}main.js`);
 }

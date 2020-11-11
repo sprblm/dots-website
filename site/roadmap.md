@@ -13,7 +13,7 @@ timeline:
   - description: Publish research report
     date: Spring 2020
     state: done
-  - description: Design patterns 
+  - description: Design patterns
     date: Summer 2020
     state: progress
   - description: Shared decentralization glossary
