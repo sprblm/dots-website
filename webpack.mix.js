@@ -42,10 +42,13 @@ mix
   });
 
 // Production only
-if (mix.inProduction()) {
+if (process.env.NODE_ENV !== "development") {
   // Remove any unused CSS using Purge
   mix
-    .purgeCss()
+    .purgeCss({
+      folders: ["site"],
+      extensions: ["html", "njk"],
+    })
 
     // Minifies CSS & JS files
     .minify(`${paths.sass.dest}main.css`)
