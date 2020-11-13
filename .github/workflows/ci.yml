@@ -33,10 +33,17 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - run: npm ci
-      - uses: wearerequired/lint-action@v1
+
+      - name: Generate ESLint report
+        run: npm run lint -- --output-file eslint_report.json --format json
+        continue-on-error: true
+      - name: Annotate report
+        uses: ataylorme/eslint-annotate-action@1.1.2
         with:
-          github_token: ${{ secrets.github_token }}
-          eslint: true
-          eslint_dir: "."
-          prettier: true
-          prettier_dir: "."
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          report-json: "eslint_report.json"
+      - name: Upload ESLint report
+        uses: actions/upload-artifact@v1
+        with:
+          name: eslint_report.json
+          path: eslint_report.json
