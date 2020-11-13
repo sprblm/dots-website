@@ -1,12 +1,12 @@
 /*
 A date formatter filter for Nunjucks
 */
-module.exports = function(date, part) {
-  var d = new Date(date);
-  if (part == "year") {
+function dateFilters(date, part) {
+  const d = new Date(date);
+  if (part === "year") {
     return d.getUTCFullYear();
   }
-  var month = [
+  const month = [
     "January",
     "February",
     "March",
@@ -18,23 +18,21 @@ module.exports = function(date, part) {
     "September",
     "October",
     "November",
-    "December"
+    "December",
   ];
-  var ordinal = {
+  const ordinal = {
     1: "st",
     2: "nd",
     3: "rd",
     21: "st",
     22: "nd",
     23: "rd",
-    31: "st"
+    31: "st",
   };
-  return (
-    d.getDate() +
-    (ordinal[d.getDate()] || "th") +
-    " " +
-    month[d.getMonth()] +
-    ", " +
-    d.getUTCFullYear()
-  );
-};
+
+  return `${d.getDate() + (ordinal[d.getDate()] || "th")} ${
+    month[d.getMonth()]
+  }, ${d.getUTCFullYear()}`;
+}
+
+module.exports = dateFilters;

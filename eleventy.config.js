@@ -3,23 +3,23 @@ const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAnchor = require("markdown-it-anchor");
 
-module.exports = eleventyConfig => {
+const dateFilters = require("./filters/dates.js");
+const timestampFilters = require("./filters/timestamp.js");
+
+module.exports = (eleventyConfig) => {
   // Add a readable date formatter filter to Nunjucks
-  eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"));
+  eleventyConfig.addFilter("dateDisplay", dateFilters);
 
   // Add a HTML timestamp formatter filter to Nunjucks
-  eleventyConfig.addFilter(
-    "htmlDateDisplay",
-    require("./filters/timestamp.js")
-  );
+  eleventyConfig.addFilter("htmlDateDisplay", timestampFilters);
 
   // Minify our HTML
   eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+      const minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
@@ -28,10 +28,10 @@ module.exports = eleventyConfig => {
 
   // Collections
   const byTitle = (a, b) => a.data.title.localeCompare(b.data.title, "en");
-  eleventyConfig.addCollection("patternsByTitle", collection =>
+  eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
   );
-  eleventyConfig.addCollection("topicsByTitle", collection =>
+  eleventyConfig.addCollection("topicsByTitle", (collection) =>
     collection.getFilteredByTag("topic").sort(byTitle)
   );
 
@@ -49,11 +49,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy("files");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
-  let options = {
+  const options = {
     html: true,
     breaks: false,
     linkify: false,
-    typographer: true
+    typographer: true,
   };
 
   const markdownLib = markdownIt(options)
@@ -72,7 +72,7 @@ module.exports = eleventyConfig => {
       input: "site",
       output: "dist",
       includes: "includes",
-      data: "globals"
-    }
+      data: "globals",
+    },
   };
 };

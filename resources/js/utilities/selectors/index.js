@@ -1,30 +1,27 @@
-
 const $$ = {
+  body: document.querySelector("body"),
 
-    body                : document.querySelector('body'),
+  wrapper: document.getElementById("wrapper"),
 
-    wrapper             : document.getElementById('wrapper'),
+  header: document.getElementById("header"),
 
-    header              : document.getElementById('header'),
+  nav: document.getElementById("nav"),
 
-    nav                 : document.getElementById('nav'),
+  hero: document.getElementById("hero"),
 
-    hero                : document.getElementById('hero'),
+  main: document.getElementById("main"),
 
-    main                : document.getElementById('main'),
+  containerCentre: document.getElementById("container-centre"),
 
-    containerCentre     : document.getElementById('container-centre'),
+  containerRight: document.getElementById("container-right"),
 
-    containerRight      : document.getElementById('container-right'),
+  preFooter: document.getElementById("pre-footer"),
 
-    preFooter           : document.getElementById('pre-footer'),
+  footer: document.getElementById("footer"),
 
-    footer              : document.getElementById('footer'),
+  mobileNav: document.getElementById("mobile-nav"),
 
-    mobileNav           : document.getElementById('mobile-nav'),
+  mobileNavToggle: document.getElementById("mobile-nav-toggle"),
+};
 
-    mobileNavToggle     : document.getElementById('mobile-nav-toggle')
-
-}
-
-export default $$
+module.exports = $$;
