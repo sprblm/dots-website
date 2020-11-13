@@ -1,3 +1,8 @@
 /dist
+/mix-manifest.json
+
+/js/main*.js
+
 /dots-patterns
-/js
+/site/patterns
+/site/topics
