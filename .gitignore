@@ -1,8 +1,8 @@
 .DS_Store
 node_modules/
 
-dist/
-css/
-js/
+/dist/
+/css/
+/js/
 
-mix-manifest.json
+/mix-manifest.json
