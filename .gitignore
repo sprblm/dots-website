@@ -4,3 +4,5 @@ node_modules/
 dist/
 css/
 js/
+
+mix-manifest.json
