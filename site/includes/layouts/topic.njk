@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<main class="inner topic">
+  <h1>{{ page.fileSlug | capitalize }}</h1>
+
+  <article class="content markdown">
+    {{ content | safe }}
+  </article>
+
+  <h2>Patterns</h2>
+  <ul>
+  {%- for pattern in collections[page.fileSlug] -%}
+    <a href="/patterns/{{ pattern.fileSlug | lower }}"><li>{{ pattern.data.title}}</li></a>
+  {%- endfor -%}
+  </ul>
+</main>
