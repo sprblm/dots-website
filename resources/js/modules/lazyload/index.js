@@ -17,6 +17,11 @@ const Lazyload = (function Lazyload() {
       // const srcset = img.dataset.srcset
       const src = img.dataset.lazy;
 
+      // TODO: Refactor to not assign to function parameter
+      // I think this shouldn't stay but I am not sure whether we keep this
+      // functionality so I don't want to spend the time refactoring it for
+      // nothing
+      // eslint-disable-next-line no-param-reassign
       img.src = src;
       // img.srcset = srcset
 
@@ -25,7 +30,7 @@ const Lazyload = (function Lazyload() {
       img.classList.add("loaded");
     };
 
-    const lazyLoad = new IntersectionObserver((entries, lazyLoad) => {
+    const lazyObserver = new IntersectionObserver((entries, lazyLoad) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           preloadImage(entry.target);
@@ -35,7 +40,7 @@ const Lazyload = (function Lazyload() {
     }, options);
 
     images.forEach((image) => {
-      lazyLoad.observe(image);
+      lazyObserver.observe(image);
     });
   }
 })();
