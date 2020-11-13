@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   env: {
     browser: true,
@@ -9,7 +11,17 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: "script",
+    sourceType: "module",
   },
   rules: {},
+  settings: {
+    "import/resolver": {
+      alias: {
+        map: [
+          ["@utilities", path.resolve(__dirname, "resources/js/utilities")],
+          ["@modules", path.resolve(__dirname, "resources/js/modules")],
+        ],
+      },
+    },
+  },
 };
