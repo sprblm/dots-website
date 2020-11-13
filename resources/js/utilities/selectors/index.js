@@ -24,4 +24,4 @@ const $$ = {
   mobileNavToggle: document.getElementById("mobile-nav-toggle"),
 };
 
-export default $$;
+module.exports = $$;

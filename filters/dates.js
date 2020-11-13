@@ -1,9 +1,9 @@
 /*
 A date formatter filter for Nunjucks
 */
-module.exports = function (date, part) {
+function dateFilters(date, part) {
   const d = new Date(date);
-  if (part == "year") {
+  if (part === "year") {
     return d.getUTCFullYear();
   }
   const month = [
@@ -33,4 +33,6 @@ module.exports = function (date, part) {
   return `${d.getDate() + (ordinal[d.getDate()] || "th")} ${
     month[d.getMonth()]
   }, ${d.getUTCFullYear()}`;
-};
+}
+
+module.exports = dateFilters;
