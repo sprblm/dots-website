@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
