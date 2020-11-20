@@ -10,6 +10,7 @@
   "license": "CC0-1.0",
   "private": true,
   "scripts": {
+    "production": "npm run build",
     "build": "cross-env NODE_ENV=production npm-run-all -l clean build:*",
     "build:eleventy": "eleventy --config=eleventy.config.js",
     "build:webpack": "webpack",
