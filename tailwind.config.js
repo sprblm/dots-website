@@ -2,6 +2,7 @@ module.exports = {
   prefix: "",
   important: false,
   separator: ":",
+  purge: ["./site/**/*.njk", "./site/**/*.md"],
   theme: {
     screens: {
       sm: "640px",
