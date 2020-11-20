@@ -37,7 +37,7 @@ jobs:
         run: git submodule update --init --remote --merge
 
       - name: Add and commit any changes
-      - uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v5
         with:
           # The arguments for the `git add` command (see the paragraph below for more info)
           # Default: '.'
