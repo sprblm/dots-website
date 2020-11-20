@@ -59,7 +59,7 @@ jobs:
 
           # Name of the branch to use, if different from the one that triggered the workflow
           # Default: the branch that triggered the run
-          branch: master
+          branch: auto-pull-pattern-updates
 
           # The message for the commit
           # Default: 'Commit from GitHub Actions (name of the workflow)'
