@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
+        with:
+          ref: auto-pull-pattern-updates
+          submodules: true
 
       - name: Read node version from .nvmrc
         id: nvmrc
@@ -32,7 +35,7 @@ jobs:
             ${{ runner.os }}-
       - run: npm ci
 
-      - name: Generate ESLint report
+      - name: Run linter
         run: npm run lint
         continue-on-error: false
 
