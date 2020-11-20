@@ -1,5 +1,8 @@
 name: CI
 
+on:
+  workflow_dispatch:
+
 jobs:
   update-patterns:
     name: Update pattern library
