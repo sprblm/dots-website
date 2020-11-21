@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
@@ -43,11 +44,10 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addLayoutAlias("topic", "layouts/topic.njk");
 
   // Include our static assets
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy({ "styles/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("files");
-  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy({ public: "files" });
+  eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
 
   const options = {
     html: true,
@@ -71,8 +71,8 @@ module.exports = (eleventyConfig) => {
     dir: {
       input: "site",
       output: "dist",
-      includes: "includes",
-      data: "globals",
+      includes: "_includes",
+      data: "_globals",
     },
   };
 };

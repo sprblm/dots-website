@@ -28,14 +28,14 @@
     {% endif %} {# if your site's entire CSS comes in under 14kb, you may want
     to inline in the head #} {# include main.css if in development mode #} {% if
     helpers.environment === "development" %}
-    <link rel="stylesheet" href="/css/main.css" />
+    {# css is injected with style-loader in dev mode #}
     {% else %} {# else, use the minified css file for production #}
-    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     {% endif %} {# include scripts #} {% if helpers.environment ===
     "development" %}
     <script src="/js/main.js" defer></script>
     {% else %}
-    <script src="/js/main.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
     {% endif %} {# include social meta tags #} {% include
     "components/social-meta.njk" %} {# lastly include favicon, fonts, etc #}
     <link rel="icon" type="image/png" href="{{ site.images.favicon }}" />

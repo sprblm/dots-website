@@ -21,8 +21,9 @@ module.exports = {
     "import/resolver": {
       alias: {
         map: [
-          ["@utilities", path.resolve(__dirname, "resources/js/utilities")],
-          ["@modules", path.resolve(__dirname, "resources/js/modules")],
+          ["@utilities", path.resolve(__dirname, "scripts/utilities")],
+          ["@modules", path.resolve(__dirname, "scripts/modules")],
+          ["~", path.resolve(__dirname, "scripts")],
         ],
       },
     },
