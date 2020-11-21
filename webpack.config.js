@@ -8,7 +8,7 @@ module.exports = {
   devServer: {
     clientLogLevel: "silent",
     contentBase: path.join(__dirname, "dist"),
-    host: "0.0.0.0",
+    host: "localhost",
     hot: true,
     port: 8081,
     progress: true,
@@ -18,8 +18,8 @@ module.exports = {
   },
   devtool: isDev ? "cheap-module-source-map" : "source-map",
   entry: [
-    path.resolve(__dirname, "./resources/js/main.js"),
-    path.resolve(__dirname, "./resources/sass/main.scss"),
+    path.resolve(__dirname, "./scripts/main.js"),
+    path.resolve(__dirname, "./styles/main.scss"),
   ],
   mode: isDev ? "development" : "production",
   module: {
@@ -47,8 +47,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      "@utilities": path.resolve(__dirname, "resources/js/utilities"),
-      "@modules": path.resolve(__dirname, "resources/js/modules"),
+      "@utilities": path.resolve(__dirname, "scripts/utilities"),
+      "@modules": path.resolve(__dirname, "scripts/modules"),
     },
   },
 };

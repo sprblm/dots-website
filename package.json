@@ -12,13 +12,13 @@
   "scripts": {
     "production": "npm run build",
     "build": "cross-env NODE_ENV=production npm-run-all -l clean build:*",
-    "build:eleventy": "eleventy --config=eleventy.config.js",
+    "build:eleventy": "eleventy --config=11ty/eleventy.config.js",
     "build:webpack": "webpack",
-    "clean": "rimraf dist js css",
+    "clean": "rimraf dist",
     "lint": "eslint .",
     "prettier": "prettier --write .",
     "start": "cross-env NODE_ENV=development npm-run-all --silent clean --parallel start:*",
-    "start:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet --port 8082 --config=eleventy.config.js",
+    "start:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet --port 8082 --config=11ty/eleventy.config.js",
     "start:webpack": "webpack serve"
   },
   "dependencies": {
