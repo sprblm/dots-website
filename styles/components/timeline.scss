@@ -4,19 +4,22 @@
     position: relative;
     @apply mb-16 ml-16;
     &.progress {
+      svg path,
+      svg rect {
+        fill: theme("colors.highlight");
+      }
       height: 200%;
       width: 8px;
-      top: 4px;
+      top: 10px;
       left: -85px;
       position: absolute;
       content: "";
-      background-color: theme("colors.highlight");
     }
     &.done {
       height: 30px;
       width: 30px;
       left: -85px;
-      top: 4px;
+      top: 7px;
       position: absolute;
       content: "";
       background-color: theme("colors.secondary");
@@ -31,7 +34,6 @@
       position: absolute;
       top: 4px;
       left: -85px;
-      background-color: theme("colors.gray.400");
     }
     &__description {
       @apply text-highlight text-h3;
