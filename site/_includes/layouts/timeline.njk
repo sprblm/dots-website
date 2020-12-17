@@ -10,8 +10,14 @@ layout: default
     <div class="timeline">
     {% for item in timeline %}
       <div class="timeline__item">
+        {% if item.state === 'progress' %}
+        <div class="timeline__item {{item.state}}">
+          {% include "components/loading.njk" %}
+        </div>
+{% else %}
         <div class="timeline__item {{item.state}}">
         </div>
+{% endif %} 
         <div class="timeline__item__description {{item.state}}">
         {{item.description | safe }}
         </div>

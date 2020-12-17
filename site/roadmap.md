@@ -13,15 +13,15 @@ timeline:
   - description: Publish research report
     date: Spring 2020
     state: done
-  - description: Design patterns
+  - description: Design pattern research
     date: Summer 2020
-    state: progress
+    state: done
   - description: Shared decentralization glossary
     date: Fall 2020
     state: progress
-  - description: Pattern library for developers
+  - description: Pattern library launch
     date: Winter 2020
-    state: idle
+    state: progress
   - description: Explanatory resources about decentralization
     date: Summer 2021
     state: idle
@@ -32,13 +32,12 @@ timeline:
 
 ### Roadmap
 
-DOTS is a collective initiative to identify needs, synthesize priorities, provide resources, and coordinate efforts to further the development and deployment of decentralized technologies. By addressing these issues, we can increase the overall quantity and quality of decentralized applications.
-
-This roadmap is [currently maintained by Eileen Wagner and Karissa
-McKelvey](/about),
-with a group of volunteer contributors and advisors. We are actively seeking
-funding for all contributors; fueling the development of high-quality resources
-on a faster timeframe.
+DOTS is a collective initiative to identify needs, synthesize priorities,
+provide resources, and coordinate efforts to further the development and
+deployment of decentralized technologies. By addressing these issues, we can
+increase the overall quantity and quality of decentralized applications. We are
+actively [seeking funding](/support-us) to fuel the development of high-quality
+resources on a faster timeframe.
 
 You can support us by <a href="/support-us">backing DOTS</a>.
 
