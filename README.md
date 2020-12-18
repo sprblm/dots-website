@@ -1,35 +1,45 @@
 # Decentral Patterns Website
 
-This repository holds the sources for the [decentpatterns.xyz](https://decentpatterns.xyz) website. It's built using [Skeleventy](https://skeleventy.netlify.com/), a skeleton boilerplate built with Eleventy and TailwindCSS.
+This repository holds the sources for the [decentpatterns.xyz](https://decentpatterns.xyz) website. It's built using the static site generator Eleventy, the tailwindcss framework and Javascript.
 
-### Requirements
+## Installation and development
 
-Node `>=` v8.9.0
+First, make sure that you have initialized and updated the `dots-patterns` submodule.
 
-### Installation
+```
+git submodule update --init
+```
+
+The site is developed for Node v12, you can use `nvm use` to load the specific version from `.nvmrc` or install it yourselves. Now you can pull the dependencies.
 
 ```
 npm install
 ```
 
-To start the development server (and Mix), run the `npm run dev` command in terminal. Eleventy has hot reloading baked in and will automatically watch your template files for changes. Mix will watch any changes to the JS and SCSS files.
+To start the development server, run the `npm start` command in terminal and open [`localhost:8081`](http://localhost:8081/). The development server is configured to automatically reload when you make changes.
 
-### Folder Structure
+We use prettier and eslint to maintain a consistent and maintainable code style. Use the npm commands `npm run lint` to validate sources and `npm run prettier` to reformat sources on disk.
 
-The `site` folder contains all the templates, partials and content - which Eleventy will parse into HTML for us.
+## Folder Structure
 
-Within our `site` folder, lives a `globals` folder. Here you'll find a `site.json` file - for general config stuff e.g site name, author, email, social media links etc.
+### Content
 
-You'll also find a `navigation.json` file, which we use to loop over in our nav partial to generate our navigation. There's also a `helpers.js` file, which just contains a simple environment helper.
+The `site` folder contains all the templates, partials and content - which Eleventy will parse into HTML for us. Within our `site` folder, lives a `globals` folder. Here you'll find a `site.json` file - for general config stuff e.g site name, author, email, social media links etc. You'll also find a `navigation.json` file, which we use to loop over in our nav partial to generate our navigation. It's possible to hide navigation entries from the production deployment by setting `"draft": true` on them. There's also a `helpers.js` file, which just contains a simple environment helper.
 
-Uncompiled SCSS and JS reside in the `resources` folder - as mentioned above, Mix will be watching these folders for any changes (you should restart the server when creating new partials/folders).
+The repository [dots-patterns](https://github.com/simplysecure/dots-patterns) contains markdown-formatted patterns that are included in the site. The repository contents are symlinked into the folders `site/patterns` and `site/topics`.
 
-In development mode, Skeleventy will reference `main.css` for it's stylesheet. This will be pretty chunky in filesize (around 800KB!), due to the amount of Tailwind utility classes - but don't worry, Skeleventy has you covered!
+### Assets
 
-### Ready to deploy?
+Some of the assets are bundled using Webpack. This includes client-side Javascript, which you can find in the `scripts` folder and SCSS stylesheets, which are in the `styles` folder.
 
-Type the `npm run production` command to minify scripts, styles and run Purgecss.
+Other assets are copied as-is for deployment. This includes fonts in `styles/fonts`, images in `images` and downloadable files in the `public` folder.
+
+### Tooling
+
+The repository root contains configuration files for the various tools we use. In addition, you will find the more elaborate config for 11ty in the `11ty` folder.
+
+## Ready to deploy?
+
+Type the `npm run build` command to minify scripts, styles and run Purgecss.
 
 Purge will cross reference your templates/HTML with all those Tailwind classes and will remove any classes you haven't used - pretty cool huh?
-
-Skeleventy will now reference `main.min.css` as the new stylesheet (annoyingly, Mix also minifies `main.css` as well - this bugs the hell out of me!).

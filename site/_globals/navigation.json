@@ -1,0 +1,34 @@
+{
+  "main": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Patterns",
+      "url": "/patterns/",
+      "draft": true
+    },
+    {
+      "label": "Topics",
+      "url": "/topics/",
+      "draft": true
+    },
+    {
+      "label": "Report",
+      "url": "/report/"
+    },
+    {
+      "label": "Contribute",
+      "url": "/contribute/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Roadmap",
+      "url": "/roadmap/"
+    }
+  ]
+}

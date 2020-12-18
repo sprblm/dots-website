@@ -1,0 +1,44 @@
+//==========  Utility classes ==========//
+
+// subtle 'fade in' to the lazyloaded image
+[data-lazy] {
+  @apply opacity-0 w-full;
+  transition: opacity 0.25s ease-in;
+  min-height: 120px;
+}
+
+.loaded {
+  @apply opacity-100;
+}
+
+// 'container' helper class
+header,
+.inner,
+footer {
+  @apply px-6;
+
+  @screen sm {
+    @apply px-8;
+  }
+  @screen md {
+    @apply px-6 mx-20;
+  }
+
+  @screen lg {
+    @apply mx-32;
+  }
+
+  @screen xl {
+    @apply mx-48;
+  }
+}
+
+.inner {
+  @apply py-8;
+}
+
+// Reset body visibility changed in default.njk style tag, which is loaded
+// for dev environment to avoid flash of unstyled content on navigation
+body {
+  visibility: initial;
+}

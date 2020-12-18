@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if meta_title %}{{ meta_title }}{% else %}{{ title }}{% endif %} |
+      {{ site.name }}
+    </title>
+    <meta
+      name="description"
+      content="{% if meta_description %}{{
+        meta_description
+      }}{% else %}Decentralization Off The Shelf is a collective effort to further the adoption of decentralized technologies by providing open tooling and resources for the community.{% endif %}"
+    />
+    {% if page.fileSlug === 'blog' %}
+    <meta name="robots" content="noindex,follow" />
+    {% else %}
+    <meta name="robots" content="index,follow" />
+    {% endif %} {# include analytics #} {% if helpers.environment !==
+    "development" %}
+    <script
+      async
+      defer
+      data-domain="decentpatterns.xyz"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+    {% endif %} {# if your site's entire CSS comes in under 14kb, you may want
+    to inline in the head #} {# include main.css if in development mode #} {% if
+    helpers.environment === "development" %}
+    {# css is injected with style-loader in dev mode, these style rules
+    help to avoid a short flash of unstyled content while navigating #}
+    <style> body { background-color: #131F26; visibility: hidden; }</style>
+    {% else %} {# else, use the minified css file for production #}
+    <link rel="stylesheet" href="/css/main.css" />
+    {% endif %} {# include scripts #} {% if helpers.environment ===
+    "development" %}
+    <script src="/js/main.js" defer></script>
+    {% else %}
+    <script src="/js/main.js" defer></script>
+    {% endif %} {# include social meta tags #} {% include
+    "components/social-meta.njk" %} {# lastly include favicon, fonts, etc #}
+    <link rel="icon" type="image/png" href="{{ site.images.favicon }}" />
+
+    {# canonical #}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  </head>
+
+  <body
+    {%
+    if
+    body_class
+    %}
+    id="{{ body_class }}"
+    {%
+    endif
+    %}
+    class="text-body"
+  >
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <div
+      id="wrapper"
+      class="wrapper pb-16 md:pb-0 flex flex-col relative min-h-screen"
+    >
+      {# include header #}
+
+      {% include "components/header.njk" %}
+
+      {# include content #}
+      {{ content | safe }}
+
+      {# include footer #} {% include "components/footer.njk" %}
+    </div>
+
+    {# include mobile nav #} {% include "components/mobile-nav.njk" %}
+  </body>
+</html>
