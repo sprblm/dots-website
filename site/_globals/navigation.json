@@ -6,11 +6,13 @@
     },
     {
       "label": "Patterns",
-      "url": "/patterns/"
+      "url": "/patterns/",
+      "draft": true
     },
     {
       "label": "Topics",
-      "url": "/topics/"
+      "url": "/topics/",
+      "draft": true
     },
     {
       "label": "Report",
