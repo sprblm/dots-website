@@ -36,3 +36,9 @@ footer {
 .inner {
   @apply py-8;
 }
+
+// Reset body visibility changed in default.njk style tag, which is loaded
+// for dev environment to avoid flash of unstyled content on navigation
+body {
+  visibility: initial;
+}
