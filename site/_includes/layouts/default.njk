@@ -61,8 +61,10 @@
 
     <div
       id="wrapper"
-      class="wrapper pb-16 md:pb-0 flex flex-col relative min-h-screen"
+      class="wrapper pb-16 md:pb-0 flex flex-col relative min-h-screen parallax-container"
     >
+    {% include "components/parallax-backdrop.njk" %}
+    <div class="parallax parallax-base">
       {# include header #}
 
       {% include "components/header.njk" %}
@@ -72,6 +74,7 @@
 
       {# include footer #} {% include "components/footer.njk" %}
     </div>
+  </div>
 
     {# include mobile nav #} {% include "components/mobile-nav.njk" %}
   </body>
