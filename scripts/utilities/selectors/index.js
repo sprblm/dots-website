@@ -7,6 +7,8 @@ const $$ = {
 
   nav: document.getElementById("nav"),
 
+  parallax: document.getElementsByClassName("parallax-back"),
+
   hero: document.getElementById("hero"),
 
   main: document.getElementById("main"),

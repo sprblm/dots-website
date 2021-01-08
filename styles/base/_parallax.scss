@@ -1,3 +1,11 @@
+:root {
+  --parallax-shift: 0;
+  --parallax-loading: "none";
+}
+
+// This container wraps all .parallax elements and sets a `perspective`
+// it's clipped at the horizontal viewport boundary to avoid horizontal
+// scrolling due to perspective effects
 .parallax-container {
   perspective: 1px;
   height: 100vh;
@@ -13,15 +21,21 @@
   left: 0;
 }
 
+// Contains the page content - no depth
 .parallax-base {
   transform: translateZ(0);
 }
-.parallax-back-1 {
+
+.parallax-back {
   display: flex;
+  visibility: hidden;
+}
+
+// The two parallax layers have 1px and 2px depth to scroll at different speeds
+.parallax-back-1 {
   transform: translateZ(-1px) scale(2);
 }
 
 .parallax-back-2 {
-  display: flex;
   transform: translateZ(-2px) scale(3);
 }
