@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
       input: "site",
       output: "dist",
       includes: "_includes",
-      data: "_globals",
+      data: "../11ty/data",
     },
   };
 };
