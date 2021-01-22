@@ -105,14 +105,15 @@ ol {
 }
 
 .content.markdown {
-  @apply max-w-3xl;
+  @apply max-w-4xl;
 
   p {
-    @apply max-w-2xl;
+    @apply max-w-3xl text-lg;
   }
 
   h2 {
     @apply my-16;
+    font-size: 48px;
     @screen md {
       @apply my-24;
     }
@@ -126,7 +127,7 @@ ol {
 
   ul,
   ol {
-    @apply list-outside;
+    @apply list-outside text-lg;
 
     @screen md {
       @apply pl-12;
@@ -138,14 +139,14 @@ ol {
   }
 
   blockquote {
-    @apply pl-8 my-12;
+    @apply my-12;
 
     @screen md {
       @apply my-16;
     }
 
     p {
-      @apply text-h4;
+      @apply text-lg pl-8  border-l-2 border-dark;
     }
   }
 }
