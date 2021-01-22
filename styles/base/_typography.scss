@@ -111,6 +111,10 @@ ol {
     @apply max-w-3xl text-lg;
   }
 
+  h1 {
+    @apply text-h1;
+  }
+
   h2 {
     @apply my-16;
     font-size: 48px;
