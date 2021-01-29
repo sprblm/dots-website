@@ -1,4 +1,5 @@
 // //==========  Typography ==========//
+
 // headings
 h1,
 h2,
@@ -104,22 +105,44 @@ ol {
   @apply list-decimal;
 }
 
+// the .markdown-class is applied to content, which is rendered from a markdown
+// source file
+
 .content.markdown {
   @apply max-w-4xl;
 
-  p {
-    @apply max-w-3xl text-lg;
+  p,
+  ul,
+  ol {
+    // increases readbility
+    @apply max-w-4xl text-lg;
+    @screen lg {
+      @apply mb-20;
+    }
   }
+
+  // larger font-size needs more space around the paragraphs
+  p + p {
+    @apply mt-8;
+  }
+
+  // markdown header styles
 
   h1 {
     @apply text-h1;
+
+    // hiding the header-anchor on h1 elements specifically because they are
+    // quite obtrusive at that font-size
+
+    .header-anchor {
+      display: none;
+    }
   }
 
   h2 {
-    @apply my-16;
-    font-size: 48px;
+    @apply my-16 text-h2;
     @screen md {
-      @apply my-24;
+      @apply my-32;
     }
   }
 
@@ -129,18 +152,26 @@ ol {
     }
   }
 
+  // markdown list styles
+
   ul,
   ol {
-    @apply list-outside text-lg;
+    @apply list-outside;
 
     @screen md {
-      @apply pl-12;
+      @apply pl-16;
+    }
+
+    li + li {
+      @apply mt-8;
     }
   }
 
   ul {
     @apply list-disc;
   }
+
+  // quote styles
 
   blockquote {
     @apply my-12;
@@ -153,8 +184,19 @@ ol {
       @apply text-lg pl-8  border-l-2 border-dark;
     }
   }
-}
 
-.footnote-item {
-  word-break: break-all;
+  // this horizontal ruler is inserted before the footnotes, which are extracted
+  // from the main markdown document
+
+  hr.footnotes-sep {
+    @apply mb-16;
+    @screen lg {
+      margin-top: -2rem;
+    }
+  }
+
+  .footnote-item {
+    // make sure that links in footnotes do have line breaks
+    word-break: break-all;
+  }
 }

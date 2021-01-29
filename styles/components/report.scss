@@ -1,4 +1,10 @@
+// These style rules are written specifically for the dots report, however they
+// are not scoped to that page
+
 .content.markdown {
+  // the take-aways component sits below a heading and contains the main take-
+  // aways of the following paragraph
+
   .take-aways {
     @apply mb-16;
 
@@ -7,7 +13,7 @@
     }
 
     p {
-      @apply text-base my-8;
+      @apply text-lg my-8;
 
       @screen md {
         @apply text-h4 my-16;
@@ -27,6 +33,24 @@
       }
     }
   }
+
+  // The table of contents is written as a regular markdown lists, this class
+  // allows customizing the markdown list-styling to something that works for
+  // a table of contents
+
+  .markdown-toc {
+    ul,
+    ol {
+      @apply my-4;
+      li {
+        @apply mt-4;
+      }
+    }
+  }
+
+  // the aside is a special element used in the dots report. it is implemented
+  // here as an element with a dotted colored border and contains content that
+  // sits "aside" to the main content of the report
 
   .aside {
     @apply py-8 px-6 my-16 border-dotted border-2 border-secondary;
