@@ -1,6 +1,6 @@
 // 'container' helper class
 header,
-.inner,
+main,
 footer {
   @apply px-4;
 
@@ -21,7 +21,7 @@ footer {
   }
 }
 
-.inner {
+main {
   @apply py-8 mt-8;
 
   @screen md {
