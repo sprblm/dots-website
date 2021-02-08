@@ -2,7 +2,7 @@
   <ul>
     {% for item in navigation.main %}
       <li class="item relative opacity-0">
-        <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-highlight text-h3 hover:text-medium {% if page.url == item.url %}active text-body {% endif %}
+        <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-highlight text-xl hover:text-medium {% if page.url == item.url %}active text-body {% endif %}
       "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
       </li>
     {% endfor %}
