@@ -1,4 +1,6 @@
 footer {
+  @apply max-w-3xl;
+
   > hr {
     @apply w-24 mb-16 border-highlight;
   }

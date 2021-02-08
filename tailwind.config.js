@@ -262,18 +262,12 @@ module.exports = {
     fontSize: {
       caption: ["12px", "2rem"],
       base: ["15px", "2rem"],
+      lg: ["18px", "2.5rem"],
       h4: ["20px", "2rem"],
       h3: ["30px", "3rem"],
       h2: ["40px", "4rem"],
       h1: ["60px", "6rem"],
       hero: ["80px", "8rem"],
-      // sm: ["14px", "29px"],
-      // base: ["18px", "29px"],
-      // lg: ["24px", "29px"],
-      // xl: ["36px", "43px"],
-      // "2xl": ["48px", "58px"],
-      // "3xl": ["72px", "86px"],
-      // "4xl": ["96px", "115px"]
     },
     fontWeight: {
       hairline: "100",

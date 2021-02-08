@@ -16,6 +16,10 @@
   }
 }
 
+.markdown .link-reference {
+  @apply text-lg;
+}
+
 .link-next {
   @apply flex flex-row h-12 max-w-2xl pr-4 items-center;
   @apply text-base text-highlight;
