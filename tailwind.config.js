@@ -264,7 +264,7 @@ module.exports = {
       // https://type-scale.com/?size=18&scale=1.333&text=A%20Visual%20Type%20Scale&font=Space%20Grotesk&fontweight=400&bodyfont=Inter&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23131f26&fontcolor=%23e2e8f0&preview=false
       xs: ["0.563rem", "1.8"],
       caption: ["0.75rem", "1.8"],
-      base: ["1rem", "1.5"],
+      base: ["1rem", "1.6"], // slightly bumped up because of "dark mode"
       lg: ["1.777rem", "1.3"],
       xl: ["2.369rem", "1.3"],
       '2xl': ["3.157rem", "1.3"],
