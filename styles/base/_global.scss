@@ -1,5 +1,9 @@
 //==========  Globals ==========//
 html {
   background-color: theme("colors.background");
-  font-size: 12px;
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.78; // 18px * 1.78 = 32px
 }

@@ -17,7 +17,7 @@
 }
 
 .markdown .link-reference {
-  @apply text-lg;
+  @apply text-base;
 }
 
 .link-next {
@@ -29,7 +29,7 @@
   }
 
   @screen lg {
-    max-width: 28rem;
+    max-width: 20rem;
   }
 
   div:first-child {
@@ -51,6 +51,7 @@
     transition-duration: 0.3s;
   }
 
+  // icon button hover animation
   &:hover {
     div:last-child {
       @apply pl-2;
