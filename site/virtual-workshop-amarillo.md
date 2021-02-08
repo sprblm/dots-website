@@ -2,23 +2,30 @@
 layout: article
 meta_title: DOTS Designers Workshop
 body_class: workshop
-title: Virtual Designers Workshop (Amarillo)
+title: Designer Workshop (Amarillo)
 ---
 
 # Invitation
 
-## Join our virtual designer's design workshop this spring!
+## Join our virtual design workshop this spring!
 
-Decentralization is full of hard UX problems waiting for talented designers to tackle. 
+This spring, we invite you to collaborate with other designers experienced in decentralized technologies. 
 
-This spring, we invite you to collaborate with other designers experienced in decentralized technologies. This time, we will have a smaller group (maximum 8) designers. We will focus on how 'identity'/'me'/'us' works in a decentralized application, and how we can envision a new way to relate to each other and ourselves in these digital spaces.
+This time, we will have a smaller group (maximum 8) designers. We will focus on
+how identity (me/us) works in decentralized contexts, and how we can envision
+a new way to relate to each other and ourselves in these new digital spaces.
 
-If you are interested in attending, please send an email to team@decentpatterns.xyz with your name, email address, and how you found out about this workshop. 
+If you are interested in attending, please send an email to
+[mailto:team@decentpatterns.xyz](team@decentpatterns.xyz) with your name, email address, and how you found out
+about this workshop. 
 
 Feel free to prepare to share any work in progress or old designs that never made it to the implementation phase.
 
 
+### Topics we will cover
+
 <div class="aside">
+
 - Onboarding
   - What are the largest pain points for your users? 
   - What are the problems for onboarding to decentralized identity tech? 
@@ -32,6 +39,7 @@ Feel free to prepare to share any work in progress or old designs that never mad
   - Why can't certain data be deleted?
   - What happens if a device is lost?
   - Who can I call if I run into a problem?
+
 </div>
 
 By participating in this workshop series, you get to:
@@ -52,7 +60,6 @@ Our workshop will take place on the internet on the following date:
 This workshop series will be facilitated by Ngọc Triệu and Karissa McKelvey.
 
 If you are interested in attending, please send an email to team@decentpatterns.xyz with your name, email address, and how you found out about this workshop. 
-
 
 Thank you!
 
