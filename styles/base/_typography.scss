@@ -43,10 +43,6 @@ h3 {
 
 h4 {
   @apply text-base my-8;
-
-  // @screen md {
-  //   @apply text-h4;
-  // }
 }
 
 h5 {
@@ -73,10 +69,6 @@ p + p, p + ul, p + ol, ul + p, ol + p {
   ul,
   ol {
     @apply max-w-xl;
-    // @apply mb-6;
-    // @screen lg {
-    //   @apply mb-12;
-    // }
   }
 
   ul,
