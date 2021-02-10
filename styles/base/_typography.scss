@@ -8,6 +8,7 @@ h4 {
   @apply font-serif break-words;
   -moz-hyphens: auto;
   hyphens: auto;
+  margin: 3rem 0 1.38rem;
 }
 
 h2,
@@ -17,39 +18,31 @@ h4 {
 }
 
 h1 {
-  @apply text-h2 my-8 text-highlight;
+  @apply text-xl text-highlight;
 
   @screen sm {
-    @apply text-h1 my-16;
-  }
-
-  @screen md {
-    @apply my-32;
+    @apply text-2xl my-16;
   }
 }
 
 h2 {
-  @apply text-h3 font-light my-6;
+  @apply text-lg font-light my-6;
 
   @screen sm {
-    @apply text-h2 my-12;
+    @apply text-xl my-12;
   }
 }
 
 h3 {
-  @apply text-h4 font-light my-8;
+  @apply text-lg font-light my-8;
 
   @screen md {
-    @apply text-h3 my-10;
+    @apply text-lg my-10;
   }
 }
 
 h4 {
   @apply text-base my-8;
-
-  @screen md {
-    @apply text-h4;
-  }
 }
 
 h5 {
@@ -62,11 +55,12 @@ ol {
   @apply text-base text-white;
 }
 
-p + p {
+// Apply spacing between consecutive content blocks
+p + p, p + ul, p + ol, ul + p, ol + p {
   @apply mt-6;
 
   @screen lg {
-    @apply mt-16;
+    @apply mt-12;
   }
 }
 
@@ -74,10 +68,7 @@ p + p {
   p,
   ul,
   ol {
-    @apply mb-6 max-w-xl;
-    @screen lg {
-      @apply mb-16;
-    }
+    @apply max-w-xl;
   }
 
   ul,
@@ -115,10 +106,7 @@ ol {
   ul,
   ol {
     // increases readbility
-    @apply max-w-4xl text-lg;
-    @screen lg {
-      @apply mb-20;
-    }
+    @apply max-w-xl text-base;
   }
 
   // larger font-size needs more space around the paragraphs
@@ -129,26 +117,11 @@ ol {
   // markdown header styles
 
   h1 {
-    @apply text-h1;
-
     // hiding the header-anchor on h1 elements specifically because they are
     // quite obtrusive at that font-size
 
     .header-anchor {
       display: none;
-    }
-  }
-
-  h2 {
-    @apply my-16 text-h2;
-    @screen md {
-      @apply my-32;
-    }
-  }
-
-  h3 {
-    @screen md {
-      @apply my-16;
     }
   }
 
@@ -161,10 +134,6 @@ ol {
     @screen md {
       @apply pl-16;
     }
-
-    li + li {
-      @apply mt-8;
-    }
   }
 
   ul {
@@ -176,12 +145,12 @@ ol {
   blockquote {
     @apply my-12;
 
-    @screen md {
-      @apply my-16;
-    }
+    // @screen md {
+    //   @apply my-16;
+    // }
 
     p {
-      @apply text-lg pl-8  border-l-2 border-dark;
+      @apply text-base pl-8  border-l-2 border-dark;
     }
   }
 

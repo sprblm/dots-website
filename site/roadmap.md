@@ -30,7 +30,7 @@ timeline:
     state: idle
 ---
 
-### Roadmap
+# Roadmap
 
 DOTS is a collective initiative to identify needs, synthesize priorities,
 provide resources, and coordinate efforts to further the development and
@@ -41,4 +41,4 @@ resources on a faster timeframe.
 
 You can support us by <a href="/support-us">backing DOTS</a>.
 
-### Timeline
+## Timeline

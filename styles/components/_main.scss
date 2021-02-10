@@ -1,0 +1,31 @@
+// 'container' helper class
+header,
+main,
+footer {
+  @apply px-4;
+
+  @screen sm {
+    @apply px-6;
+  }
+
+  @screen md {
+    @apply px-6 mx-12;
+  }
+
+  @screen lg {
+    @apply mx-20;
+  }
+
+  @screen xl {
+    @apply mx-32;
+  }
+}
+
+main {
+  @apply py-8 mt-8;
+
+  @screen md {
+    @apply mt-0;
+  }
+
+}

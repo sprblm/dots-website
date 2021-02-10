@@ -1,5 +1,5 @@
 .content .donation-options {
-  @apply flex flex-col mb-10;
+  @apply flex flex-col my-10;
 
   @screen sm {
     @apply flex-row flex-wrap max-w-3xl;
@@ -10,6 +10,6 @@
   }
 
   @screen lg {
-    @apply mb-16;
+    @apply my-16;
   }
 }

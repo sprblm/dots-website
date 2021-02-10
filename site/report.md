@@ -277,7 +277,7 @@ It is established academically that distributed systems do not all have the same
 
 Because of this, projects have developed many diverse and creative UX solutions for decentralized technologies. This has resulted in a large variety of terminology, adding to the confusion for both new developers and new end users.
 
-<table class="text-lg">
+<table>
   <tr class="text-highlight">
    <td>Do
    </td>
