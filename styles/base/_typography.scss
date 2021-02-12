@@ -56,7 +56,11 @@ ol {
 }
 
 // Apply spacing between consecutive content blocks
-p + p, p + ul, p + ol, ul + p, ol + p {
+p + p,
+p + ul,
+p + ol,
+ul + p,
+ol + p {
   @apply mt-6;
 
   @screen lg {
