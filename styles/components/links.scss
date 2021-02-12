@@ -3,7 +3,7 @@
 
   &::after {
     content: url("/images/icons/arrow-right.svg");
-    vertical-align: top;
+    vertical-align: middle;
     margin-left: 2rem;
     transition-property: margin-left;
     transition-duration: 0.3s;
@@ -16,6 +16,10 @@
   }
 }
 
+.markdown .link-reference {
+  @apply text-base;
+}
+
 .link-next {
   @apply flex flex-row h-12 max-w-2xl pr-4 items-center;
   @apply text-base text-highlight;
@@ -25,7 +29,7 @@
   }
 
   @screen lg {
-    max-width: 28rem;
+    max-width: 20rem;
   }
 
   div:first-child {
@@ -35,7 +39,7 @@
   div:last-child {
     @apply flex-shrink-0 ml-auto flex justify-center content-center;
     @apply w-12 h-12 rounded-full;
-    @apply bg-highlight text-white text-h3;
+    @apply bg-highlight text-white text-xl;
     line-height: 1;
 
     // @screen md {
@@ -47,6 +51,7 @@
     transition-duration: 0.3s;
   }
 
+  // icon button hover animation
   &:hover {
     div:last-child {
       @apply pl-2;

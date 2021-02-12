@@ -58,7 +58,7 @@ module.exports = (eleventyConfig) => {
 
   const markdownLib = markdownIt(options)
     .use(markdownItFootnote)
-    .use(markdownItAnchor, { permalink: true, level: 2 });
+    .use(markdownItAnchor, { permalink: true, level: 1 });
 
   eleventyConfig.setLibrary("md", markdownLib);
 

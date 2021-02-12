@@ -2,28 +2,27 @@
 layout: default
 ---
 
-<main class="inner"> 
+<main class="inner">
   <article class="content markdown">
-    {{ content | safe }} 
+    {{ content | safe }}
   </article>
   <article class="content">
     <div class="timeline">
-    {% for item in timeline %}
-      <div class="timeline__item">
-        {% if item.state === 'progress' %}
-        <div class="timeline__item {{item.state}}">
-          {% include "components/loading.njk" %}
+      {% for item in timeline %}
+        <div class="timeline__item">
+          {% if item.state === 'progress' %}
+            <div class="timeline__item {{item.state}}">
+              {% include "components/loading.njk" %}
+            </div>
+          {% else %}
+            <div class="timeline__item {{item.state}}"></div>
+          {% endif %}
+          <div class="timeline__item__description {{item.state}}">
+            {{item.description | safe }}
+          </div>
+          <div class="timeline__item__date">{{item.date}}</div>
         </div>
-{% else %}
-        <div class="timeline__item {{item.state}}">
-        </div>
-{% endif %} 
-        <div class="timeline__item__description {{item.state}}">
-        {{item.description | safe }}
-        </div>
-        <div class="timeline__item__date">{{item.date}}</div>
-      </div>
-    {% endfor %}
+      {% endfor %}
     </div>
   </article>
 </main>

@@ -2,11 +2,15 @@
   @apply text-white hidden w-8;
 
   @screen lg {
-    @apply block -ml-24 mr-16;
+    @apply block;
+    // position logo in white space left of nav bar
+    margin-left: -4.5rem;
+    margin-right: 2.5rem;
   }
 
   @screen xl {
-    @apply w-16 mr-20;
-    margin-left: -9rem;
+    @apply w-16;
+    margin-left: -7rem;
+    margin-right: 3rem;
   }
 }
