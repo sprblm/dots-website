@@ -18,7 +18,7 @@ h4 {
 }
 
 h1 {
-  @apply text-xl text-highlight;
+  @apply text-xl text-highlight mt-0;
 
   @screen sm {
     @apply text-2xl my-16;
