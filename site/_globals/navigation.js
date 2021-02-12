@@ -11,11 +11,6 @@ const navitems = {
       "draft": true
     },
     {
-      "label": "Topics",
-      "url": "/topics/",
-      "draft": true
-    },
-    {
       "label": "Report",
       "url": "/report/"
     },
