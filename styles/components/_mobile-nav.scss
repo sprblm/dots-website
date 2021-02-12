@@ -80,8 +80,12 @@ $transition-length: 0.25s;
   }
 
   .footer {
-    @apply p-6 fixed left-0 w-full z-50 overflow-y-auto;
+    @apply py-3 px-5 fixed left-0 w-full z-50 overflow-y-auto;
     bottom: 4rem;
+
+    @screen sm {
+      @apply px-5 py-6;
+    }
 
     @screen md {
       @apply hidden;
