@@ -267,9 +267,9 @@ module.exports = {
       base: ["1rem", "1.6"], // slightly bumped up because of "dark mode"
       lg: ["1.777rem", "1.3"],
       xl: ["2.369rem", "1.3"],
-      '2xl': ["3.157rem", "1.3"],
-      '3xl': ["4.209rem", "1.3"],
-      '4xl': ["5.61rem", "1.3"],
+      "2xl": ["3.157rem", "1.3"],
+      "3xl": ["4.209rem", "1.3"],
+      "4xl": ["5.61rem", "1.3"],
     },
     fontWeight: {
       hairline: "100",
