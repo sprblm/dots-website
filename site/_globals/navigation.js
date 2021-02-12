@@ -44,5 +44,5 @@ const draftFilter = ({ main, ...rest }) => ({
   ...rest,
 });
 
-const filtered_navitems = draftFilter(navitems);
-module.exports = filtered_navitems;
+const filteredNavitems = draftFilter(navitems);
+module.exports = filteredNavitems;
