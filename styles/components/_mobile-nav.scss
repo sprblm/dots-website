@@ -52,6 +52,7 @@ $transition-length: 0.25s;
 
 // mobile menu
 .mobile-nav {
+  height: -webkit-fill-available;
   transform: translate3d(-100%, 0, 0);
   transition: transform $transition-length $transition-easing;
   transition-delay: 0.1s;
