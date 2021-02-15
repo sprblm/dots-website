@@ -3,14 +3,19 @@ layout: default
 ---
 
 <main class="inner pattern">
-  <h1>Patterns</h1>
+  <h1>Pattern Library</h1>
 
-  <p>{{ content | safe }}</p>
+  {% include "components/featured-pattern.njk" %}
 
-  <h2>Index</h2>
+  <a class="btn" href="patterns/list">View all patterns</a>
+
   <ul>
-  {%- for pattern in collections.patternsByTitle -%}
-    <a href="/patterns/{{ pattern.fileSlug | lower }}"><li>{{ pattern.data.title }}</li></a>
+  {%- for topic in collections.topicsByTitle -%}
+    <li>
+      <h2>{{ topic.data.title }}</h2>
+      <div class="mb-2">{{ topic.templateContent | safe }}</div>
+      <a class="link-reference" href="/topics/{{ topic.fileSlug | lower }}">See all {{topic.data.title}}</a>
+    </li>
   {%- endfor -%}
   </ul>
 </main>
