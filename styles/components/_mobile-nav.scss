@@ -44,7 +44,10 @@ $transition-length: 0.25s;
 }
 
 .wrapper.menu-visible {
-  @apply hidden;
+  display: none;
+  @screen md {
+    display: flex;
+  }
 }
 
 // mobile menu
