@@ -31,6 +31,13 @@ module.exports = (eleventyConfig) => {
 
   // Configure 11ty to merge directory-level data with item-level data (e.g tags)
   eleventyConfig.setDataDeepMerge(true);
+
+  const byTitle = (a, b) => {
+    if (a.data.title == null) return -1;
+    else if (b.data.title == null) return 1;
+    else return a.data.title.localeCompare(b.data.title, "en")
+  };
+
   eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
   );
