@@ -43,6 +43,10 @@ $transition-length: 0.25s;
   }
 }
 
+.wrapper.menu-visible {
+  @apply hidden;
+}
+
 // mobile menu
 .mobile-nav {
   transform: translate3d(-100%, 0, 0);
