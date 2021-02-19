@@ -1,8 +1,8 @@
-<nav id="mobile-nav" class="mobile-nav fixed left-0 top-0 h-screen w-full overflow-y-auto pt-12 bg-dark z-50 md:hidden">
+<nav id="mobile-nav" class="mobile-nav">
   <ul>
     {% for item in navigation.main %}
       <li class="item relative opacity-0">
-        <a href="{{ item.url | safe }}" class="link block py-2 px-5 text-highlight text-xl hover:text-medium {% if page.url == item.url %}active text-body {% endif %}
+        <a href="{{ item.url | safe }}" class="link block py-1 sm:py-2 px-5 text-highlight text-base xs:text-lg hover:text-medium {% if page.url == item.url %}active text-body {% endif %}
       "{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
       </li>
     {% endfor %}
@@ -17,19 +17,15 @@
         />
     </a>
 
-    <div class="my-12 text-base text-medium"><em>Decentralization Off The Shelf</em> is an initiative hosted by Simply Secure, a US-based nonprofit supporting the usability of safety and privacy tools. All design patterns are licensed CC-BY. We follow <a href="https://simplysecure.org/legal/">Simply Secure’s privacy policy</a>.</div>
+    <div class="mt-3 xs:mt-6 text-caption sm:text-base text-medium"><em>Decentralization Off The Shelf</em> is an initiative hosted by Simply Secure, a US-based nonprofit supporting the usability of safety and privacy tools. All design patterns are licensed CC-BY. We follow <a href="https://simplysecure.org/legal/">Simply Secure’s privacy policy</a>.</div>
 
-    <div class="flex flex-row flex-wrap">
+    <div class="hidden xs:flex mt-3 xs:mt-6">
       <a href="/support-us" class="btn btn-sm btn-secondary">Support us</a>
-      {# <a href="https://github.com/simplysecure/dots-patterns" class="btn btn-sm">Github</a>
-      <a href="https://tinyletter.com/decentpatterns" class="btn
-btn-sm">Newsletter</a>
-      <a href="https://matrix.to/#/+decentpatterns:matrix.org" class="btn btn-sm">Matrix</a> #}
     </div>
   </div>
 </nav>
 
-<button id="mobile-nav-toggle" class="mobile-nav-toggle block fixed h-16 w-full bottom-0 flex items-center justify-center font-bold border-none bg-highlight text-white z-50 focus:outline-none md:hidden" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
+<button id="mobile-nav-toggle" class="mobile-nav-toggle focus:outline-none" aria-label="Mobile menu toggle" aria-expanded="false" aria-controls="mobile-nav">
   <span class="mobile-nav-label mr-2 font-medium">Menu</span>
 
   <span class="mobile-nav-icon-bg"></span>

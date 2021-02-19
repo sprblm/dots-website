@@ -18,7 +18,7 @@ h4 {
 }
 
 h1 {
-  @apply text-xl text-highlight;
+  @apply text-xl text-highlight mt-0;
 
   @screen sm {
     @apply text-2xl my-16;
@@ -56,7 +56,11 @@ ol {
 }
 
 // Apply spacing between consecutive content blocks
-p + p, p + ul, p + ol, ul + p, ol + p {
+p + p,
+p + ul,
+p + ol,
+ul + p,
+ol + p {
   @apply mt-6;
 
   @screen lg {

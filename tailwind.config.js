@@ -2,9 +2,12 @@ module.exports = {
   prefix: "",
   important: false,
   separator: ":",
-  purge: ["./site/**/*.njk", "./site/**/*.md"],
+  purge: {
+    content:["./site/**/*.njk", "./site/**/*.md"]
+  },
   theme: {
     screens: {
+      xs: "375px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -178,24 +181,24 @@ module.exports = {
     },
     borderColor: (theme) => ({
       ...theme("colors"),
-      default: theme("colors.gray.300", "currentColor"),
+      DEFAULT: theme("colors.gray.300", "currentColor"),
     }),
     borderRadius: {
       none: "0",
       sm: "0.125rem",
-      default: "0.25rem",
+      DEFAULT: "0.25rem",
       lg: "0.5rem",
       full: "9999px",
     },
     borderWidth: {
-      default: "1px",
+      DEFAULT: "1px",
       0: "0",
       2: "2px",
       4: "4px",
       8: "8px",
     },
     boxShadow: {
-      default:
+      DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       md:
         "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -211,7 +214,7 @@ module.exports = {
     container: {},
     cursor: {
       auto: "auto",
-      default: "default",
+      DEFAULT: "default",
       pointer: "pointer",
       wait: "wait",
       text: "text",
@@ -229,11 +232,11 @@ module.exports = {
     },
     flexGrow: {
       0: "0",
-      default: "1",
+      DEFAULT: "1",
     },
     flexShrink: {
       0: "0",
-      default: "1",
+      DEFAULT: "1",
     },
     fontFamily: {
       sans: [
@@ -267,9 +270,9 @@ module.exports = {
       base: ["1rem", "1.6"], // slightly bumped up because of "dark mode"
       lg: ["1.777rem", "1.3"],
       xl: ["2.369rem", "1.3"],
-      '2xl': ["3.157rem", "1.3"],
-      '3xl': ["4.209rem", "1.3"],
-      '4xl': ["5.61rem", "1.3"],
+      "2xl": ["3.157rem", "1.3"],
+      "3xl": ["4.209rem", "1.3"],
+      "4xl": ["5.61rem", "1.3"],
     },
     fontWeight: {
       hairline: "100",
