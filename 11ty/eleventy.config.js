@@ -66,7 +66,8 @@ module.exports = (eleventyConfig) => {
     (pattern) => `
     <div class="pattern-preview">
       <img width="322" height="204"  />
-      <p>${pattern.data.title}</p>
+      <h3 class="mt-8 mb-4">${pattern.data.title}</h3>
+      <p>${pattern.data.description || ""}</p>
     </div>
   `
   );

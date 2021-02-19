@@ -11,14 +11,14 @@ layout: default
 
   <ul>
     {%- for topic in collections.topicsByTitle -%}
-      <li>
+      <li class="my-48 max-w-6xl">
         <h2>{{ topic.data.title }}</h2>
-        <div class="mb-2">{{ topic.templateContent | safe }}</div>
+        <div class="mb-4">{{ topic.templateContent | safe }}</div>
         <a class="link-reference" href="/topics/{{ topic.fileSlug | lower }}">
           See all
           {{topic.data.title}}
         </a>
-        <div class="flex flex-row justify-between my-12">
+        <div class="flex flex-row justify-between my-20">
           {% for pattern in topic.data.patterns %}
             {% if loop.index0 < 3 %}
               {% patternPreview pattern %}
