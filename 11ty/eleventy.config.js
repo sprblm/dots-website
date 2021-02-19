@@ -40,7 +40,7 @@ module.exports = (eleventyConfig) => {
 
   const insertPatterns = (getPatternsByTopic) => (topic) => {
     // eslint-disable-next-line
-    topic.data.patterns = getPatternsByTopic(topic.data.tagName);
+    topic.data.patterns = getPatternsByTopic(topic.data.slug);
     return topic;
   };
 
@@ -51,8 +51,10 @@ module.exports = (eleventyConfig) => {
     collection
       .getFilteredByTag("topic")
       .map(
-        insertPatterns((topicTag) =>
-          collection.getFilteredByTags("pattern", topicTag)
+        insertPatterns((topicSlug) =>
+          collection
+            .getFilteredByTags("pattern")
+            .filter((pattern) => pattern.data.topic === topicSlug)
         )
       )
       .sort(byTitle)
