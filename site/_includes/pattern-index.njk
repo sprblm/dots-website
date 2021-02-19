@@ -7,15 +7,25 @@ layout: default
 
   {% include "components/featured-pattern.njk" %}
 
-  <a class="btn" href="patterns/list">View all patterns</a>
+  <a class="btn btn-primary" href="patterns/list">View all patterns</a>
 
   <ul>
-  {%- for topic in collections.topicsByTitle -%}
-    <li>
-      <h2>{{ topic.data.title }}</h2>
-      <div class="mb-2">{{ topic.templateContent | safe }}</div>
-      <a class="link-reference" href="/topics/{{ topic.fileSlug | lower }}">See all {{topic.data.title}}</a>
-    </li>
-  {%- endfor -%}
+    {%- for topic in collections.topicsByTitle -%}
+      <li>
+        <h2>{{ topic.data.title }}</h2>
+        <div class="mb-2">{{ topic.templateContent | safe }}</div>
+        <a class="link-reference" href="/topics/{{ topic.fileSlug | lower }}">
+          See all
+          {{topic.data.title}}
+        </a>
+        <div class="flex flex-row justify-between my-12">
+          {% for pattern in topic.data.patterns %}
+            {% if loop.index0 < 3 %}
+              {% patternPreview pattern %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </li>
+    {%- endfor -%}
   </ul>
 </main>

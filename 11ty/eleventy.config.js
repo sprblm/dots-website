@@ -34,15 +34,39 @@ module.exports = (eleventyConfig) => {
 
   const byTitle = (a, b) => {
     if (a.data.title == null) return -1;
-    else if (b.data.title == null) return 1;
-    else return a.data.title.localeCompare(b.data.title, "en")
+    if (b.data.title == null) return 1;
+    return a.data.title.localeCompare(b.data.title, "en");
+  };
+
+  const insertPatterns = (getPatternsByTopic) => (topic) => {
+    // eslint-disable-next-line
+    topic.data.patterns = getPatternsByTopic(topic.data.tagName);
+    return topic;
   };
 
   eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
   );
   eleventyConfig.addCollection("topicsByTitle", (collection) =>
-    collection.getFilteredByTag("topic").sort(byTitle)
+    collection
+      .getFilteredByTag("topic")
+      .map(
+        insertPatterns((topicTag) =>
+          collection.getFilteredByTags("pattern", topicTag)
+        )
+      )
+      .sort(byTitle)
+  );
+
+  // Shortcodes
+  eleventyConfig.addShortcode(
+    "patternPreview",
+    (pattern) => `
+    <div class="pattern-preview">
+      <img width="322" height="204"  />
+      <p>${pattern.data.title}</p>
+    </div>
+  `
   );
 
   // Layout aliases

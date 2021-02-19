@@ -1,0 +1,11 @@
+// Component for rendering a pattern preview that includes an image and
+// a short text blurb below
+.pattern-preview {
+  img {
+    @apply border rounded-lg border-white mb-4;
+  }
+
+  p {
+    // add test styles here later
+  }
+}
