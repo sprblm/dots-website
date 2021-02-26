@@ -20,7 +20,8 @@
   @apply text-base;
 }
 
-.link-next {
+.link-next,
+.link-prev {
   @apply flex flex-row h-12 max-w-2xl pr-4 items-center;
   @apply text-base text-highlight;
 
@@ -31,7 +32,9 @@
   @screen lg {
     max-width: 20rem;
   }
+}
 
+.link-next {
   div:first-child {
     @apply pr-16 inline;
   }
@@ -49,6 +52,46 @@
 
     transition-property: padding-left;
     transition-duration: 0.3s;
+  }
+
+  &.link-small {
+    div:last-child {
+      @apply w-8 h-8;
+    }
+  }
+
+  // icon button hover animation
+  &:hover {
+    div:last-child {
+      @apply pl-2;
+    }
+  }
+}
+
+.link-prev {
+  div:last-child {
+    @apply pl-16 inline;
+  }
+
+  div:first-child {
+    @apply flex justify-center content-center;
+    @apply w-12 h-12 rounded-full;
+    @apply bg-highlight text-white text-xl;
+    line-height: 1;
+
+    // @screen md {
+    //   @apply w-16 h-16;
+    //   line-height: 1.5;
+    // }
+
+    transition-property: padding-left;
+    transition-duration: 0.3s;
+  }
+
+  &.link-small {
+    div:first-child {
+      @apply w-8 h-8;
+    }
   }
 
   // icon button hover animation

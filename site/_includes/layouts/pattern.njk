@@ -3,6 +3,13 @@ layout: default
 ---
 
 <main class="inner pattern">
+  <a class="link-prev link-small" href="/patterns">
+    <div>&#8249;</div>
+    <div>
+      Go back to pattern index
+    </div>
+  </a>
+
   <h1>{{ title }}</h1>
 
   <article class="content markdown">
@@ -13,11 +20,13 @@ layout: default
     <nav>
       <h2>Tags</h2>
       <ul>
-      {% for tag in tags %}
-        {% if tag !== 'pattern' %}
-          <li><a href="/topics/{{ tag | urlencode }}">{{ tag | capitalize }}</a></li>
-        {% endif %}
-      {% endfor %}
+        {% for tag in tags %}
+          {% if tag !== 'pattern' %}
+            <li>
+              <a href="/topics/{{ tag | urlencode }}">{{ tag | capitalize }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </nav>
   {% endif %}
