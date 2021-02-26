@@ -68,6 +68,10 @@
 
       li {
         @apply my-3;
+
+        span {
+          text-transform: capitalize;
+        }
       }
     }
   }

@@ -20,22 +20,15 @@ layout: default
     <div class="pattern-meta pattern-sidebar">
       <div class="pattern-published">
         <em>Last Updated</em>
-        <div>01 / 20 / 2020</div>
+        <div>{{ published }}</div>
       </div>
 
-      <div class="pattern-related-patterns">
-        <em>Related patterns</em>
-        <ul class="pattern-related-patterns">
-          <li class="pattern-related-pattern">
-            <span>Sharing is caring</span>
-            <a class="link-reference" href="/">View</a>
-          </li>
-          <li class="pattern-related-pattern">
-            <span>Network health indicator</span>
-            <a class="link-reference" href="/">View</a>
-          </li>
-        </ul>
-      </div>
+      {% if relatedPatterns | length > 0 %}
+        <div class="pattern-related-patterns">
+          <em>Related patterns</em>
+          {% renderRelatedPatterns relatedPatterns %}
+        </div>
+      {% endif %}
 
       <div class="pattern-cta">
         <a class="link-next" href='/contribute'>

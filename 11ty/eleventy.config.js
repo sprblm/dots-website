@@ -1,8 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
-const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItWikilinks = require("@f3rno/markdown-it-wikilinks");
+const slugify = require("slugify");
 
 const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
@@ -61,6 +63,10 @@ module.exports = (eleventyConfig) => {
   );
 
   // Shortcodes
+
+  /**
+   * Render a thumbnail display of a given pattern object
+   */
   eleventyConfig.addShortcode(
     "patternPreview",
     (pattern) => `
@@ -73,6 +79,27 @@ module.exports = (eleventyConfig) => {
     </div>
   `
   );
+
+  /**
+   * Render links for a list of pattern names
+   *
+   * Used in the pattern detail page sidebar
+   */
+  eleventyConfig.addShortcode("renderRelatedPatterns", (patterns) => {
+    const patternList = patterns
+      .sort()
+      .map(
+        (p) => `
+      <li class="pattern-related-pattern">
+        <span>${p}</span>
+        <a class="link-reference" href="/patterns/${slugify(p, {
+          lower: true,
+        })}">View</a>
+      </li>`
+      )
+      .reduce((prev, cur) => prev + cur, "");
+    return `<ul class="pattern-related-patterns">${patternList}</ul>`;
+  });
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
@@ -97,7 +124,16 @@ module.exports = (eleventyConfig) => {
     typographer: true,
   };
 
+  // Configure wikilinks to transfrom in the right way, i.e.:
+  //     [[some link]] => href="/patterns/some-link"
+  const wikilinksOptions = {
+    generatePageNameFromLabel: (label) => slugify(label, { lower: true }),
+    relativeBaseURL: "/patterns/",
+    uriSuffix: "",
+  };
+
   const markdownLib = markdownIt(options)
+    .use(markdownItWikilinks(wikilinksOptions))
     .use(markdownItFootnote)
     .use(markdownItAnchor, { permalink: true, level: 1 });
 
