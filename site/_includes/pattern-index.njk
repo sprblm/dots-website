@@ -3,14 +3,29 @@ layout: default
 ---
 
 <main class="inner pattern">
-  <h1>Patterns</h1>
+  <h1>Pattern Library</h1>
 
-  <p>{{ content | safe }}</p>
+  {% include "components/featured-pattern.njk" %}
 
-  <h2>Index</h2>
+  <a class="btn btn-secondary " href="patterns/list">View all patterns</a>
+
   <ul>
-  {%- for pattern in collections.patternsByTitle -%}
-    <a href="/patterns/{{ pattern.fileSlug | lower }}"><li>{{ pattern.data.title }}</li></a>
-  {%- endfor -%}
+    {%- for topic in collections.topicsByTitle -%}
+      <li class="my-48 max-w-6xl">
+        <h2>{{ topic.data.title }}</h2>
+        <div class="mb-4">{{ topic.templateContent | safe }}</div>
+        <a class="link-reference" href="/topics/{{ topic.fileSlug | lower }}">
+          See all
+          {{topic.data.title}}
+        </a>
+        <div class="flex flex-row justify-between my-20">
+          {% for pattern in topic.data.patterns %}
+            {% if loop.index0 < 3 %}
+              {% patternPreview pattern %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </li>
+    {%- endfor -%}
   </ul>
 </main>

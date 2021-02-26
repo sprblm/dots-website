@@ -2,9 +2,7 @@ module.exports = {
   prefix: "",
   important: false,
   separator: ":",
-  purge: {
-    content:["./site/**/*.njk", "./site/**/*.md"]
-  },
+  purge: ["./site/**/*.njk", "./site/**/*.md"],
   theme: {
     screens: {
       xs: "375px",
@@ -181,24 +179,24 @@ module.exports = {
     },
     borderColor: (theme) => ({
       ...theme("colors"),
-      DEFAULT: theme("colors.gray.300", "currentColor"),
+      default: theme("colors.gray.300", "currentColor"),
     }),
     borderRadius: {
       none: "0",
       sm: "0.125rem",
-      DEFAULT: "0.25rem",
+      default: "0.25rem",
       lg: "0.5rem",
       full: "9999px",
     },
     borderWidth: {
-      DEFAULT: "1px",
+      default: "1px",
       0: "0",
       2: "2px",
       4: "4px",
       8: "8px",
     },
     boxShadow: {
-      DEFAULT:
+      default:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       md:
         "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -214,7 +212,7 @@ module.exports = {
     container: {},
     cursor: {
       auto: "auto",
-      DEFAULT: "default",
+      default: "default",
       pointer: "pointer",
       wait: "wait",
       text: "text",
@@ -232,11 +230,11 @@ module.exports = {
     },
     flexGrow: {
       0: "0",
-      DEFAULT: "1",
+      default: "1",
     },
     flexShrink: {
       0: "0",
-      DEFAULT: "1",
+      default: "1",
     },
     fontFamily: {
       sans: [
