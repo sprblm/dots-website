@@ -28,12 +28,50 @@ module.exports = (eleventyConfig) => {
   });
 
   // Collections
-  const byTitle = (a, b) => a.data.title.localeCompare(b.data.title, "en");
+
+  // Configure 11ty to merge directory-level data with item-level data (e.g tags)
+  eleventyConfig.setDataDeepMerge(true);
+
+  const byTitle = (a, b) => {
+    if (a.data.title == null) return -1;
+    if (b.data.title == null) return 1;
+    return a.data.title.localeCompare(b.data.title, "en");
+  };
+
+  const insertPatterns = (getPatternsByTopic) => (topic) => {
+    // eslint-disable-next-line
+    topic.data.patterns = getPatternsByTopic(topic.data.slug);
+    return topic;
+  };
+
   eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
   );
   eleventyConfig.addCollection("topicsByTitle", (collection) =>
-    collection.getFilteredByTag("topic").sort(byTitle)
+    collection
+      .getFilteredByTag("topic")
+      .map(
+        insertPatterns((topicSlug) =>
+          collection
+            .getFilteredByTags("pattern")
+            .filter((pattern) => pattern.data.topic === topicSlug)
+        )
+      )
+      .sort(byTitle)
+  );
+
+  // Shortcodes
+  eleventyConfig.addShortcode(
+    "patternPreview",
+    (pattern) => `
+    <div class="pattern-preview">
+      <a href="${pattern.data.page.url}">
+        <img width="322" height="204" src="/images/illustrations/placeholder.svg" />
+        <h3 class="mt-8 mb-4">${pattern.data.title}</h3>
+        <p>${pattern.data.description || ""}</p>
+      </a>
+    </div>
+  `
   );
 
   // Layout aliases
