@@ -4,13 +4,15 @@ layout: default
 
 <main class="inner pattern">
   <a class="link-prev link-small" href="/patterns">
-    <div>&#8249;</div>
+    <img role="presentation" src="/images/icons/back.svg" />
     <div>
       Go back to pattern index
     </div>
   </a>
 
   <h1>{{ title }}</h1>
+
+  <img class="pattern-illustration" role="presentation" src="./illustration.svg" />
 
   <article class="content markdown">
     {{ content | safe }}

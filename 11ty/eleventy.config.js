@@ -86,6 +86,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy({ public: "files" });
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy("**/*.svg");
 
   const options = {
     html: true,
