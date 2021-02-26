@@ -73,19 +73,8 @@
     @apply pl-16 inline;
   }
 
-  div:first-child {
-    @apply flex justify-center content-center;
-    @apply w-12 h-12 rounded-full;
-    @apply bg-highlight text-white text-xl;
-    line-height: 1;
-
-    // @screen md {
-    //   @apply w-16 h-16;
-    //   line-height: 1.5;
-    // }
-
-    transition-property: padding-left;
-    transition-duration: 0.3s;
+  img {
+    transition: transform 0.3s ease-in;
   }
 
   &.link-small {
@@ -96,8 +85,8 @@
 
   // icon button hover animation
   &:hover {
-    div:last-child {
-      @apply pl-2;
+    img {
+      transform: translateX(-4px);
     }
   }
 }
