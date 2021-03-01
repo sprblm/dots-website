@@ -1,0 +1,40 @@
+// This component can be included in markdown templates by using this syntax:
+//
+//     ::: examples
+//     markdown content
+//     :::
+//
+// turns into:
+//
+//     <div class="examples">
+//       markdown content
+//     </div>
+//
+
+.markdown.content .examples {
+  ul {
+    @apply list-none p-0 m-0 grid grid-cols-2 gap-4;
+
+    @screen md {
+      @apply grid-cols-3;
+    }
+
+    li + li {
+      @apply mt-0;
+    }
+  }
+
+  img {
+    @apply w-full mb-2 object-cover rounded-lg border border-white;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 10em;
+    mix-blend-mode: overlay;
+    transition: filter 0.25s ease-out;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+    mix-blend-mode: normal;
+  }
+}

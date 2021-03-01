@@ -5,6 +5,16 @@ $transition-length: 0.25s;
 
 // menu toggle button
 .mobile-nav-toggle {
+  @apply block fixed h-12 w-full bottom-0 flex items-center justify-center font-bold border-none bg-highlight text-white z-50;
+
+  @screen xs {
+    @apply h-12;
+  }
+
+  @screen md {
+    @apply hidden;
+  }
+
   .mobile-nav-icon-line {
     height: 2px;
   }
@@ -43,12 +53,25 @@ $transition-length: 0.25s;
   }
 }
 
+.wrapper.menu-visible {
+  display: none;
+  @screen md {
+    display: flex;
+  }
+}
+
 // mobile menu
 .mobile-nav {
+  @apply fixed left-0 top-0 h-screen w-full overflow-y-auto pt-12 bg-dark z-50;
+  height: -webkit-fill-available;
   transform: translate3d(-100%, 0, 0);
   transition: transform $transition-length $transition-easing;
   transition-delay: 0.1s;
   will-change: transform;
+
+  @screen md {
+    @apply hidden;
+  }
 
   // when menu is visible
   &.menu-visible {
@@ -80,8 +103,17 @@ $transition-length: 0.25s;
   }
 
   .footer {
-    @apply p-6 fixed left-0 w-full z-50 overflow-y-auto;
-    bottom: 4rem;
+    @apply pt-3 px-5 fixed left-0 w-full z-50 overflow-y-auto;
+
+    // bottom = height of .mobile-nav-toggle
+    bottom: 3rem;
+    @screen xs {
+      bottom: 4rem;
+    }
+
+    @screen sm {
+      @apply px-5 py-6;
+    }
 
     @screen md {
       @apply hidden;

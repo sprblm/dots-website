@@ -3,22 +3,64 @@ layout: default
 ---
 
 <main class="inner pattern">
+  <a class="link-prev link-small" href="/patterns">
+    <img role="presentation" src="/images/icons/back.svg" />
+    <div>
+      Return to library
+    </div>
+  </a>
+
   <h1>{{ title }}</h1>
 
-  <article class="content markdown">
-    {{ content | safe }}
-  </article>
+  <section class="pattern-head">
+    <div class="pattern-illustration pattern-content">
+      <img role="presentation" src="./illustration.svg" />
+    </div>
 
-  {% if tags | length > 1 %}
-    <nav>
-      <h2>Tags</h2>
-      <ul>
-      {% for tag in tags %}
-        {% if tag !== 'pattern' %}
-          <li><a href="/topics/{{ tag | urlencode }}">{{ tag | capitalize }}</a></li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </nav>
-  {% endif %}
+    <div class="pattern-meta pattern-sidebar">
+      <div class="pattern-published">
+        <em>Last Updated</em>
+        <div>{{ published }}</div>
+      </div>
+
+      {% if relatedPatterns | length > 0 %}
+        <div class="pattern-related-patterns">
+          <em>Related patterns</em>
+          {% set byTitle = collections.patternsByTitle %}
+          {% renderRelatedPatterns relatedPatterns,
+          byTitle %}
+        </div>
+      {% endif %}
+
+      <div class="pattern-cta">
+        <a class="link-next" href='/contribute'>
+          <span>Want to contribute? Learn more about our library.</span>
+          <img src="/images/icons/forward.svg" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pattern-main">
+    <article class="pattern-content content markdown">
+      {{ content | safe }}
+    </article>
+
+    <div class="pattern-sidebar">
+      {% if tags | length > 1 %}
+        <div class="pattern-tags">
+          <em>Tags</em>
+          <ul>
+            {% for tag in tags %}
+              {% if tag !== 'pattern' %}
+                <li>
+                  <a class="btn btn-sm btn-pill" href="/topics/{{ tag | urlencode }}">{{ tag | capitalize }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </section>
 </main>

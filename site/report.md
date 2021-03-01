@@ -39,12 +39,14 @@ This research is part of [Decentralization Off The Shelf](https://decentpatterns
 
 ## Table of Contents
 
+<span class="markdown-toc">
+
 - [Executive Summary.](#executive-summary)
 - [Table of Contents.](#table-of-contents)
 - [Introduction.](#introduction)
-  - [Key terms.](#key-terms)
-  - [Approach.](#approach)
-- Maxims
+- [Key terms.](#key-terms)
+- [Approach.](#approach)
+- [Maxims](#maxims)
   1. [**Collaboration.** Recognize the context.](#1.-collaboration.-recognize-the-context.)
   2. [**Design.** New user experience patterns.](#2.-design.-new-user-experience-patterns)
   3. [**Infrastructure.** Independent verifiability and resilience.](#3.-infrastructure.-independent-verifiability-and-resilience.)
@@ -53,8 +55,9 @@ This research is part of [Decentralization Off The Shelf](https://decentpatterns
   6. [**Sustainability.** Attracting and retaining talent.](#6.-sustainability.-attracting-and-retaining-talent.)
   7. [**Governance.** Decision-making and stability.](#7.-governance.-decision-making-and-stability.)
 - [Appendix.](#appendix)
-  - Research Participants
 - [Notes](#notes)
+
+</span>
 
 ## Introduction
 
@@ -64,7 +67,7 @@ Perhaps more polarized than technical disagreements are political ones: practiti
 
 While the motivations for decentralization are heterogenous, the goal, however, is clear: better usability and more adoption. Despite the rapid growth of some decentralized protocols, however, key challenges remain across the domains. It is our hope to identify those common challenges and work towards generalized solutions. This report serves as a starting point, and we welcome comments and feedback from the community.
 
-### Key Terms
+## Key Terms
 
 - **Decentralization** \
   Network architecture that avoids reliance on a single party. Encompasses peer-to-peer, blockchain, federated, and distributed technologies that involve many individual users.
@@ -102,7 +105,7 @@ While the motivations for decentralization are heterogenous, the goal, however, 
 - **End users** \
   Mythical creatures that have been known to visit your website or app. We’ll be using “users” contextually for anyone using a product or service (including a protocol documentation), and emphasize “end users” where we mean individuals and organizations that ultimately adopt an application.
 
-### Approach
+## Approach
 
 This report is based on two independent research efforts in mid- and late-2019, conducted by an interdisciplinary group of designers, researchers, and technologists: Kelsie Nabben (RMIT University), Eileen Wagner (Simply Secure), and Karissa McKelvey (Digital Democracy). We investigated the technical, design and organizational challenges as well as aspirations in the decentralized technology community.
 
@@ -274,7 +277,7 @@ It is established academically that distributed systems do not all have the same
 
 Because of this, projects have developed many diverse and creative UX solutions for decentralized technologies. This has resulted in a large variety of terminology, adding to the confusion for both new developers and new end users.
 
-<table class="text-base">
+<table>
   <tr class="text-highlight">
    <td>Do
    </td>
