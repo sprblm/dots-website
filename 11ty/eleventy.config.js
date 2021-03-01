@@ -2,6 +2,7 @@
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItContainer = require("markdown-it-container");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItWikilinks = require("@f3rno/markdown-it-wikilinks");
 const slugify = require("slugify");
@@ -153,7 +154,8 @@ module.exports = (eleventyConfig) => {
   const markdownLib = markdownIt(options)
     .use(markdownItWikilinks(wikilinksOptions))
     .use(markdownItFootnote)
-    .use(markdownItAnchor, { permalink: true, level: 1 });
+    .use(markdownItAnchor, { permalink: true, level: 1 })
+    .use(markdownItContainer, "examples");
 
   eleventyConfig.setLibrary("md", markdownLib);
 
