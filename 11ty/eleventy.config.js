@@ -9,6 +9,8 @@ const slugify = require("slugify");
 
 const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
+const patternPreview = require("./shortcodes/patternPreview.js");
+const renderRelatedPatterns = require("./shortcodes/renderRelatedPatterns.js");
 
 module.exports = (eleventyConfig) => {
   // Add a readable date formatter filter to Nunjucks
@@ -68,57 +70,14 @@ module.exports = (eleventyConfig) => {
   /**
    * Render a thumbnail display of a given pattern object
    */
-  eleventyConfig.addShortcode(
-    "patternPreview",
-    (pattern) => `
-    <div class="pattern-preview">
-      <a href="${pattern.data.page.url}">
-        <img width="322" height="204" src="/images/illustrations/placeholder.svg" />
-        <h3 class="mt-8 mb-4">${pattern.data.title}</h3>
-        <p>${pattern.data.description || ""}</p>
-      </a>
-    </div>
-  `
-  );
+  eleventyConfig.addShortcode("patternPreview", patternPreview);
 
   /**
    * Render links for a list of pattern names
    *
    * Used in the pattern detail page sidebar
    */
-  eleventyConfig.addShortcode(
-    "renderRelatedPatterns",
-    (patterns, collection) => {
-      const patternExists = (patternName) =>
-        collection.filter(
-          (p) =>
-            slugify(p.data.title, { lower: true }) ===
-            slugify(patternName, { lower: true })
-        ).length !== 0;
-
-      const patternList = patterns
-        .sort()
-        .map((p) =>
-          patternExists(p)
-            ? `
-      <li class="pattern-related-pattern">
-        <span>${p}</span>
-        <a class="link-reference" href="/patterns/${slugify(p, {
-          lower: true,
-        })}">View</a>
-      </li>`
-            : `
-      <li class="pattern-related-pattern">
-          <span>${p}</span>
-          <a class="link-reference" href="/patterns/${slugify(p, {
-            lower: true,
-          })}">Missing pattern</a>
-      </li>`
-        )
-        .reduce((prev, cur) => prev + cur, "");
-      return `<ul class="pattern-related-patterns">${patternList}</ul>`;
-    }
-  );
+  eleventyConfig.addShortcode("renderRelatedPatterns", renderRelatedPatterns);
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
