@@ -3,11 +3,18 @@ layout: default
 ---
 
 <main class="inner pattern">
-  <h1>Pattern Library</h1>
+  <div class="flex flex-col md:flex-row align-middle">
+    <h1>Pattern Library</h1>
+
+    <span class=" mb-8 md:my-16 md:ml-auto">
+      <a class="link-reference" href="/patterns/index">
+        View pattern index
+      </a>
+
+    </span>
+  </div>
 
   {% include "components/featured-pattern.njk" %}
-
-  <a class="btn btn-secondary " href="patterns/list">View all patterns</a>
 
   <ul>
     {%- for topic in collections.topicsByTitle -%}

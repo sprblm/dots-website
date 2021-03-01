@@ -32,6 +32,7 @@ a.btn {
   margin: 10px 1rem 10px 0;
 
   @apply border border-light text-light bg-transparent;
+
   &:hover {
     @apply bg-dark;
   }
@@ -56,10 +57,20 @@ a.btn {
     @apply p-2;
     font-size: 12px;
     min-width: 7rem;
+
+    &.btn-pill {
+      @apply py-1 px-2;
+    }
   }
 
   &.btn-lg {
     min-width: 12rem;
     @apply p-6;
+  }
+
+  &.btn-pill {
+    @apply rounded-full py-3 px-6;
+
+    min-width: 4rem;
   }
 }
