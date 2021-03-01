@@ -1,0 +1,22 @@
+---
+title: Pattern index
+layout: default
+permalink: "patterns/list/index.html"
+---
+
+<main class="inner pattern">
+
+  <a class="link-prev link-small" href="/patterns">
+    <img role="presentation" src="/images/icons/back.svg" />
+    <div>
+      Return to library
+    </div>
+  </a>
+
+  <h1>All patterns</h1>
+
+  <p>{{ content | safe }}</p>
+
+  {% filterList collections.patternsByTitle %}
+
+</main>
