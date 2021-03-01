@@ -85,33 +85,39 @@ module.exports = (eleventyConfig) => {
    *
    * Used in the pattern detail page sidebar
    */
-  eleventyConfig.addShortcode("renderRelatedPatterns", (patterns, byTitle) => {
-    // console.log(eleventyConfig);
+  eleventyConfig.addShortcode(
+    "renderRelatedPatterns",
+    (patterns, collection) => {
+      const patternExists = (patternName) =>
+        collection.filter(
+          (p) =>
+            slugify(p.data.title, { lower: true }) ===
+            slugify(patternName, { lower: true })
+        ).length !== 0;
 
-    // console.log(byTitle);
-    const patternExists = (name) =>
-      byTitle.filter((p) => p.fileSlug === slugify(name)).length !== 0;
-
-    const patternList = patterns
-      .sort()
-      .map((p) =>
-        patternExists(p)
-          ? `
+      const patternList = patterns
+        .sort()
+        .map((p) =>
+          patternExists(p)
+            ? `
       <li class="pattern-related-pattern">
         <span>${p}</span>
         <a class="link-reference" href="/patterns/${slugify(p, {
           lower: true,
         })}">View</a>
       </li>`
-          : `
+            : `
       <li class="pattern-related-pattern">
           <span>${p}</span>
-          <a class="link-reference" href="https://github.com/simplysecure/dots-patterns/issues/new?assignees=&labels=pattern-submission&template=pattern-proposal-template.md&title=%5Bsubmission%5D">Help define this missing pattern</a>
+          <a class="link-reference" href="/patterns/${slugify(p, {
+            lower: true,
+          })}">Missing pattern</a>
       </li>`
-      )
-      .reduce((prev, cur) => prev + cur, "");
-    return `<ul class="pattern-related-patterns">${patternList}</ul>`;
-  });
+        )
+        .reduce((prev, cur) => prev + cur, "");
+      return `<ul class="pattern-related-patterns">${patternList}</ul>`;
+    }
+  );
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
