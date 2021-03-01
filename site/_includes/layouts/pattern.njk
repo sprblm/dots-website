@@ -26,7 +26,9 @@ layout: default
       {% if relatedPatterns | length > 0 %}
         <div class="pattern-related-patterns">
           <em>Related patterns</em>
-          {% renderRelatedPatterns relatedPatterns %}
+          {% set byTitle = collections.patternsByTitle %}
+          {% renderRelatedPatterns relatedPatterns,
+          byTitle %}
         </div>
       {% endif %}
 
