@@ -16,7 +16,7 @@ The site is developed for Node v12, you can use `nvm use` to load the specific v
 npm install
 ```
 
-To start the development server, run the `npm start` command in terminal and open [`localhost:8081`](http://localhost:8081/). The development server is configured to automatically reload when you make changes.
+To start the development server, run the `npm start` command in terminal and open [`localhost:3000`](http://localhost:3000/). The development server is configured to automatically reload when you make changes.
 
 We use prettier and eslint to maintain a consistent and maintainable code style. Use the npm commands `npm run lint` to validate sources and `npm run prettier` to reformat sources on disk.
 
