@@ -11,6 +11,7 @@ const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
 const patternPreview = require("./shortcodes/patternPreview.js");
 const renderRelatedPatterns = require("./shortcodes/renderRelatedPatterns.js");
+const filterList = require("./shortcodes/filterList.js");
 
 module.exports = (eleventyConfig) => {
   // Add a readable date formatter filter to Nunjucks
@@ -66,18 +67,9 @@ module.exports = (eleventyConfig) => {
   );
 
   // Shortcodes
-
-  /**
-   * Render a thumbnail display of a given pattern object
-   */
   eleventyConfig.addShortcode("patternPreview", patternPreview);
-
-  /**
-   * Render links for a list of pattern names
-   *
-   * Used in the pattern detail page sidebar
-   */
   eleventyConfig.addShortcode("renderRelatedPatterns", renderRelatedPatterns);
+  eleventyConfig.addShortcode("filterList", filterList);
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
