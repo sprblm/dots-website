@@ -1,4 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
+
+/**
+ * Render a thumbnail display of a given pattern object
+ */
 module.exports = (pattern) => `
 <div class="pattern-preview">
   <a href="${pattern.data.page.url}">

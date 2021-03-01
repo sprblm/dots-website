@@ -1,6 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const slugify = require("slugify");
 
+/**
+ * Render links for a list of pattern names
+ *
+ * Used in the pattern detail page sidebar
+ */
 module.exports = (patterns, collection) => {
   const patternExists = (patternName) =>
     collection.filter(
