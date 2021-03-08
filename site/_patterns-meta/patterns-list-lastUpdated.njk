@@ -1,10 +1,10 @@
 ---
 title: Pattern index
 layout: default
-permalink: "patterns/list/index.html"
+permalink: "patterns/list/last-updated/index.html"
 ---
 
-<main class="inner pattern">
+<main class="inner mt-0 pt-4 md:pt-0">
 
   <a class="link-prev link-small" href="/patterns">
     <img role="presentation" src="/images/icons/back.svg" />
@@ -13,10 +13,11 @@ permalink: "patterns/list/index.html"
     </div>
   </a>
 
-  <h1>All patterns</h1>
+  <h1 class="my-4 md:my-8">Pattern Index</h1>
 
   <p>{{ content | safe }}</p>
 
-  {% filterList collections.patternsByTitle %}
+  {% patternListing collections.patternsByLastUpdated,
+  'lastUpdated' %}
 
 </main>

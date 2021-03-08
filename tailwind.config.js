@@ -494,5 +494,4 @@ module.exports = {
     zIndex: ["responsive"],
   },
   corePlugins: {},
-  plugins: [require("@tailwindcss/forms")],
 };
