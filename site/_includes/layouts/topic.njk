@@ -1,18 +1,29 @@
 ---
 layout: default
 ---
-
 <main class="inner topic">
-  <h1>{{ page.fileSlug | capitalize }}</h1>
 
-  <article class="content markdown">
+  <a class="link-prev link-small" href="/patterns">
+    <img role="presentation" src="/images/icons/back.svg" />
+    <div>
+      Return to library
+    </div>
+  </a>
+
+  <h1>{{ title }}</h1>
+
+  <article class="content markdown mb-16">
     {{ content | safe }}
   </article>
 
-  <h2>Patterns</h2>
-  <ul>
-  {%- for pattern in collections[page.fileSlug] -%}
-    <a href="/patterns/{{ pattern.fileSlug | lower }}"><li>{{ pattern.data.title}}</li></a>
-  {%- endfor -%}
-  </ul>
+  {% patternListing patterns %}
+
+  <p id="pattern-listing-no-results">No patterns found for this search term.</p>
+
+  <div id="pattern-listing-entries" class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16 my-8">
+    {% for pattern in patterns %}
+      {% patternPreview pattern %}
+    {% endfor %}
+  </div>
+
 </main>

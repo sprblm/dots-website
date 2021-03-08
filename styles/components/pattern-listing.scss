@@ -13,10 +13,15 @@
     }
 
     input {
-      @apply w-full mb-4 bg-transparent border-b-2 border-light px-0 py-1;
+      @apply w-full mb-4 bg-transparent border-b-2 border-light p-2;
 
       @screen sm {
         @apply mr-4 mb-0;
+      }
+
+      &:focus {
+        @apply bg-dark;
+        outline: none;
       }
     }
 
@@ -28,18 +33,18 @@
       @apply my-0;
     }
   }
+}
 
-  #pattern-listing-entries {
-    @screen sm {
-      column-count: 2;
-    }
+#pattern-listing-entries {
+  @screen sm {
+    column-count: 2;
+  }
 
-    @screen lg {
-      column-count: 3;
-    }
+  @screen lg {
+    column-count: 3;
+  }
 
-    a {
-      @apply border-none;
-    }
+  a {
+    @apply border-none;
   }
 }
