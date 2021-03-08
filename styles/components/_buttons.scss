@@ -23,6 +23,26 @@
 //   }
 // }
 
+.button-group {
+  @apply flex flex-row;
+
+  .btn {
+    @apply rounded-none border-r-0 mr-0;
+    margin-right: 0;
+  }
+
+  .btn:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .btn:last-child {
+    @apply border;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+}
+
 a.btn {
   @apply rounded font-bold p-4 text-center;
   font-size: 14px;
@@ -35,6 +55,10 @@ a.btn {
 
   &:hover {
     @apply bg-dark;
+  }
+
+  &.btn-active {
+    @apply bg-light text-dark border-light;
   }
 
   &.btn-primary {
