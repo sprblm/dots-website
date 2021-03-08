@@ -25,7 +25,7 @@ module.exports = {
       medium: "#A0ADC0",
       light: "#CAD3DF",
 
-      black: "#000",
+      black: "#1D1D1F",
       white: "#ECF0F8",
 
       gray: {
@@ -494,5 +494,5 @@ module.exports = {
     zIndex: ["responsive"],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
