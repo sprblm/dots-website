@@ -11,7 +11,7 @@ const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
 const patternPreview = require("./shortcodes/patternPreview.js");
 const renderRelatedPatterns = require("./shortcodes/renderRelatedPatterns.js");
-const filterList = require("./shortcodes/filterList.js");
+const patternListing = require("./shortcodes/patternListing.js");
 
 module.exports = (eleventyConfig) => {
   // Add a readable date formatter filter to Nunjucks
@@ -44,6 +44,12 @@ module.exports = (eleventyConfig) => {
     return a.data.title.localeCompare(b.data.title, "en");
   };
 
+  const byLastUpdated = (a, b) => {
+    if (a.data.created == null) return -1;
+    if (b.data.created == null) return 1;
+    return a.data.created > b.data.created;
+  };
+
   const insertPatterns = (getPatternsByTopic) => (topic) => {
     // eslint-disable-next-line
     topic.data.patterns = getPatternsByTopic(topic.data.slug);
@@ -52,6 +58,9 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
+  );
+  eleventyConfig.addCollection("patternsByLastUpdated", (collection) =>
+    collection.getFilteredByTag("pattern").sort(byLastUpdated)
   );
   eleventyConfig.addCollection("topicsByTitle", (collection) =>
     collection
@@ -69,7 +78,7 @@ module.exports = (eleventyConfig) => {
   // Shortcodes
   eleventyConfig.addShortcode("patternPreview", patternPreview);
   eleventyConfig.addShortcode("renderRelatedPatterns", renderRelatedPatterns);
-  eleventyConfig.addShortcode("filterList", filterList);
+  eleventyConfig.addShortcode("patternListing", patternListing);
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
