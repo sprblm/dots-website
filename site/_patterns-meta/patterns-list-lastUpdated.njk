@@ -20,4 +20,15 @@ permalink: "patterns/list/last-updated/index.html"
   {% patternListing collections.patternsByLastUpdated,
   'lastUpdated' %}
 
+  <ul id="pattern-listing-entries">
+    {% for pattern in collections.patternsByLastUpdated %}
+      <a href="{{ pattern.url }}">
+        <li>
+          {{ pattern.data.title}}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+  <p id="pattern-listing-no-results">No patterns found for this search term.</p>
+
 </main>
