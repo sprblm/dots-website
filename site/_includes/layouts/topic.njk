@@ -20,7 +20,7 @@ layout: default
 
   <p id="pattern-listing-no-results">No patterns found for this search term.</p>
 
-  <div id="pattern-listing-entries" class="grid grid-cols-1 xs:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-12 lg:gap-y-16 xl:gap-y-24 xl:gap-x-16 my-8 lg:my-16 max-w-4xl">
+  <div id="pattern-listing-entries" class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-8 md:gap-y-12 lg:gap-y-16 xl:gap-y-24 xl:gap-x-16 my-8 lg:my-16 max-w-6xl">
     {% for pattern in patterns %}
       {% patternPreview pattern %}
     {% endfor %}
