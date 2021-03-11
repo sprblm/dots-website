@@ -1,6 +1,6 @@
 ---
 title: Patterns
-layout: pattern-index.njk
+layout: patterns-main.njk
 permalink: "patterns/"
 ---
 
