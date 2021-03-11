@@ -2,3 +2,4 @@
 import "@modules/mobile-nav";
 import "@modules/lazyload";
 import "@modules/parallax";
+import "@modules/filterlist";

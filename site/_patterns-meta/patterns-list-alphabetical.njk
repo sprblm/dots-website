@@ -1,0 +1,34 @@
+---
+title: Pattern index
+layout: default
+permalink: "patterns/list/index.html"
+---
+
+<main class="inner mt-0 pt-4 md:pt-0">
+
+  <a class="link-prev link-small" href="/patterns">
+    <img role="presentation" src="/images/icons/back.svg" />
+    <div>
+      Return to library
+    </div>
+  </a>
+
+  <h1 class="my-4 md:my-8">Pattern Index</h1>
+
+  <p>{{ content | safe }}</p>
+
+  {% patternListing collections.patternsByTitle,
+  'alphabetical' %}
+
+  <p id="pattern-listing-no-results">No patterns found for this search term.</p>
+  <ul id="pattern-listing-entries">
+    {% for pattern in collections.patternsByTitle %}
+      <a href="{{ pattern.url }}">
+        <li>
+          {{ pattern.data.title}}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+</main>
