@@ -7,7 +7,7 @@ module.exports = (pattern) => `
 <div class="pattern-preview">
   <a href="${pattern.data.page.url}">
     <img
-      class="pattern-preview-illustration
+      class="pattern-preview-illustration"
       style="background-image: url(${
         pattern.data.page.url
       }/illustration.svg)" />
