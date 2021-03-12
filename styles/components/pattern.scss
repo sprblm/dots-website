@@ -22,25 +22,15 @@
     @apply flex flex-col;
 
     @screen md {
-      @apply flex-row my-16;
+      @apply flex-row mt-16;
     }
 
     .pattern-illustration {
+      @apply border rounded-lg border-white border-2 p-8;
       img {
         width: 660px;
+        height: 370px;
       }
-    }
-
-    img.pattern-illustration:before {
-      // fall back to displaying a placeholder image if no illustration
-      // was included with the pattern
-      content: " ";
-      display: block;
-      position: absolute;
-      width: 660px;
-      height: 370px;
-      background: url(/images/illustrations/placeholder.svg) center no-repeat;
-      background-size: contain;
     }
 
     .pattern-meta {

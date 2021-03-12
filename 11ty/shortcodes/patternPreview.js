@@ -8,8 +8,6 @@ module.exports = (pattern) => `
   <a href="${pattern.data.page.url}">
     <img
       class="pattern-preview-illustration
-      // pseudo-image (transparent 1x1px)
-      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
       style="background-image: url(${
         pattern.data.page.url
       }/illustration.svg)" />

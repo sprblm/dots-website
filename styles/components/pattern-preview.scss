@@ -4,12 +4,8 @@
   @apply max-w-xs;
 
   img {
-    @apply border rounded-lg border-white mb-4;
-    background-image: url(/images/illustrations/placeholder.svg);
+    @apply border rounded-lg border-white mb-4 p-8 border-2;
     width: 322px;
     height: 204px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
