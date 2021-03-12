@@ -5,9 +5,11 @@
 
   img {
     @apply border rounded-lg border-white mb-4;
-  }
-
-  p {
-    // add test styles here later
+    background-image: url(/images/illustrations/placeholder.svg);
+    width: 322px;
+    height: 204px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
