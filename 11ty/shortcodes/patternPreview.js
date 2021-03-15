@@ -6,7 +6,9 @@
 module.exports = (pattern) => `
 <div class="pattern-preview">
   <a href="${pattern.data.page.url}">
-    <img width="322" height="204" src="/images/illustrations/placeholder.svg" />
+    <img
+      class="pattern-preview-illustration"
+      src="${pattern.data.page.url}/illustration.svg" />
     <h3 class="my-4">${pattern.data.title}</h3>
     <p class="leading-snug text" >${pattern.data.description || ""}</p>
   </a>
