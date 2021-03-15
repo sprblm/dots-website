@@ -23,6 +23,13 @@ layout: default
         <div>{{ published }}</div>
       </div>
 
+      <div>
+        <em>Category</em>
+        <a href="/topics/{{ topic }}">
+          <div>{{ categoryName }}</div>
+        </a>
+      </div>
+
       {% if relatedPatterns | length > 0 %}
         <div class="pattern-related-patterns">
           <em>Related patterns</em>
@@ -47,7 +54,7 @@ layout: default
     </article>
 
     <div class="pattern-sidebar">
-      {% if tags | length > 1 %}
+      {# {% if tags | length > 1 %}
         <div class="pattern-tags">
           <em>Tags</em>
           <ul>
@@ -60,7 +67,7 @@ layout: default
             {% endfor %}
           </ul>
         </div>
-      {% endif %}
+      {% endif %} #}
     </div>
   </section>
 </main>

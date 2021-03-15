@@ -52,7 +52,9 @@ module.exports = (eleventyConfig) => {
 
   const insertPatterns = (getPatternsByTopic) => (topic) => {
     // eslint-disable-next-line
-    topic.data.patterns = getPatternsByTopic(topic.data.slug);
+    topic.data.patterns = getPatternsByTopic(topic.data.slug).sort(
+      byLastUpdated
+    );
     return topic;
   };
 

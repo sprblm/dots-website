@@ -22,6 +22,19 @@ const getRelatedPatterns = (data) => {
   }
 };
 
+const categoryName = (data) => {
+  const category = data.collections.topic.find(
+    (t) => t.data.slug === data.topic
+  );
+  if (category == null) {
+    // console.error(
+    //   `Category ${data.topic} for pattern ${data.title} not found.`
+    // );
+    return `Category ${data.topic} not found`;
+  }
+  return category.data.title;
+};
+
 module.exports = {
   // environment helper
   environment: process.env.ELEVENTY_ENV,
@@ -30,4 +43,6 @@ module.exports = {
   is_netlify_production: process.env.CONTEXT === "production",
 
   relatedPatterns: getRelatedPatterns,
+
+  categoryName,
 };
