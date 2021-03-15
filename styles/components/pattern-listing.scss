@@ -36,14 +36,6 @@
 }
 
 #pattern-listing-entries {
-  @screen sm {
-    column-count: 2;
-  }
-
-  @screen lg {
-    column-count: 3;
-  }
-
   a {
     @apply border-none;
   }
