@@ -16,11 +16,11 @@ timeline:
   - description: Design pattern research
     date: Summer 2020
     state: done
-  - description: Shared decentralization glossary
-    date: Fall 2020
-    state: progress
   - description: Pattern library launch
     date: Winter 2020
+    state: done
+  - description: Shared decentralization glossary
+    date: Spring 2021
     state: progress
   - description: Explanatory resources about decentralization
     date: Summer 2021
