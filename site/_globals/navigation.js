@@ -8,7 +8,6 @@ const navitems = {
     {
       label: "Pattern Library",
       url: "/library/",
-      draft: true,
     },
     {
       label: "Contribute",
