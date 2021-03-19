@@ -26,10 +26,8 @@
     }
 
     .pattern-illustration {
-      @apply border rounded-lg border-white border-2 p-8;
       img {
-        width: 660px;
-        height: 370px;
+        @apply w-full;
       }
     }
 
