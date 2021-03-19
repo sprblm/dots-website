@@ -56,12 +56,12 @@
         @apply block text-caption;
       }
 
-      li {
-        @apply my-3;
+      li span {
+        text-transform: capitalize;
+      }
 
-        span {
-          text-transform: capitalize;
-        }
+      li + li {
+        @apply mt-3;
       }
     }
   }
