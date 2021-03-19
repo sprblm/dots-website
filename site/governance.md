@@ -15,7 +15,7 @@ DOTS creates resources and toolkits that help with usability and adoption of dec
 
 Our core values are: mutual respect, open-mindedness, human-centric approaches, inclusion.
 
-All design assets created are licensed under CC-BY. All code created is open source. The legal entity sponsoring DOTS is Simply Secure, a US 501(c)3.
+All design assets created are licensed under CC-BY. All code created is open source. The legal entity sponsoring DOTS is Simply Secure, a US 501\(c\)3.
 
 ### Participants
 

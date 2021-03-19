@@ -30,7 +30,7 @@
     }
 
     &__description {
-      @apply text-highlight text-base;
+      @apply text-highlight text-base flex-1;
       margin-left: 9px;
       &.done {
         @apply text-secondary;
