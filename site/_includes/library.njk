@@ -3,17 +3,17 @@ layout: default
 ---
 
 <main class="inner library-main">
-  <div class="flex flex-col sm:flex-row align-middle lg:mb-12 xl:my-24">
-    <h1>Pattern Library</h1>
+  <h1 class="lg:mb-12">Pattern Library</h1>
 
-    <span class="mb-8 sm:ml-auto sm:my-16">
-      <a class="btn btn-primary btn-sm" href="/patterns/list">
+  <div class="flex flex-col lg:flex-row align-middle sm:my-16 xl:my-24">
+    <div class="max-w-2xl">{{ content | safe }}</div>
+
+    <span class="mb-8 lg:ml-auto mt-6 lg:mt-0 lg:pl-16">
+      <a class="btn btn-primary" href="/library/list">
         View pattern index
       </a>
     </span>
   </div>
-
-  <div class="max-w-2xl sm:my-16 xl:my-24">{{ content | safe }}</div>
 
   {% include "components/featured-pattern.njk" %}
 
@@ -44,6 +44,6 @@ layout: default
   </ul>
 
   <p class="mt-16 md:mt-24 lg:mt-48">
-    <a href="/patterns/list" class="btn btn-primary">View pattern index</a>
+    <a href="/library/list" class="btn btn-primary">View pattern index</a>
   </p>
 </main>

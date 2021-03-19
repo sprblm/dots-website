@@ -96,7 +96,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
 
   // Add assets for individual patterns
-  eleventyConfig.addPassthroughCopy("site/patterns/**/*.{svg,png}");
+  eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png}");
 
   const options = {
     html: true,
@@ -106,10 +106,10 @@ module.exports = (eleventyConfig) => {
   };
 
   // Configure wikilinks to transfrom in the right way, i.e.:
-  //     [[some link]] => href="/patterns/some-link"
+  //     [[some link]] => href="/library/some-link"
   const wikilinksOptions = {
     generatePageNameFromLabel: (label) => slugify(label, { lower: true }),
-    relativeBaseURL: "/patterns/",
+    relativeBaseURL: "/library/",
     uriSuffix: "",
   };
 

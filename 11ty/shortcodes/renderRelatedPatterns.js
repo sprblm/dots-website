@@ -21,14 +21,14 @@ module.exports = (patterns, collection) => {
         ? `
   <li class="pattern-related-pattern">
     <span>${p}</span>
-    <a class="link-reference" href="/patterns/${slugify(p, {
+    <a class="link-reference" href="/library/${slugify(p, {
       lower: true,
     })}">View</a>
   </li>`
         : `
   <li class="pattern-related-pattern">
       <span>${p}</span>
-      <a class="link-reference" href="/patterns/${slugify(p, {
+      <a class="link-reference" href="/library/${slugify(p, {
         lower: true,
       })}">Missing pattern</a>
   </li>`

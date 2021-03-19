@@ -7,7 +7,7 @@ const navitems = {
     },
     {
       label: "Pattern Library",
-      url: "/patterns/",
+      url: "/library/",
       draft: true,
     },
     {
