@@ -17,7 +17,7 @@ Decentralization allows the coexistence of different opinions and voices in a wo
 
 We believe that a human-centered design approach to decentralized technologies will ensure accessibility and usability for a better world where technologies bring about positive change to humans and their environments.
 
-One of the main challenges for decentralized technologies is the lack of adaptation. There are far too many unfamiliar and technical concepts which often lead to confusion. Design allows for the simplification of these terms and helps make sense of things in a user-friendly manner. By combining a variety of design research methodologies and design principles, including iterative testing and feedback, we are able to obtain an understanding of users, their existing social practices, habits, and mental models. In any given step, user’ perspectives are always prioritized and emphasized. This empowers new ideas and allows us to compile best practices for decentralization design.
+One of the main challenges for decentralized technologies is the lack of adaptation. There are far too many unfamiliar and technical concepts which often lead to confusion. Design allows for the simplification of these terms and helps make sense of things in a user-friendly manner. By combining a variety of design research methodologies and design principles, including iterative testing and feedback, we are able to obtain an understanding of users, their existing social practices, habits, and mental models. In any given step, users’ perspectives are always prioritized and emphasized. This empowers new ideas and allows us to compile best practices for decentralization design.
 
 ## Why collaborative?
 
