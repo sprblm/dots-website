@@ -1,8 +1,12 @@
 module.exports = (collection, sort) => {
   const hasSorting = sort != null;
   const isAlphabetical = sort === "alphabetical";
-  const linkAlphabetical = isAlphabetical ? "./" : "../";
-  const linkLastUpdated = !isAlphabetical ? "./" : "./last-updated";
+  const linkAlphabetical = isAlphabetical
+    ? "./#pattern-listing"
+    : "../#pattern-listing";
+  const linkLastUpdated = !isAlphabetical
+    ? "./#pattern-listing"
+    : "./last-updated#pattern-listing";
 
   const sortButtons = hasSorting
     ? `<div class="button-group">
