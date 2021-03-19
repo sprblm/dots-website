@@ -10,7 +10,7 @@
 
   .pattern-sidebar {
     @screen md {
-      @apply w-1/3 pl-8;
+      @apply w-1/3 pl-16;
     }
   }
 
@@ -77,6 +77,14 @@
       @apply flex-row;
     }
 
+    .content.markdown {
+      p,
+      ul,
+      ol {
+        @apply max-w-full;
+      }
+    }
+
     .pattern-sidebar {
       .pattern-tags {
         @apply my-3;
@@ -89,6 +97,10 @@
           @apply text-medium mb-1;
         }
       }
+    }
+
+    h3 {
+      margin-top: 5.5rem;
     }
   }
 }
