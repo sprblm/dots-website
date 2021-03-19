@@ -1,9 +1,15 @@
 // These style rules are written specifically for the dots report, however they
 // are not scoped to that page
 
-.content.markdown {
+#report .content.markdown {
   // the take-aways component sits below a heading and contains the main take-
   // aways of the following paragraph
+
+  p,
+  ul,
+  ol {
+    @apply max-w-xl;
+  }
 
   .take-aways {
     @apply mb-16;
