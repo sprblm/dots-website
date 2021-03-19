@@ -3,6 +3,31 @@ layout: default
 meta_title: Contribute
 body_class: contribute
 title: Contribute
+timeline:
+  - description: Project scope and research design
+    date: Summer 2019
+    state: done
+  - description: Workshops and interviews
+    date: Winter 2019
+    state: done
+  - description: Publish research report
+    date: Spring 2020
+    state: done
+  - description: Design pattern research
+    date: Summer 2020
+    state: done
+  - description: Pattern library launch
+    date: Winter 2020
+    state: done
+  - description: Shared decentralization glossary
+    date: Spring 2021
+    state: progress
+  - description: Explanatory resources about decentralization
+    date: Summer 2021
+    state: idle
+  - description: Comparative map of decentralization projects
+    date: Fall 2021
+    state: idle
 ---
 
 <main
@@ -11,39 +36,69 @@ title: Contribute
   tabindex="-1"
 >
   <h1>
-    Share your perspective
+    Join our conversation
   </h1>
 
   <div class="content">
     <section class="mb-16 md:mb-24">
       <p>
-        <em>Decentralization Off The Shelf</em> is a commons project; we create tooling and resources by the community and for the community. We invite your participation both in sharing your specific problems and challenges, as well as offering possible solutions for specific topics.</p>
-
+        <em>Decentralization Off The Shelf</em> is a commons project; we create tooling and resources by the community and for the community. We invite your participation both in sharing your specific problems and challenges, as well as offering possible solutions for specific topics.
+      </p>
     </section>
+
+    <section>
+      <h2>Road map</h2>
+      <p>DOTS is a collective initiative to identify needs, synthesize priorities,
+provide resources, and coordinate efforts to further the development and
+deployment of decentralized technologies. By addressing these issues, we can
+increase the overall quantity and quality of decentralized applications. We are
+actively <a href="/support-us">seeking funding</a> to fuel the development of high-quality
+resources on a faster timeframe.
+      </p>
+
+      <p>You can support us by <a href="/support-us">backing DOTS</a>
+      </p>
+    </section>
+
+    <section class="content">
+      <h3>Timeline</h3>
+      <div class="timeline">
+        {% for item in timeline %}
+          <div class="timeline__item">
+            {% if item.state === 'progress' %}
+              <div class="timeline__item {{item.state}}">
+                {% include "components/loading.njk" %}
+              </div>
+            {% else %}
+              <div class="timeline__item {{item.state}}"></div>
+            {% endif %}
+            <div class="timeline__item__description {{item.state}}">
+              {{item.description | safe }}
+            </div>
+            <div class="timeline__item__date">{{item.date}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
     <section class="mb-16 md:mb-24">
+      <h2 class="lg:my-24 xl:mt-48">Where to find us</h2>
 
-      <h2 class="lg:my-24 xl:mt-48">Our communication channels</h2>
-
-      <div class="gap-20 max-w-2xl lg:grid lg:grid-cols-2">
-        <ul class="mb-6 xl:mb-0">
-          <li>Our repository via GitHub for issues related to the pattern library development</li>
+      <div class="gap-x-20 max-w-6xl lg:grid lg:grid-cols-2">
+        <ul class="mb-6 xl:mb-0" style="padding-left: 0">
+          <li>Our design patterns live in this Github repository. Join our discussion there, you can request or propose patterns as well.</li>
           <li>
             <a href="https://github.com/simplysecure/dots-patterns"
 class="link-reference">DOTS repository</a>
           </li>
-          <li class="pt-4">Find us on Reddit for wide open discussions and community forum</li>
           <li>
-            <a href="https://reddit.com/r/decentpatterns" class="link-reference">Reddit</a>
-          </li>
-          <li class="pt-4">To receive updates on our work and get invited to workshops, sign up for our newsletter
-        </li>
-          <li>
-            <a href="https://tinyletter.com/decentpatterns" class="link-reference">Newsletter signup</a>
+            <a href="https://github.com/simplysecure/dots-patterns/discussions"
+class="link-reference">Discuss and propose patterns</a>
           </li>
         </ul>
 
-        <ul>
-          <li>Community chat for day to day communications and tea time</li>
+        <ul class="mb-6 xl:mb-0" style="padding-left: 0">
+          <li class="pt-8 lg:pt-0">Community chat for day to day communications and tea time</li>
           <li>
             <a href="https://matrix.to/#/+decentpatterns:matrix.org" class="link-reference">Matrix community</a>
           </li>
@@ -55,9 +110,17 @@ class="link-reference">DOTS repository</a>
             <a class="text-highlight" href="https://discord.gg/duPn5wy2pA">Discord</a>
           </li>
         </ul>
+
+        <ul style="padding-left: 0">
+          <li class="pt-8 lg:pt-12">We give talks and facilitate invite-only workshops, focus groups, and conference gatherings about decentralization! To get notified when we release new resources and get invited to events, sign up for our newsletter.
+        </li>
+          <li>
+            <a href="https://tinyletter.com/decentpatterns" class="link-reference">Newsletter signup</a>
+          </li>
+        </ul>
       </div>
 
-      <p class="px-6 md:px-0 mt-12 lg:mt-24">
+      <p class="mt-12 lg:mt-24">
         For speaking engagements, workshops, grants, and partnerships, inquire through
           <a href="mailto:team@decentpatterns.xyz">our email</a>!
       </p>
@@ -66,22 +129,18 @@ class="link-reference">DOTS repository</a>
     <section class="mb-16 md:mb-24 xl:mt-48">
       <div class="lg:grid lg:grid-cols-2 gap-24 max-w-6xl">
         <section>
-          <h2>What's next?</h2>
-          <p class="px-6 md:px-0 mb-6">
-        We're hard at work on a steady pace to make good decentralization
-        practice easier to incorporate into applications and protocols. See what
-        we're up to now and what's next!
+          <h2>Donate</h2>
+          <p class="mb-6">
+        We are actively seeking funding and support for this project. Decentralization Off The Shelf is hosted by Simply Secure, a US-based 501(c)3 nonprofit. Your donation will help our ongoing work in creating tooling and resources for the decentralization community.
         </p>
-          <a class="link-reference" href="/roadmap">See the roadmap</a>
+          <a class="link-reference" href="/support-us">Donate &amp; keep this work going</a>
         </section>
 
         <section class="md:mb-16">
-          <h2>Donate</h2>
-          <p class="mb-6">We are actively seeking funding and support for this project.
-          <em>Decentralization Off The Shelf</em>
-          is hosted by Simply Secure, a US-based 501(c)3 nonprofit. Your donation will help our ongoing work in creating tooling and resources for the decentralization community.
+          <h2>Governance</h2>
+          <p class="mb-6">Our core values are: mutual respect, open-mindedness, human-centric approaches, inclusion. All design assets created are licensed under CC-BY. All code created is open source. The legal entity sponsoring DOTS is Simply Secure, a US 501(c)3.
         </p>
-          <a class="link-reference" href="/support-us">Donate &amp; keep this work going</a>
+          <a class="link-reference" href="/governance">Find out about our governance structure</a>
         </section>
       </div>
     </main>

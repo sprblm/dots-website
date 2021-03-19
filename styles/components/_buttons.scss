@@ -23,6 +23,26 @@
 //   }
 // }
 
+.button-group {
+  @apply flex flex-row;
+
+  .btn {
+    @apply rounded-none border-r-0 mr-0;
+    margin-right: 0;
+  }
+
+  .btn:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .btn:last-child {
+    @apply border;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+}
+
 a.btn {
   @apply rounded font-bold p-4 text-center;
   font-size: 14px;
@@ -32,8 +52,13 @@ a.btn {
   margin: 10px 1rem 10px 0;
 
   @apply border border-light text-light bg-transparent;
+
   &:hover {
     @apply bg-dark;
+  }
+
+  &.btn-active {
+    @apply bg-light text-dark border-light;
   }
 
   &.btn-primary {
@@ -56,10 +81,20 @@ a.btn {
     @apply p-2;
     font-size: 12px;
     min-width: 7rem;
+
+    &.btn-pill {
+      @apply py-1 px-2;
+    }
   }
 
   &.btn-lg {
     min-width: 12rem;
     @apply p-6;
+  }
+
+  &.btn-pill {
+    @apply rounded-full py-3 px-6;
+
+    min-width: 4rem;
   }
 }

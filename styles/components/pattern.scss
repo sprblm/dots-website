@@ -1,0 +1,104 @@
+.inner.pattern {
+  //
+  // Rules for desktop content columns
+  //
+  .pattern-content {
+    @screen md {
+      @apply w-2/3;
+    }
+  }
+
+  .pattern-sidebar {
+    @screen md {
+      @apply w-1/3 pl-16;
+    }
+  }
+
+  //
+  // Head of page contains illustration and metadata (except tags)
+  //
+
+  .pattern-head {
+    @apply flex flex-col;
+
+    @screen md {
+      @apply flex-row mt-16;
+    }
+
+    .pattern-illustration {
+      img {
+        @apply w-full;
+      }
+    }
+
+    .pattern-meta {
+      @apply flex flex-col;
+
+      & > div {
+        @apply my-3;
+
+        em:first-child {
+          @apply text-medium;
+        }
+      }
+    }
+
+    .pattern-published {
+      span {
+        @apply my-2;
+      }
+    }
+
+    .pattern-related-patterns {
+      a {
+        @apply block text-caption;
+      }
+
+      li span {
+        text-transform: capitalize;
+      }
+
+      li + li {
+        @apply mt-3;
+      }
+    }
+  }
+
+  //
+  // Main section of page contains text content and sidebar with tags
+  //
+
+  .pattern-main {
+    @apply flex flex-col-reverse;
+
+    @screen md {
+      @apply flex-row;
+    }
+
+    .content.markdown {
+      p,
+      ul,
+      ol {
+        @apply max-w-full;
+      }
+    }
+
+    .pattern-sidebar {
+      .pattern-tags {
+        @apply my-3;
+
+        @screen md {
+          @apply my-12;
+        }
+
+        em:first-child {
+          @apply text-medium mb-1;
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 5.5rem;
+    }
+  }
+}

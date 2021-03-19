@@ -4,10 +4,8 @@
   @apply max-w-xs;
 
   img {
-    @apply border rounded-lg border-white mb-4;
-  }
-
-  p {
-    // add test styles here later
+    @apply mb-4;
+    width: 322px;
+    height: 204px;
   }
 }

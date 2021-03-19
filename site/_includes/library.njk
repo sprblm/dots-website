@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<main class="inner library-main">
+  <h1>Pattern Library</h1>
+
+  <div class="flex flex-col lg:flex-row align-middle sm:my-16 xl:my-16">
+    <div class="max-w-2xl">{{ content | safe }}</div>
+
+    <span class="mb-8 lg:ml-auto mt-6 lg:mt-0 lg:pl-16">
+      <a class="btn btn-primary" href="/library/list">
+        View pattern index
+      </a>
+    </span>
+  </div>
+
+  {% include "components/featured-pattern.njk" %}
+
+  <h2 class="my-16 text-xl lg:text-2xl sm:mt-20 sm:mb-12">Pattern Categories</h2>
+
+  <ul class="library-main-topics">
+    {%- for topic in collections.topicsByTitle -%}
+      <li>
+        <h3 class="lg:text-xl">{{ topic.data.title }}</h3>
+
+        <div class="library-main-topics-description">
+          <div class="mb-4">{{ topic.templateContent | safe }}</div>
+          <a class="link-reference my-8" href="/topics/{{ topic.fileSlug | lower }}">
+            See all
+            {{topic.data.title}}
+          </a>
+        </div>
+
+        <div class="library-main-topics-patterns">
+          {% for pattern in topic.data.patterns %}
+            {% if loop.index0 < 3 %}
+              {% patternPreview pattern %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="mt-16 md:mt-24 lg:mt-48">
+    <a href="/library/list" class="btn btn-primary">View pattern index</a>
+  </p>
+</main>

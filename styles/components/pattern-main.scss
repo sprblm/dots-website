@@ -1,0 +1,70 @@
+.library-main {
+  ul.library-main-topics {
+    li {
+      @apply max-w-6xl;
+    }
+
+    li + li {
+      @apply mt-24;
+
+      @screen sm {
+        @apply mt-32;
+      }
+    }
+
+    // topic description
+    .library-main-topics-description {
+      @apply max-w-2xl;
+
+      @screen xl {
+        @apply my-16;
+      }
+    }
+
+    .library-main-topics-patterns {
+      @apply flex flex-row justify-between my-8;
+
+      @screen sm {
+        @apply my-12;
+      }
+
+      @screen xl {
+        @apply my-16;
+      }
+
+      div {
+        // Equal spacing for pattern previews
+        @apply flex-1;
+      }
+
+      // gap between pattern previews
+      div + div {
+        @apply ml-4;
+
+        @screen sm {
+          @apply ml-12;
+        }
+
+        @screen md {
+          @apply ml-8;
+        }
+
+        @screen xl {
+          @apply ml-12;
+        }
+      }
+
+      // Show more previews for larger screens
+
+      div:nth-child(3) {
+        @apply hidden;
+      }
+
+      @screen md {
+        div:nth-child(3) {
+          @apply block;
+        }
+      }
+    }
+  }
+}

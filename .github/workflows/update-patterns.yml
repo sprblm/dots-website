@@ -12,7 +12,7 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
         with:
-          ref: develop
+          ref: master
           submodules: true
 
       - name: Read node version from .nvmrc
@@ -62,7 +62,7 @@ jobs:
 
           # Name of the branch to use, if different from the one that triggered the workflow
           # Default: the branch that triggered the run
-          branch: develop
+          branch: master
 
           # The message for the commit
           # Default: 'Commit from GitHub Actions (name of the workflow)'

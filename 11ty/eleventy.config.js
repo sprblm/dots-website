@@ -1,11 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const htmlmin = require("html-minifier");
 const markdownIt = require("markdown-it");
-const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItContainer = require("markdown-it-container");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItWikilinks = require("@f3rno/markdown-it-wikilinks");
+const slugify = require("slugify");
 
 const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
+const patternPreview = require("./shortcodes/patternPreview.js");
+const renderRelatedPatterns = require("./shortcodes/renderRelatedPatterns.js");
+const patternListing = require("./shortcodes/patternListing.js");
 
 module.exports = (eleventyConfig) => {
   // Add a readable date formatter filter to Nunjucks
@@ -38,14 +44,25 @@ module.exports = (eleventyConfig) => {
     return a.data.title.localeCompare(b.data.title, "en");
   };
 
+  const byLastUpdated = (a, b) => {
+    if (a.data.created == null) return -1;
+    if (b.data.created == null) return 1;
+    return a.data.created > b.data.created;
+  };
+
   const insertPatterns = (getPatternsByTopic) => (topic) => {
     // eslint-disable-next-line
-    topic.data.patterns = getPatternsByTopic(topic.data.slug);
+    topic.data.patterns = getPatternsByTopic(topic.data.slug).sort(
+      byLastUpdated
+    );
     return topic;
   };
 
   eleventyConfig.addCollection("patternsByTitle", (collection) =>
     collection.getFilteredByTag("pattern").sort(byTitle)
+  );
+  eleventyConfig.addCollection("patternsByLastUpdated", (collection) =>
+    collection.getFilteredByTag("pattern").sort(byLastUpdated)
   );
   eleventyConfig.addCollection("topicsByTitle", (collection) =>
     collection
@@ -61,18 +78,9 @@ module.exports = (eleventyConfig) => {
   );
 
   // Shortcodes
-  eleventyConfig.addShortcode(
-    "patternPreview",
-    (pattern) => `
-    <div class="pattern-preview">
-      <a href="${pattern.data.page.url}">
-        <img width="322" height="204" src="/images/illustrations/placeholder.svg" />
-        <h3 class="mt-8 mb-4">${pattern.data.title}</h3>
-        <p>${pattern.data.description || ""}</p>
-      </a>
-    </div>
-  `
-  );
+  eleventyConfig.addShortcode("patternPreview", patternPreview);
+  eleventyConfig.addShortcode("renderRelatedPatterns", renderRelatedPatterns);
+  eleventyConfig.addShortcode("patternListing", patternListing);
 
   // Layout aliases
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
@@ -87,6 +95,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ public: "files" });
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
 
+  // Add assets for individual patterns
+  eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png}");
+
   const options = {
     html: true,
     breaks: false,
@@ -94,9 +105,19 @@ module.exports = (eleventyConfig) => {
     typographer: true,
   };
 
+  // Configure wikilinks to transfrom in the right way, i.e.:
+  //     [[some link]] => href="/library/some-link"
+  const wikilinksOptions = {
+    generatePageNameFromLabel: (label) => slugify(label, { lower: true }),
+    relativeBaseURL: "/library/",
+    uriSuffix: "",
+  };
+
   const markdownLib = markdownIt(options)
+    .use(markdownItWikilinks(wikilinksOptions))
     .use(markdownItFootnote)
-    .use(markdownItAnchor, { permalink: true, level: 1 });
+    .use(markdownItAnchor, { permalink: true, level: 1 })
+    .use(markdownItContainer, "examples");
 
   eleventyConfig.setLibrary("md", markdownLib);
 

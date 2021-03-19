@@ -1,0 +1,39 @@
+---
+title: All Patterns
+layout: default
+permalink: "library/list/index.html"
+---
+
+<main class="inner mt-0 pt-4 md:pt-0">
+
+  <a class="link-prev link-small" href="/library">
+    <img role="presentation" src="/images/icons/back.svg" />
+    <div>
+      Return to library
+    </div>
+  </a>
+
+  <h1 class="my-4 md:my-8">All Patterns</h1>
+
+  <div class="max-w-2xl sm:my-16 xl:my-24">
+    <p>
+    Every piece of software needs some amount of interface, content, and service design. This is no different in decentralization. What is different, however, is that decentralization introduces concepts and scenarios that are diverging from today’s dominant, centralized paradigms. These design patterns are generalizable to protocols, applications, and the user interfaces of decentralized applications.</p>
+
+    <p>See something missing? <a href="https://github.com/simplysecure/dots-patterns/issues/new/choose">Please propose a new pattern</a>.</p>
+  </div>
+
+  {% patternListing collections.patternsByTitle,
+  'alphabetical' %}
+
+  <p id="pattern-listing-no-results">No patterns found for this search term.</p>
+  <ul id="pattern-listing-entries">
+    {% for pattern in collections.patternsByTitle %}
+      <a href="{{ pattern.url }}">
+        <li>
+          {{ pattern.data.title}}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+</main>

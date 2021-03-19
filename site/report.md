@@ -1,7 +1,7 @@
 ---
 layout: article
 meta_title: Report
-body_class: about
+body_class: report
 title: Report
 ---
 

@@ -1,0 +1,42 @@
+.featured-pattern {
+  @apply flex flex-col my-8;
+
+  @screen xl {
+    @apply flex-row max-w-5xl my-32;
+  }
+
+  // illustration
+  div:first-child {
+    @apply flex-none;
+
+    @screen lg {
+      @apply mr-12;
+    }
+
+    img {
+      @apply max-w-2xl;
+    }
+  }
+
+  // text
+  div:last-child {
+    @apply flex flex-col max-w-xl;
+    min-width: 300px;
+
+    h2 {
+      @apply mt-4 mb-2;
+
+      @screen sm {
+        @apply mt-8;
+      }
+
+      em {
+        @apply block text-lg;
+      }
+    }
+
+    p + p {
+      @apply mt-2;
+    }
+  }
+}

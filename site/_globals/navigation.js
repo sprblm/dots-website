@@ -6,13 +6,9 @@ const navitems = {
       url: "/",
     },
     {
-      label: "Patterns",
-      url: "/patterns/",
+      label: "Pattern Library",
+      url: "/library/",
       draft: true,
-    },
-    {
-      label: "Report",
-      url: "/report/",
     },
     {
       label: "Contribute",
@@ -21,10 +17,6 @@ const navitems = {
     {
       label: "About",
       url: "/about/",
-    },
-    {
-      label: "Roadmap",
-      url: "/roadmap/",
     },
   ],
 };

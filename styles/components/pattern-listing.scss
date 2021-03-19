@@ -1,0 +1,42 @@
+#pattern-listing {
+  @apply max-w-4xl;
+
+  .filterbar {
+    @apply flex flex-col mb-4;
+
+    @screen sm {
+      @apply flex-row;
+    }
+
+    @screen md {
+      @apply mb-8;
+    }
+
+    input {
+      @apply w-full mb-4 bg-transparent border-b-2 border-light p-2;
+
+      @screen sm {
+        @apply mr-4 mb-0;
+      }
+
+      &:focus {
+        @apply bg-dark;
+        outline: none;
+      }
+    }
+
+    .button-group {
+      @apply items-center;
+    }
+
+    .button-group .btn {
+      @apply my-0;
+    }
+  }
+}
+
+#pattern-listing-entries {
+  a {
+    @apply border-none;
+  }
+}
