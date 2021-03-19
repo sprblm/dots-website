@@ -3,13 +3,13 @@
   // Rules for desktop content columns
   //
   .pattern-content {
-    @screen md {
+    @screen lg {
       @apply w-2/3;
     }
   }
 
   .pattern-sidebar {
-    @screen md {
+    @screen lg {
       @apply w-1/3 pl-16;
     }
   }
@@ -21,7 +21,7 @@
   .pattern-head {
     @apply flex flex-col;
 
-    @screen md {
+    @screen lg {
       @apply flex-row mt-16;
     }
 
@@ -32,7 +32,11 @@
     }
 
     .pattern-meta {
-      @apply flex flex-col;
+      @apply flex flex-col mt-4;
+
+      @screen lg {
+        @apply mt-0;
+      }
 
       & > div {
         @apply my-3;
@@ -40,12 +44,6 @@
         em:first-child {
           @apply text-medium;
         }
-      }
-    }
-
-    .pattern-published {
-      span {
-        @apply my-2;
       }
     }
 
