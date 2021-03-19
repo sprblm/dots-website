@@ -2,7 +2,7 @@
   @apply flex flex-col my-8;
 
   @screen xl {
-    @apply flex-row max-w-5xl;
+    @apply flex-row max-w-5xl my-32;
   }
 
   // illustration
@@ -24,7 +24,11 @@
     min-width: 300px;
 
     h2 {
-      @apply my-8;
+      @apply mt-4 mb-2;
+
+      @screen sm {
+        @apply mt-8;
+      }
 
       em {
         @apply block text-lg;
@@ -32,7 +36,7 @@
     }
 
     p + p {
-      @apply mt-4;
+      @apply mt-2;
     }
   }
 }
