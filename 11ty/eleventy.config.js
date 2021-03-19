@@ -96,7 +96,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
 
   // Add assets for individual patterns
-  eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png}");
+  eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png,jpg,jpeg}");
 
   const options = {
     html: true,
