@@ -97,25 +97,25 @@ Four models of web monetization exist today: (1) advertisement, (2) tips, (3) su
 
 ### 2.2. Case Studies
 
-Our team interviewed five new users of the Web Monetization API. Of those, we tracked the progress of two individuals who attempted to integrate the technology into their existing web applications. 
+Our team interviewed five new users of the Web Monetization API and tracked the progress of two organizations that attempted to integrate the technology into their existing web applications. Their experiences are documented in the case studies below.
 
-**Case Study #1**
+**Case Study #1: COMPOST**
 
-[COMPOST](https://compost.digital) is a cooperative magazine that has one bank account for the organization. Their magazine consists of contributors who all get paid a portion of the total. All of the contributors to the magazine have their own individual bank accounts. They wanted to use the Web Monetization API for two particular purposes:
+[COMPOST](https://compost.digital) is a cooperative magazine with one organizational bank account. The content of the magazine comes from various contributors who all get paid a portion of the total amount received. Each contributor to the magazine has their own individual bank account. The organization was interested in using the Web Monetization API for two  purposes:
 
 *   **Crowdfunding**: “We wanted to use it to be able to track the real-time balance and feed it back to magazine readers, but access to the account balance doesn't exist -- there is no way to show collective or historical balance. That's something we'd expect.”
-*   **Distribute payment to multiple creators from one website**: “Ideally each creator, each writer would get their own payment pointer. Then the money would go directly to them.” However, they found it time consuming for every contributor to sign up for a payment pointer individually, so they just have one payment pointer for the entire magazine and then manage the distribution of that money manually.
+*   **Distribute payments to multiple creators from a single website**: “Ideally each creator, each writer would get their own payment pointer. Then the money would go directly to them.” However, they found it time consuming for every contributor to sign up for a payment pointer individually, so they just have one payment pointer for the entire magazine and then manage the distribution of that money manually.
 
-Managing money with multiple contributors on a single website is still not entirely straightforward with the Web Monetization API. It requires extra effort on behalf of the organization’s IT manager to properly distribute payment to all contributors. The [probabilistic revenue sharing pattern](https://webmonetization.org/docs/probabilistic-rev-sharing/) requires all contributors to sign up for a payment pointer. This is often not possible or difficult when working with contributors of many different skill levels, time commitments, and abilities. Ideally, Uphold would allow organizations to easily create and manage payment pointers for all of their magazine’s contributors.
+**Takeaways:** Managing money with multiple contributors on a single website is still not entirely straightforward with the Web Monetization API. Doing so requires extra effort on behalf of an organization’s IT manager or accountant to properly distribute payment to all contributors. The suggested [probabilistic revenue sharing pattern](https://webmonetization.org/docs/probabilistic-rev-sharing/) requires all contributors to sign up for a payment pointer, but this proposed approach is often not possible or difficult to achieve when working with contributors of many different skill levels, time commitments, and abilities. Ideally in the future, Uphold will allow organizations to easily create and manage payment pointers for all of their contributors.
 
-**Case Study #2**
+**Case Study #2: StreetMix**
 
-StreetMix is a collaborative civic engagement platform for urban design. They are developing a two-tiered freemium model, where users can pay money to access premium features. Patreon is their target payment platform, but their team also wanted to integrate the Web Monetization API as an alternative way to pay for subscriptions. They had two main challenges:
+[StreetMix](https://streetmix.net/) is a collaborative civic engagement platform for urban design. They are developing a two-tiered freemium model, through which users can pay money to access premium features. Patreon is their target payment platform, but the team also wanted to integrate the Web Monetization API as an alternative way for users to pay for subscriptions. The StreetMix team encountered two main challenges in doing so:
 
-*   **Fixed subscription rates. **“Can we change the default rate people pay for a subscription? We haven't figured that out. StreetMix's model is not about being trapped in your site as long as possible.” They would benefit from a tutorial that guides them on how to ask users for a flat rate per month for access to premium content rather than be paid per visit.
-*   **Technical mental models.  **“We figured that requiring a browser extension wouldn’t work for StreetMix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated coil and the protocol itself.” 
+* **Fixed subscription rates.** “Can we change the default rate people pay for a subscription? We haven't figured that out. StreetMix's model is not about being trapped in your site as long as possible.” The organization would benefit from a tutorial that provides guidance on how to ask users for a flat rate per month for access to premium content, rather per-visit payments.
+* **Technical mental models.** “We figured that requiring a browser extension wouldn’t work for StreetMix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated Coil and the protocol itself.” 
 
-This team would benefit from more developer-facing tutorials on how to integrate their platform with Web Monetization. The StreetMix team also had confusion around the difference between the Interledger Protocol, Web Monetization API, and Coil. This could be an indication that the [introductory materials](https://webmonetization.org/docs) were unclear for developers about which level of abstraction they should be working with. It would be helpful to have an introductory checklist that guides developers as to when they should and should not use an intermediary such as Coil in their platform.
+**Takeaways:** The StreetMix team would appreciate more developer-facing tutorials on how to integrate their platform with Web Monetization. They experienced confusion around the difference between the Interledger Protocol, Web Monetization API, and Coil. These difficulties could be an indication that the provided [introductory materials](https://webmonetization.org/docs) were unclear regarding which level of abstraction developers should be working with. Going forward, developers would benefit from the creation of an introductory checklist that offers insight into when they should, or should not, use an intermediary such as Coil in their platform.
 
 
 ## 3.  Challenges 
@@ -191,10 +191,11 @@ To increase Web Monetization understanding and adoption, it is also important to
 
 ## 5.  Conclusion
 
-Overall, our research shows that the Web Monetization API retains interest and momentum. It has potential to supplement (not replace) advertising as a means for accessing content and paying creators on the web. However, there are significant barriers to adoption on behalf of both the sender and receiver of payments. There is also significant confusion about in which contexts the Web Monetization API should or _should not _be used. With time, these issues may be addressed with improved documentation, quality control, and increased buy-in from major browsers. 
+Overall, our research shows that the Web Monetization API retains real interest and momentum throughout the community. The innovative tool has the potential to supplement (although not replace) advertising as a means for accessing content and paying creators on the web. In situations where this transition occurs, individual autonomy and agency will be strengthened as users -- not large corporations -- will be able to set their own privacy and payment preferences. Website developers will also benefit through an additional option by which they can monetize their content without relying on invasive surveillance practices. Yet despite this promising potential, significant barriers to adoption remain on behalf of both the sender and receiver of payments. Significant confusion also continues to surround the various contexts in which the Web Monetization API should or _should not_ be used. With time, however, it is our hope that these issues will be addressed through improved documentation, quality control, and increased buy-in from major browsers. 
 
 
 ### 6. Acknowledgments
 
-Thanks to Grant for the Web and Simply Secure for financial and organizational support of this project. Thanks to all participants in workshops and interviews for sharing their important expert analysis and experiences.
+Thanks to Grant for the Web and Simply Secure for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
+
 
