@@ -5,18 +5,17 @@ body_class: report
 title: Barriers to Adoption for Web Monetization
 ---
 
-# Barriers to Adoption for Web Monetization
+Zine
 
 
-Karissa McKelvey and Ngọc Triệu, Simply Secure
+# The Web Monetization API’s Barriers to Adoption
 
-<a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
+**Authors**
 
-_With funding support from Grant for the Web._
+Ngọc Triệu (Simply SEcure)
+Karissa McKelvey (Simply Secure) 
 
-## Zine
-
-<iframe width="100%" height="400px" src="/zines/web-monetization"></iframe>
+<a class="link-reference" href="/projets/web-monetization/DOTS-webmon-report.txt">Open as a text file</a>
 
 ## Table of Contents
 

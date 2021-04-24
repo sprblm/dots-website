@@ -99,6 +99,8 @@ module.exports = (eleventyConfig) => {
   // Add assets for individual patterns
   eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png,jpg,jpeg}");
 
+  eleventyConfig.addPassthroughCopy("site/projects/**/*.{svg,png,jpg,jpeg}");
+
   const options = {
     html: true,
     breaks: false,
