@@ -1,4 +1,3 @@
-var TM = require('./tm.js')
 var regl = require('regl')({
   extensions: ['oes_standard_derivatives']
 })
@@ -17,6 +16,7 @@ var emitter = new(require('events').EventEmitter)()
 
 var fs = require('fs')
 var icons = (function () {
+  document.body.style = "background-color:#131f26"
   var div = document.createElement('div')
   div.innerHTML = fs.readFileSync(__dirname + '/icons.svg', 'utf8')
   var root = div.children[0]
@@ -84,7 +84,6 @@ var icons = (function () {
   })
   document.body.appendChild(right)
 
-  /*
   var fold = icons.get('fold')
   fold.style.position = 'absolute'
   fold.style.right = '15px'
@@ -102,34 +101,13 @@ var icons = (function () {
     emitter.emit('fold:toggle')
   })
   document.body.appendChild(fold)
-  */
-
-  /*
-  var grid = icons.get('grid')
-  grid.style.position = 'absolute'
-  grid.style.right = '20px'
-  grid.style.top = '90px'
-  grid.style.zIndex = 100
-  grid.style.opacity = 0.2
-  var gg = grid.querySelector('g')
-  gg.addEventListener('mouseover', function () {
-    grid.style.opacity = 0.8
-  })
-  gg.addEventListener('mouseout', function () {
-    grid.style.opacity = 0.2
-  })
-  gg.addEventListener('click', function () {
-    emitter.emit('grid:toggle')
-  })
-  document.body.appendChild(grid)
-  */
 })()
 
 var state = {
   page: 0,
   folded: true,
   speed: 0.35,
-  zoom: 1.0,
+  zoom: 1.3,
   pan: [0,0,0],
   prevMouse: [-1,-1]
 }
@@ -148,7 +126,7 @@ window.addEventListener('mousemove', function (ev) {
   state.prevMouse[1] = ev.clientY
 })
 window.addEventListener('wheel', function (ev) {
-  state.zoom = clamp(0.25,1.5,state.zoom + ev.deltaY*0.001)
+  state.zoom = clamp(0.25,1.5,state.zoom + ev.deltaY*0.01)
   frame()
 })
 
@@ -268,11 +246,8 @@ Object.keys(papers).forEach(function (key) {
   papers[key].offset = [0,0,0]
 })
 
-var fileOffsets = {
-  'decent.jpg': 5
-}
-var file = 'decent.jpg'
-var pageOffset = fileOffsets[file]
+var file = 'decent-small.png'
+var pageOffset = 5
 var zine = regl.texture()
 
 resl({
@@ -286,7 +261,8 @@ resl({
 })
 
 var flips = {
-  5: [+1,+1,+1,-1,-1,-1,-1,+1]
+  5: [+1,+1,+1,+1,+1,+1,+1,+1],
+  7: [+1,-1,-1,+1,+1,-1,-1,+1]
 }
 paperProps.forEach(function (paper) {
   paper.pageFlip = flips[pageOffset][paper.page]
@@ -299,7 +275,7 @@ var ease = {
 }
 var zNear = 0
 var zFar = +2.0
-let tm = TM({
+var tm = require('./tm.js')({
   page0Flip: {
     state: { x: PI, y: PI, page: 0, offset: [+0.0,+0.0,zNear], flip: +PI },
     easing: { x: ease.sineOut, y: ease.sineOut }
@@ -450,7 +426,7 @@ function frame () {
   regl.poll()
   update(performance.now()/1000)
   updateModels()
-  regl.clear({ color: [0,0,.1,1], depth: true })
+  regl.clear({ color: [0,0.0,0,0], depth: true })
   camera(function () {
     draw.paper(paperProps)
   })
@@ -532,12 +508,14 @@ function updateModels () {
 }
 
 function paper (regl, texture) {
+  var size = [0,0]
   return regl({
     frag: `
       precision highp float;
       #extension GL_OES_standard_derivatives: enable
       uniform float page, pageOffset, pageFlip;
       uniform sampler2D texture;
+      uniform vec2 size;
       varying vec2 vpos;
       void main () {
         float p = mod(page + pageOffset, 8.0);
@@ -547,7 +525,13 @@ function paper (regl, texture) {
           y*0.5
         );
         vec2 uv = mod(vpos.xy*vec2(pageFlip)+0.5,vec2(1))/vec2(4,2) + offset;
-        gl_FragColor = texture2D(texture,uv);
+        vec2 d = vec2(0.2)/size;
+        vec4 c = texture2D(texture,uv);
+        vec4 cW = texture2D(texture,uv + vec2(-d.x,0));
+        vec4 cS = texture2D(texture,uv + vec2(0,d.y));
+        vec4 cE = texture2D(texture,uv + vec2(d.x,0));
+        vec4 cN = texture2D(texture,uv + vec2(0,-d.y));
+        gl_FragColor = (c + cW + cS + cE + cN) / 5.0;
       }
     `,
     vert: `
@@ -568,7 +552,12 @@ function paper (regl, texture) {
       page: regl.prop('page'),
       model: regl.prop('model'),
       offset: regl.prop('offset'),
-      texture: function () { return texture }
+      texture: function () { return texture },
+      size: function (context) {
+        size[0] = context.viewportWidth
+        size[1] = context.viewportHeight
+        return size
+      }
     },
     attributes: {
       position: regl.prop('positions')
@@ -576,3 +565,4 @@ function paper (regl, texture) {
     elements: regl.prop('cells')
   })
 }
+
