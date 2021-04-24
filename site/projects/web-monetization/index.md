@@ -15,12 +15,12 @@ Karissa McKelvey and Ngọc Triệu, Simply Secure
 _With funding support from Grant for the Web._
 
 <div class="content">
-  <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
-
   <a class="link-reference" href="/zines/web-monetization">Read full-sized in your browser</a>
   <br>
   <a class="link-reference" href="/zines/web-monetization/zine.pdf">Download as a printable PDF</a>
   <br>
+  <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
+
 </div>
 
 
