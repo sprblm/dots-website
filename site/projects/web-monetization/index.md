@@ -14,8 +14,24 @@ Karissa McKelvey and Ngọc Triệu, Simply Secure
 
 _With funding support from Grant for the Web._
 
+
+The innovative Web Monetization API has the potential to create a viable
+alternative to targeted advertising as a means for website content creators to
+generate revenue. Yet despite this promising possibility, confusion and
+significant barriers to adoption remain on behalf of both the sender and
+receiver of payments. In response, this report and accompanying zine work first
+to highlight common questions and challenges encountered by end users, and then
+offer a set of recommendations for opportunities to expand web monetization
+adoption in the future.
+
+
+## Dear Decent, Money in my browser!?? 
+
+*33 Questions I have about Web Monetization*
+
+
 <div class="content">
-  <a class="link-reference" href="/zines/web-monetization">Read full-sized in your browser</a>
+  <a class="link-reference" href="/zines/web-monetization">View full-sized in your browser</a>
   <br>
   <a class="link-reference" href="/zines/web-monetization/zine.pdf">Download as a printable PDF</a>
   <br>
@@ -273,9 +289,9 @@ A mental model is an explanation or representation of an individual's thought pr
 
 Our research revealed a myriad of opportunities that can help expand web monetization adoption. To summarize, we've organized these recommendations into three target groups. To get the most of out of this section, take a moment to recognize what user group you fall into. If you are:
 
-  - [For Streaming Platforms](#4.1.-for-streaming-platforms) is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
-  - [For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
-  - [For Implementers](#4.3.-for-implementers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
+  - [4.1. For Streaming Platforms](#4.1.-for-streaming-platforms) is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
+  - [4.2. For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
+  - [4.3. For Implementers](#4.3.-for-implementers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
 
 
 ### 4.1. For Streaming Platforms
@@ -312,7 +328,7 @@ Many of the existing explanatory resources about Web Monetization are targeted
 towards end users or developers, resulting in a gap addressing how to integrate
 the technology into existing creative platforms where creators are already
 making money. This could be improved with step-by-step instructions, including
-screen shots, on how to start making money quickly with existing
+screenshots, on how to start making money quickly with existing
 platforms (such as YouTube and Twitch).
 
 *Web extension walkthrough*
