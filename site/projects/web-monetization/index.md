@@ -34,7 +34,7 @@ _With funding support from Grant for the Web._
   - [Research Objectives](#1.3.-research-methodology)
   - [Who we are](#1.4.-who-we-are)
 - [Understanding Web Monetization](#2.-understanding-web-monetization)
-  - [Four Ways to Use it](#2.1.-four-ways-to-use-it)
+  - [Four Design Patterns](#2.1.-four-design-patterns)
   - [Case Studies](#2.2.-the-four-models)
 - [Challenges](#3.-challenges)
   - [User Journey](#3.1.-user-journey)
@@ -104,15 +104,13 @@ Ngọc sees design as an intervention to asymmetrical power relations. As a desi
 ## 2.  Understanding Web Monetization
 
 
-### 2.1. Four Ways to use it
+### 2.1. Four Design Patterns
 
-Four models of web monetization exist today: (1) advertisement, (2) tips, (3) subscriptions, and (4) streaming. Each model is discussed below.
+There are four dominant design patterns for using web monetization today: (1) advertisement, (2) tips, (3) subscriptions, and (4) streaming. Each is discussed below.
 
 **(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertisement today is typically invasive from both user experience and privacy standpoints. 
 
-<div class="take-aways">
-In the futuer, we hope to see more websites offer a button that says “_Remove advertisements_” to enable Web Monetization. See more in the [recommendations section for creators](#4.2.-for-creators).
-</div>
+* _In the future, we hope to see more websites offer a button that says “_Remove advertisements_” to enable Web Monetization. See more in the [recommendations section for creators](#4.2.-for-creators)._
 
 
 ![alt_text](image_3.png "image_tooltip")
@@ -120,9 +118,7 @@ In the futuer, we hope to see more websites offer a button that says “_Remove 
 
 **(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. 
 
-<div class="take-aways">
-In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.3.-for-implementers).
-</div>
+* _In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
 
 
 ![alt_text](image_4.png "image_tooltip")
@@ -130,9 +126,7 @@ In the future, we hope to see more browsers implementing tip buttons directly. S
 
 **(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). Subscriptions also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants -- which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
 
-<div class="take-aways">
-In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API's developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers).
-</div>
+* _In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API's developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
 
 
 ![alt_text](image_5.png "image_tooltip")
@@ -140,9 +134,7 @@ In the future, we hope to see subscriptions become easier to create as part of t
 
 **(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription. 
 
-<div class="take-aways">
-In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms).
-</div>
+* _In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms)._
 
 
 ![alt_text](image_6.png "image_tooltip")
