@@ -121,7 +121,7 @@ In the futuer, we hope to see more websites offer a button that says “_Remove 
 **(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. 
 
 <div class="take-aways">
-In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.2.-for-implementers).
+In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.3.-for-implementers).
 </div>
 
 
@@ -131,7 +131,7 @@ In the future, we hope to see more browsers implementing tip buttons directly. S
 **(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). Subscriptions also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants -- which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
 
 <div class="take-aways">
-In the future, we hope to see subscriptions become easier to use as part of the Web Monetization API. See more in the [recommendations section for implementers](#4.2.-for-implementers).
+In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API's developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers).
 </div>
 
 
@@ -141,7 +141,7 @@ In the future, we hope to see subscriptions become easier to use as part of the 
 **(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription. 
 
 <div class="take-aways">
-In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.2.-for-streaming-platforms).
+In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms).
 </div>
 
 
@@ -161,14 +161,14 @@ Our team interviewed five new users of the Web Monetization API and tracked the 
 
 **Takeaways:** Managing money with multiple contributors on a single website is still not entirely straightforward with the Web Monetization API. Doing so requires extra effort on behalf of an organization’s IT manager or accountant to properly distribute payment to all contributors. The suggested [probabilistic revenue sharing pattern](https://webmonetization.org/docs/probabilistic-rev-sharing/) requires all contributors to sign up for a payment pointer and have separate bank accounts through a KYC process. Associating each payment pointer to a different bank/payment account isn't easy, and systems for invoice payout isn't in place. This approach is even yet more difficult to achieve when working with contributors of many different skill levels, time commitments, and abilities. Ideally in the future, Uphold will allow organizations to easily create and manage payment pointers, bank accounts, and invoicing.
 
-**Case Study #2: StreetMix**
+**Case Study #2: Streetmix**
 
-[StreetMix](https://streetmix.net/) is a collaborative civic engagement platform for urban design. They are developing a two-tiered freemium model, through which users can pay money to access premium features. Patreon is their target payment platform, but the team also wanted to integrate the Web Monetization API as an alternative way for users to pay for subscriptions. The StreetMix team encountered two main challenges in doing so:
+[Streetmix](https://streetmix.net/) is a collaborative civic engagement platform for urban design. They are developing a two-tiered freemium model, through which users can pay money to access premium features. Patreon is their target payment platform, but the team also wanted to integrate the Web Monetization API as an alternative way for users to pay for subscriptions. The Streetmix team encountered two main challenges in doing so:
 
-* **Fixed subscription rates.** “Can we change the default rate people pay for a subscription? We haven't figured that out. StreetMix's model is not about being trapped in your site as long as possible.” The organization would benefit from a tutorial that provides guidance on how to ask users for a flat rate per month for access to premium content, rather per-visit payments.
-* **Technical mental models.** “We figured that requiring a browser extension wouldn’t work for StreetMix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated Coil and the protocol itself.” 
+* **Fixed subscription rates.** “Can we change the default rate people pay for a subscription? We haven't figured that out. Streetmix's model is not about being trapped in your site as long as possible.” The organization would benefit from a tutorial that provides guidance on how to ask users for a flat rate per month for access to premium content, rather per-visit payments.
+* **Technical mental models.** “We figured that requiring a browser extension wouldn’t work for Streetmix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated Coil and the protocol itself.” 
 
-**Takeaways:** The StreetMix team would appreciate more developer-facing tutorials on how to integrate their platform with Web Monetization. They experienced confusion around the difference between the Interledger Protocol, Web Monetization API, and Coil. These difficulties could be an indication that the provided [introductory materials](https://webmonetization.org/docs) were unclear regarding which level of abstraction developers should be working with. Going forward, developers would benefit from the creation of an introductory checklist that offers insight into when they should, or should not, use an intermediary such as Coil in their platform.
+**Takeaways:** The Streetmix team would appreciate more developer-facing tutorials on how to integrate their platform with Web Monetization. They experienced confusion around the difference between the Interledger Protocol, Web Monetization API, and Coil. These difficulties could be an indication that the provided [introductory materials](https://webmonetization.org/docs) were unclear regarding which level of abstraction developers should be working with. Going forward, developers would benefit from the creation of an introductory checklist that offers insight into when they should, or should not, use an intermediary such as Coil in their platform.
 
 
 ## 3.  Challenges 
