@@ -34,16 +34,16 @@ _With funding support from Grant for the Web._
   - [Research Objectives](#1.3.-research-methodology)
   - [Who we are](#1.4.-who-we-are)
 - [Understanding Web Monetization](#2.-understanding-web-monetization)
-  - [The Four Models](#2.1.-the-four-models)
+  - [Four Ways to Use it](#2.1.-four-ways-to-use-it)
   - [Case Studies](#2.2.-the-four-models)
 - [Challenges](#3.-challenges)
   - [User Journey](#3.1.-user-journey)
   - [Centralized Financial Services](#3.2.-centralized-financial-services)
   - [Mental Models](#3.3.-mental-models)
-- [Opportunities Ahead](#4.-opportunities-ahead)
-  - [Developers Are Users](#4.1.-developers-are-users)
-  - [Design Patterns](#4.2.-design-patterns)
-  - [Explanatory Resources](#4.3.-explanatory-resources)
+- [Recommendations](#4.-recommendations)
+  - [For Streaming PLatforms](#4.1.-for-streaming-platforms)
+  - [For Creators](#4.2.-for-creators)
+  - [For Web Monetization team](#4.3.-for-web-monetization-team)
 - [Conclusion](#5.-conclusion)
 - [Acknowledgments](#6.-acknowledgments)
 
@@ -104,18 +104,21 @@ Ngọc sees design as an intervention to asymmetrical power relations. As a desi
 ## 2.  Understanding Web Monetization
 
 
-### 2.1. The Four Models 
+### 2.1. Four Ways to use it
 
 Four models of web monetization exist today: (1) advertisement, (2) tips, (3) subscriptions, and (4) streaming. Each model is discussed below.
 
-**(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertisement today is typically invasive from both user experience and privacy standpoints. One option to address this issue is to enable websites to offer users a button that says “_Remove advertisements_” in either a banner ad or a blocking pop-up upon entering the website. After clicking the button, users would be prompted to install the appropriate web extension or browser that supports web monetization.
+**(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertisement today is typically invasive from both user experience and privacy standpoints. 
 
+One option to address this issue is to offer users a button that says “_Remove advertisements_” in either a banner ad or a blocking pop-up upon entering the website. After clicking the button, users would be prompted to install the appropriate web extension or browser that supports web monetization.
 
 
 ![alt_text](image_3.png "image_tooltip")
 
 
-**(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. To help facilitate this process even further, the Web Monetization API could enable this interaction directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. Notably, Brave Browser has a [product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time).
+**(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. 
+
+To help facilitate this process even further, the Web Monetization API could enable this interaction directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. Notably, Brave Browser has a [product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time).
 
 
 ![alt_text](image_4.png "image_tooltip")
@@ -161,20 +164,21 @@ Overall, our research revealed that web monetization is still in an early innova
 
 ### 3.1. User Journey
 
-Based on our research, we mapped out five key points for both creators (payees) and readers (payers) in the user journey towards web monetization adoption. A conversion funnel for Web Monetization shows the rate at which users (i.e., a payee or payer) complete each step of the journey. The conversion rate for onboarding to the Web Monetization API could be monitored by the flagship products that are invested in the success of the technology. Below, we’ve listed key questions that should be readily answered while users are attempting to integrate the technology.
+Based on our research, we mapped out five key points for both creators (payees) and the audience (payers) in the user journey towards web monetization adoption. A conversion funnel for Web Monetization shows the rate at which users (i.e., a payee or payer) complete each step of the journey. The conversion rate for onboarding to the Web Monetization API could be monitored by the flagship products that are invested in the success of the technology. Below, we’ve listed key questions that should be readily answered while users are attempting to integrate the technology.
 
 
+<div class="aside">
 
-1. _Understand why. _A user first needs to understand why they should invest their time (and ultimately money) into web monetization. In particular, a creator needs to understand why they should spend time signing up, and how doing so could impact their audience and economic return. Relevant questions include:
+1. _Understand why._ A user first needs to understand why they should invest their time (and ultimately money) into web monetization. In particular, a creator needs to understand why they should spend time signing up, and how doing so could impact their audience and economic return. Relevant questions include:
     1. How much money does a creator expect to receive over time?
     2. How does it benefit me (or my users?)
     3. How does it compare to other payment methods?
     4. How easy will it be to correctly report my income for tax purposes?
-2. _Create a wallet. _Once a user understands why they want to use web monetization, they next need to go through the process of creating a wallet. Most users will create a wallet on centralized services such as [Uphold](https://wallet.uphold.com/signup), as this is the [recommended method](https://webmonetization.org/docs/uphold/) on the Web Monetization website. At this point, relevant user questions include:
+2. _Create a wallet._ Once a user understands why they want to use web monetization, they next need to go through the process of creating a wallet. Most users will create a wallet on centralized services such as [Uphold](https://wallet.uphold.com/signup), as this is the [recommended method](https://webmonetization.org/docs/uphold/) on the Web Monetization website. At this point, relevant user questions include:
     5. What happens if I lose my password?
     6. Can I manage my own decentralized wallet (on a phone, laptop, web extension or all of the above)?
     7. How can I manage payment pointers for users of my platform?
-3. _Enable web monetization. _To use web monetization, two sides of the relationship must be established: (1) the creator needs to integrate the payment pointer into their website, and (2) the reader needs to have a web monetization-enabled browser or web extension. For first-time users, this will involve installing and running the appropriate software, knowing how to finish the onboarding process, and then connecting their newly created wallet. In doing so, questions may include:
+3. _Enable web monetization._ To use web monetization, two sides of the relationship must be established: (1) the creator needs to integrate the payment pointer into their website, and (2) the reader needs to have a web monetization-enabled browser or web extension. For first-time users, this will involve installing and running the appropriate software, knowing how to finish the onboarding process, and then connecting their newly created wallet. In doing so, questions may include:
     8. How will the user experience change if web monetization is enabled?
     9. Will enabling web monetization slow down my website?
 4. _Make a payment._ Once web monetization is enabled and a wallet is connected to the browser, the user will be able to send payments. The browser only allows allocation of payments with the amount and the intended recipient (also called a payment pointer).
@@ -182,21 +186,43 @@ Based on our research, we mapped out five key points for both creators (payees) 
     11. When do I pay?
     12. How can I pay more or less?
     13. How can I refund a payment?
-5. _Retention and sustainability. _Upon completion of the prior four steps, a user’s concern turns toward the future. For web monetization adoption to increase (and for existing users to be retained and sustained), users must have a general understanding of what using web monetization looks like long term. Unfortunately, however, we found a significant lack of attention to this detail in the existing ecosystem. It is not easy for users to find answer to important questions such as:
+5. _Retention and sustainability._ Upon completion of the prior four steps, a user’s concern turns toward the future. For web monetization adoption to increase (and for existing users to be retained and sustained), users must have a general understanding of what using web monetization looks like long term. Unfortunately, however, we found a significant lack of attention to this detail in the existing ecosystem. It is not easy for users to find answer to important questions such as:
     14. How much money will a creator expect to receive over time?
     15. How much of my money is going to be spent at which websites?
     16. Is this worth my money, or should I allocate my resources in a different way (i.e., a subscription to the creator)?
     17. How can I further engage and retain my audience?
 
+</div>
+
 ### 3.2. Centralized Financial Services
 
-The designers and experts we interviewed as part of our research process identified onboarding as the single most challenging obstacle for web monetization adoption. Creators who want to collect money using Web Monetization must sign up for an account with an approved financial services company (at the time of research, two companies were available: [Uphold](https://uphold.com/en-us) and [GateHub](https://gatehub.net/)). Similar to PayPal, services like Uphold broker payments and allow users to exchange between tokens and currencies. 
+The designers and experts we interviewed as part of our research process
+identified onboarding as the single most challenging obstacle for web
+monetization adoption. Creators who want to collect money using Web
+Monetization must sign up for an account with an approved financial services
+company (at the time of research, two companies were available:
+[Uphold](https://uphold.com/en-us) and [GateHub](https://gatehub.net/)).
+Similar to PayPal, services like Uphold broker payments and allow users to
+exchange between tokens and currencies. 
 
-To deposit or withdraw money, users are required to provide verification of their identity to the financial service. This includes an operational email and phone number, as well as a photo of themselves and an identification document such as a passport. These requirements are part of an industry standard practice called KYC (Know your Customer), which has been implemented with the goal of reducing fraud and abuse in these areas. Though important, this process nonetheless introduces a significant number of hurdles for creators to get their Web Monetization identification number and start collecting money from their readers.
+To deposit or withdraw money, users are required to provide verification of
+their identity to the financial service. This includes an operational email and
+phone number, as well as a photo of themselves and an identification document
+such as a passport. These requirements are part of an industry standard
+practice called KYC (Know your Customer), which has been implemented with the
+goal of reducing fraud and abuse in these areas. Though important, this process
+nonetheless introduces a significant number of hurdles for creators to get
+their Web Monetization identification number and start collecting money from
+their audience members.
 
-Interestingly, we observed that the user experience between Uphold and GateHub varied significantly enough that specialized tutorials and training may be needed for each platform. This suggests that the widespread adoption of the Web Monetization API is at least partially dependent upon the capabilities of these third-party companies and their human-centered design practices. This level of responsibility -- which is largely beyond the control of the API -- is important to acknowledge as the maintenance of these services is subject to instability over time. 
-
-To help address this issue, the maintainers of the Web Monetization main website could create a process for monitoring the quality for any of the services linked on the main webpage. Services that are unable to complete user experience tests at a high standard should not be included as recommended services. 
+Interestingly, we observed that the user experience between Uphold and GateHub
+varied significantly enough that specialized tutorials and training may be
+needed for each platform. This suggests that the widespread adoption of the Web
+Monetization API is at least partially dependent upon the capabilities of these
+third-party companies and their human-centered design practices. This level of
+responsibility -- which is largely beyond the control of the API -- is
+important to acknowledge as the maintenance of these services is subject to
+instability over time. 
 
 ### 3.3. Mental Models
 
@@ -204,27 +230,135 @@ A mental model is an explanation or representation of an individual's thought pr
 
 **_Web Extensions_**. It is often unclear to users why downloading a web extension is necessary. In response, web browsers such as Brave and Puma removed this extra step by integrating the underlying technology directly into the browser itself. Although this improves adoption, one participant noted there is “skepticism that laggard browsers will adopt the right crypto support, especially on mobile.” If the Web Monetization API is to become more accessible, it needs support to be more directly integrated in popular browsers such as Firefox.
 
-**_Wallets. _**A wallet is a service that stores the public and/or private keys for cryptocurrency transactions. The concept of a “wallet” is common in adjacent and related products. For example, the Brave Browser has a feature which allows users to tip websites from a wallet that is integrated into their browser as a web extension. Nonetheless, as discussed above, creating a wallet is often a new experience (and potential obstacle) for many users. Users who are familiar with cryptocurrency may expect to be able to connect an existing browser wallet such as MetaMask, but that is also not directly possible with the Web Monetization API at this time.
+**_Wallets._** A wallet is a service that stores the public and/or private keys for cryptocurrency transactions. The concept of a “wallet” is common in adjacent and related products. For example, the Brave Browser has a feature which allows users to tip websites from a wallet that is integrated into their browser as a web extension. Nonetheless, as discussed above, creating a wallet is often a new experience (and potential obstacle) for many users. Users who are familiar with cryptocurrency may expect to be able to connect an existing browser wallet such as MetaMask, but that is also not directly possible with the Web Monetization API at this time.
 
-**_Account recovery. _**If you lose your password to a typical centralized account, the service provider can help you gain access anyway with identity verification methods, such as a phone number. As a participant noted, however, “if you lose the keys to your [decentralized] wallet, there isn't an analogue for a locksmith.” This limitation creates a tension between security and usability.
+**_Account recovery._** If you lose your password to a typical centralized account, the service provider can help you gain access anyway with identity verification methods, such as a phone number. As a participant noted, however, “if you lose the keys to your [decentralized] wallet, there isn't an analogue for a locksmith.” This limitation creates a tension between security and usability.
 
 **_Streaming_**. Web Monetization allows streaming payments to be made through a browser via small incremental payments made over time. This breakthrough technology is not possible in traditional banking relationships. Such innovation, however, can be a hurdle for users seeking to understand when and how money is being sent and received. To better communicate these processes, Web Monetization-enabled web extensions should give users direct feedback about how much money they are sending to a website in real time. A major goal should be to prevent a situation in which a user is unaware that they are giving money to a website.  
 
-## 4.  Opportunities Ahead
+## 4.  Recommendations
 
-Our research revealed three opportunities to expand web monetization adoption, including targeting developers as users, providing a standard of excellence for wallets and web extensions that integrate with the Web Monetization API, and creating better explanatory resources that address how to integrate the technology into websites and web applications. 
+Our research revealed a myriad of opportunities that can help expand web monetization adoption. To summarize, we've organized these recommendations into three target groups. To get the most of out of this section, take a moment to recognize what user group you fall into. If you are:
 
-### 4.1. Developers Are Users
+1. "For Streaming Platforms" is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
+2. "For Creators" is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
+3. "For Web Monetization implementers" is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
 
-A target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that incorporate these technologies. Going forward, however, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners (though it is still difficult for developers to understand how to create and manage payment pointers programmatically). 
+### 4.1. For Streaming Platforms
 
-### 4.2. Design Patterns
+*Automate the signup process*
 
-Every piece of existing software needs some amount of interface, content, and service design before it can be operational. This is no different in decentralization. What is different, however, is that decentralization technologies introduce concepts and scenarios that diverge from today’s dominant, centralized paradigms for how to make money on the web. Decentralized technologies require new, generalizable design patterns. As a result, we recommend the Web Monetization API work to provide a standard of excellence for wallets and web extensions that integrate with the protocol.
+Right now, integrating through the OAuth API in Coil is ad-hoc and manual.
+Mature implementations of API integration would have a self-serve user
+interface, with the ability to automatically enable OAuth and get a developer
+key as part of a user interface. This has the power to change a weeks or
+months-long process into hours or days.
 
-### 4.3. Explanatory Resources 
+*Better Wallet Support*
 
-To increase Web Monetization understanding and adoption, it is also important to create more explanatory resources including how the API is useful and meaningful for products and end-users alike, as well as what types of problems the innovative software helps solve. The creation of such resources will be a crucial step in growing the number of projects that understand how Web Monetization works, how it could be integrated into their products, and how it impacts their users. Many of the existing explanatory resources about Web Monetization are targeted towards developers and end users, resulting in a gap addressing how to integrate the technology into websites and web applications. 
+As noted in section 3.3, a "Wallet" is a new concept that requires new mental
+models on the behalf of creators. Currently, streaming platforms require creators
+to integrate with a wallet platform such as Uphold or GateHub before collecting
+money.
+
+Streaming platforms like Coil could make this easier by integrating the KYC
+process directly into their creator platform, so that the streaming platform
+users would not need to maintain multiple accounts. This could be achieved
+through a direct partnership with these companies that allows a seamless user
+experience.
+
+Creators and platform developers who are familiar with cryptocurrency may
+expect to be able to connect an existing browser wallet such as MetaMask, but
+that is not directly possible in Coil. Supporting this as an option may also
+grealy improve conversion rates for early adopters.
+
+*Creator-friendly documentation*
+
+Many of the existing explanatory resources about Web Monetization are targeted
+towards end users or developers, resulting in a gap addressing how to integrate
+the technology into existing creative platforms where creators are already
+making money. This could be improved with step-by-step instructions, including
+screen shots, on how to start making money quickly with existing
+platforms (such as YouTube and Twitch).
+
+*Web extension walkthrough*
+
+Any web extension needs thorough in-app walkthroughs to orient users on how to
+best use their service. It isn't entirely clear that the Coil web extension,
+for example, is primarly targeted at audience members, rather than creators. It
+could be made more clear why and how the web extension is needed immediately
+after installing it.
+
+### 4.2. For Creators
+
+*Add a payment pointer*
+
+The most straightforward way to start collecting money immediately is to add
+a payment pointer to your content. After signing up for Uphold or Gatehub, you
+are provided a payment pointer (sometimes called a "Wallet URL") which is
+a series of numbers and letters unique to you. If you add this payment pointer
+to the HTML of your website, you can start collecting money from users. If you
+are collecting money through an existing platform such as YouTube or Twitch,
+you can enable this payment through a platform such as Coil.
+
+*Lead with a choice*
+
+One option to improve adoption of Web Monetization for your users is to offer
+users a button that says “_Remove advertisements_” in either a banner ad or
+a blocking pop-up upon entering the website. After clicking the button, users
+would be sent to a screen that explains how to install the appropriate web
+extension or browser that supports web monetization. You can also provide
+different experience in your app depending on if the user has web monetization
+enabled or not. You can see this in Web Monetization's official Getting Started
+documentation.
+
+*Inform your audience*
+
+If you decide to adopt the Web Monetization, you can inform your users that
+they must download a web extension or browser to properly enable it. This can
+be done by providing a series of steps once the user has decided to opt-in to
+paying you. 
+
+For example, here is an [exerpt from COMPOST digital's
+instructions](https://one.compost.digital/support-us/#web-monetization):
+
+<div class="aside">
+
+    1. Visit https://coil.com/signup and signup.
+    2. Go to Settings and enter the "Membership" menu item.
+    3. Add your credit card and subscribe. It's $5 a month.
+    4. Download the extension for any browser of your choice.
+
+</div>
+
+
+### 4.3. For Web Monetization team
+
+*Developers Are Users*
+
+A target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that incorporate these technologies. Going forward, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners. However, it is still difficult for developers to understand how to create and manage payment pointers programmatically. 
+
+*Built-in tipping*
+
+If the Web Monetization API is to become more accessible, it needs support to
+be more directly integrated in popular browsers. The Web Monetization API could
+enable tipping directly in the web browser itself by presenting a button that
+would allow for a tip to be sent directly to the creator of the content
+currently on the page. Notably, Brave Browser has
+a [product](https://brave.com/tips/) like this that users can try today
+(although not very many websites currently support Brave tips at this time).
+Web Monetization has an opportunity to fill this gap by making tipping a part
+of web browsers for any creator that includes a payment pointer in their
+website.
+
+*Quality assurance*
+
+During the process of this research, we found that users had significant
+challenges signing up for GateHub accounts. The maintainers of the Web
+Monetization main website could create a process for monitoring the quality for
+any of the services linked on the main webpage. Services that are unable to
+complete user experience tests at a high standard should not be included as
+recommended services. 
 
 ## 5.  Conclusion
 
