@@ -40,7 +40,9 @@ adoption in the future.
 </div>
 
 
-## Table of Contents
+## Barriers to Adoption for Web Monetization: A Report
+
+### Table of Contents
 
 <span class="markdown-toc">
 
