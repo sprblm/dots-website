@@ -43,7 +43,7 @@ _With funding support from Grant for the Web._
 - [Recommendations](#4.-recommendations)
   - [For Streaming PLatforms](#4.1.-for-streaming-platforms)
   - [For Creators](#4.2.-for-creators)
-  - [For Web Monetization team](#4.3.-for-web-monetization-team)
+  - [For Implementers](#4.3.-for-implementers)
 - [Conclusion](#5.-conclusion)
 - [Acknowledgments](#6.-acknowledgments)
 
@@ -110,7 +110,9 @@ Four models of web monetization exist today: (1) advertisement, (2) tips, (3) su
 
 **(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertisement today is typically invasive from both user experience and privacy standpoints. 
 
-One option to address this issue is to offer users a button that says “_Remove advertisements_” in either a banner ad or a blocking pop-up upon entering the website. After clicking the button, users would be prompted to install the appropriate web extension or browser that supports web monetization.
+<div class="take-aways">
+In the futuer, we hope to see more websites offer a button that says “_Remove advertisements_” to enable Web Monetization. See more in the [recommendations section for creators](#4.2.-for-creators).
+</div>
 
 
 ![alt_text](image_3.png "image_tooltip")
@@ -118,7 +120,9 @@ One option to address this issue is to offer users a button that says “_Remove
 
 **(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. 
 
-To help facilitate this process even further, the Web Monetization API could enable this interaction directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. Notably, Brave Browser has a [product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time).
+<div class="take-aways">
+In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.2.-for-implementers).
+</div>
 
 
 ![alt_text](image_4.png "image_tooltip")
@@ -126,11 +130,20 @@ To help facilitate this process even further, the Web Monetization API could ena
 
 **(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). Subscriptions also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants -- which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
 
+<div class="take-aways">
+In the future, we hope to see subscriptions become easier to use as part of the Web Monetization API. See more in the [recommendations section for implementers](#4.2.-for-implementers).
+</div>
+
 
 ![alt_text](image_5.png "image_tooltip")
 
 
 **(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription. 
+
+<div class="take-aways">
+In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.2.-for-streaming-platforms).
+</div>
+
 
 ![alt_text](image_6.png "image_tooltip")
 
@@ -289,6 +302,31 @@ for example, is primarly targeted at audience members, rather than creators. It
 could be made more clear why and how the web extension is needed immediately
 after installing it.
 
+*Subscription transparency*
+
+In the user journey section and the accompanying zine, we outlined the many
+unanswered questions that creators and audience members have when setting up
+an account with a service such as Coil.  
+
+<div class="aside">
+1. How much money does a creator expect to receive over time?
+1. How much am I paying?
+1. When do I pay?
+1. How can I pay more or less?
+1. How can I refund a payment?
+1. How much money will a creator expect to receive over time?
+1. How much of my money is going to be spent at which websites?
+1. How can I further engage and retain my audience?
+</div>
+
+Streaming platforms should improve the transparency in the web extension and on
+the creator's profile. Platforms should provide real-time feedback in the
+streaming platform website (for creators) and in the web extension (for
+audience members). This would help improve trust in the service as well as the
+payment method. As we noted in 3.3., streaming is a new technology that
+requires new mental models, and a little information and real-time tactile
+feedback can help improve understanding.
+
 ### 4.2. For Creators
 
 *Add a payment pointer*
@@ -301,16 +339,15 @@ to the HTML of your website, you can start collecting money from users. If you
 are collecting money through an existing platform such as YouTube or Twitch,
 you can enable this payment through a platform such as Coil.
 
-*Lead with a choice*
+*No ads?*
 
-One option to improve adoption of Web Monetization for your users is to offer
-users a button that says “_Remove advertisements_” in either a banner ad or
-a blocking pop-up upon entering the website. After clicking the button, users
+Offer users a button that says “_Remove advertisements_” in either a banner ad or
+a blocking pop-up upon entering the website. After clicking the "_Remove advertisements_" button, users
 would be sent to a screen that explains how to install the appropriate web
-extension or browser that supports web monetization. You can also provide
-different experience in your app depending on if the user has web monetization
-enabled or not. You can see this in Web Monetization's official Getting Started
-documentation.
+extension or browser that supports web monetization. Then, offer a button for
+the user to return tothe page they were attempting to view. You can see an
+example of how to integrate this technically in Web Monetization's official
+Getting Started documentation.
 
 *Inform your audience*
 
@@ -332,7 +369,7 @@ instructions](https://one.compost.digital/support-us/#web-monetization):
 </div>
 
 
-### 4.3. For Web Monetization team
+### 4.3. For Implementers
 
 *Developers Are Users*
 
