@@ -31,7 +31,7 @@ _With funding support from Grant for the Web._
 - [Project Overview](#1.-project-overview)
   - [Introduction](#1.1.-introduction)
   - [Research Objectives](#1.2.-research-objectives)
-  - [Research Objectives](#1.3.-research-methodology)
+  - [Research Methodology](#1.3.-research-methodology)
   - [Who we are](#1.4.-who-we-are)
 - [Understanding Web Monetization](#2.-understanding-web-monetization)
   - [Four Design Patterns](#2.1.-four-design-patterns)
@@ -41,7 +41,7 @@ _With funding support from Grant for the Web._
   - [Centralized Financial Services](#3.2.-centralized-financial-services)
   - [Mental Models](#3.3.-mental-models)
 - [Recommendations](#4.-recommendations)
-  - [For Streaming PLatforms](#4.1.-for-streaming-platforms)
+  - [For Streaming Platforms](#4.1.-for-streaming-platforms)
   - [For Creators](#4.2.-for-creators)
   - [For Implementers](#4.3.-for-implementers)
 - [Conclusion](#5.-conclusion)
@@ -67,9 +67,11 @@ This project, supported by the [Grant for the Web](https://www.grantfortheweb.or
 
 Our expert research and design team came into this project with little understanding about the specifics of Web Monetization. Although this semi-outsider's perspective ultimately helped us see new user adoption pain points with fresh insight, it also meant that to begin we first needed to understand the ecosystem at a deeper level. Therefore, over the course of three months (November 2020 to February 2021) we carried out the following research objectives:
 
-*   Understand the roadblocks to adoption of decentralized identity and web monetization;
-*   Learn more about design patterns that already exist in the space; and
-*   Understand security threats, privacy threats, and other risks to end-users.
+<div class="take-aways">
+*   **Learn more about design patterns** that already exist in the space; and
+*   **Understand security threats**, privacy threats, and other risks to end-users.
+*   **Recommend ways around the roadblocks** to adoption of decentralized identity and web monetization;
+</div>
 
 
 ### 1.3. Research Methodology
@@ -172,30 +174,56 @@ Overall, our research revealed that web monetization is still in an early innova
 Based on our research, we mapped out five key points for both creators (payees) and the audience (payers) in the user journey towards web monetization adoption. A conversion funnel for Web Monetization shows the rate at which users (i.e., a payee or payer) complete each step of the journey. The conversion rate for onboarding to the Web Monetization API could be monitored by the flagship products that are invested in the success of the technology. Below, we’ve listed key questions that should be readily answered while users are attempting to integrate the technology.
 
 
-<div class="aside">
 
 1. _Understand why._ A user first needs to understand why they should invest their time (and ultimately money) into web monetization. In particular, a creator needs to understand why they should spend time signing up, and how doing so could impact their audience and economic return. Relevant questions include:
-    1. How much money does a creator expect to receive over time?
-    2. How does it benefit me (or my users?)
-    3. How does it compare to other payment methods?
-    4. How easy will it be to correctly report my income for tax purposes?
+
+<div class="aside">
+
+  1. How much money does a creator expect to receive over time?
+  2. How does it benefit me (or my users?)
+  3. How does it compare to other payment methods?
+  4. How easy will it be to correctly report my income for tax purposes?
+
+</div>
+
 2. _Create a wallet._ Once a user understands why they want to use web monetization, they next need to go through the process of creating a wallet. Most users will create a wallet on centralized services such as [Uphold](https://wallet.uphold.com/signup), as this is the [recommended method](https://webmonetization.org/docs/uphold/) on the Web Monetization website. At this point, relevant user questions include:
-    5. What happens if I lose my password?
-    6. Can I manage my own decentralized wallet (on a phone, laptop, web extension or all of the above)?
-    7. How can I manage payment pointers for users of my platform?
+
+<div class="aside">
+
+  5. What happens if I lose my password?
+  6. Can I manage my own decentralized wallet (on a phone, laptop, web extension or all of the above)?
+  7. How can I manage payment pointers for users of my platform?
+
+</div>
+
 3. _Enable web monetization._ To use web monetization, two sides of the relationship must be established: (1) the creator needs to integrate the payment pointer into their website, and (2) the reader needs to have a web monetization-enabled browser or web extension. For first-time users, this will involve installing and running the appropriate software, knowing how to finish the onboarding process, and then connecting their newly created wallet. In doing so, questions may include:
-    8. How will the user experience change if web monetization is enabled?
-    9. Will enabling web monetization slow down my website?
+
+<div class="aside">
+
+  8. How will the user experience change if web monetization is enabled?
+  9. Will enabling web monetization slow down my website?
+
+</div>
+
 4. _Make a payment._ Once web monetization is enabled and a wallet is connected to the browser, the user will be able to send payments. The browser only allows allocation of payments with the amount and the intended recipient (also called a payment pointer).
-    10. How much am I paying?
-    11. When do I pay?
-    12. How can I pay more or less?
-    13. How can I refund a payment?
+
+<div class="aside">
+
+  10. How much am I paying?
+  11. When do I pay?
+  12. How can I pay more or less?
+  13. How can I refund a payment?
+
+</div>
+
 5. _Retention and sustainability._ Upon completion of the prior four steps, a user’s concern turns toward the future. For web monetization adoption to increase (and for existing users to be retained and sustained), users must have a general understanding of what using web monetization looks like long term. Unfortunately, however, we found a significant lack of attention to this detail in the existing ecosystem. It is not easy for users to find answer to important questions such as:
-    14. How much money will a creator expect to receive over time?
-    15. How much of my money is going to be spent at which websites?
-    16. Is this worth my money, or should I allocate my resources in a different way (i.e., a subscription to the creator)?
-    17. How can I further engage and retain my audience?
+
+<div class="aside">
+
+  14. How much money will a creator expect to receive over time?
+  15. How much of my money is going to be spent at which websites?
+  16. Is this worth my money, or should I allocate my resources in a different way (i.e., a subscription to the creator)?
+  17. How can I further engage and retain my audience?
 
 </div>
 
@@ -245,9 +273,10 @@ A mental model is an explanation or representation of an individual's thought pr
 
 Our research revealed a myriad of opportunities that can help expand web monetization adoption. To summarize, we've organized these recommendations into three target groups. To get the most of out of this section, take a moment to recognize what user group you fall into. If you are:
 
-1. "For Streaming Platforms" is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
-2. "For Creators" is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
-3. "For Web Monetization implementers" is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
+  - [For Streaming Platforms](#4.1.-for-streaming-platforms) is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
+  - [For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
+  - [For Implementers](#4.3.-for-implementers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
+
 
 ### 4.1. For Streaming Platforms
 
@@ -301,23 +330,30 @@ unanswered questions that creators and audience members have when setting up
 an account with a service such as Coil.  
 
 <div class="aside">
-1. How much money does a creator expect to receive over time?
-1. How much am I paying?
-1. When do I pay?
-1. How can I pay more or less?
-1. How can I refund a payment?
-1. How much money will a creator expect to receive over time?
-1. How much of my money is going to be spent at which websites?
-1. How can I further engage and retain my audience?
+
+  1. How much money does a creator expect to receive over time
+  2. How much am I paying?
+  3. When do I pay?
+  4. How can I pay more or less? 
+  5. How can I refund a payment? 
+  6. How much money will a creator expect to receive over time? 
+  7. How much of my money is going to be spent at which websites? 
+  8. How can I further engage and retain my audience?
+
 </div>
 
 Streaming platforms should improve the transparency in the web extension and on
 the creator's profile. Platforms should provide real-time feedback in the
 streaming platform website (for creators) and in the web extension (for
-audience members). This would help improve trust in the service as well as the
-payment method. As we noted in 3.3., streaming is a new technology that
-requires new mental models, and a little information and real-time tactile
-feedback can help improve understanding.
+audience members). This would help improve trust in the service as well as the Web
+Monetization API. 
+
+As we noted in 3.3., streaming is a new technology that requires new mental
+models, and real-time tactile feedback can help improve understanding. To
+better communicate these mental models, Web Monetization-enabled web extensions
+should give users direct feedback about how much money they are sending to
+a website in real time. A major goal should be to prevent a situation in which
+a user is unaware that they are giving money to a website.
 
 ### 4.2. For Creators
 
@@ -353,10 +389,10 @@ instructions](https://one.compost.digital/support-us/#web-monetization):
 
 <div class="aside">
 
-    1. Visit https://coil.com/signup and signup.
-    2. Go to Settings and enter the "Membership" menu item.
-    3. Add your credit card and subscribe. It's $5 a month.
-    4. Download the extension for any browser of your choice.
+  1. Visit https://coil.com/signup and signup.
+  2. Go to Settings and enter the "Membership" menu item.
+  3. Add your credit card and subscribe. It's $5 a month.
+  4. Download the extension for any browser of your choice.
 
 </div>
 
