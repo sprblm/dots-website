@@ -107,7 +107,7 @@ var state = {
   page: 0,
   folded: true,
   speed: 0.35,
-  zoom: 1.3,
+  zoom: 1,
   pan: [0,0,0],
   prevMouse: [-1,-1]
 }
@@ -124,10 +124,6 @@ window.addEventListener('mousemove', function (ev) {
   }
   state.prevMouse[0] = ev.clientX
   state.prevMouse[1] = ev.clientY
-})
-window.addEventListener('wheel', function (ev) {
-  state.zoom = clamp(0.25,1.5,state.zoom + ev.deltaY*0.01)
-  frame()
 })
 
 var camera = (function () {
