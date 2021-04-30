@@ -22,14 +22,14 @@ const getRelatedPatterns = (data) => {
   }
 };
 
+/**
+ * Return the category name given pattern data, which contains the category slug
+ */
 const categoryName = (data) => {
   const category = data.collections.topic.find(
     (t) => t.data.slug === data.topic
   );
   if (category == null) {
-    // console.error(
-    //   `Category ${data.topic} for pattern ${data.title} not found.`
-    // );
     return `Category ${data.topic} not found`;
   }
   return category.data.title;
