@@ -1,0 +1,110 @@
+---
+layout: layouts/website-contributions.njk
+title: Nunjucks Style Guide
+body_class: style-guide
+---
+
+<section class="max-w-xl block">
+  <h1>Nunjucks Style Guide</h1>
+  <p>This page provides examples that can be copied when creating new content for Nunjucks-formatted pages. Find the source code at:
+    </p>
+  <pre><a href="http://github.com/simplysecure/dots-website/blob/master/site/contribute/dots-website/style-guide-nunjucks.njk">/site/contribute/dots-website/style-guide-nunjucks.njk</a></pre>
+  <p>
+    <a class="link-reference" href="../style-guide-markdown">Markdown Style Guide</a>
+  </p>
+</section>
+
+<section>
+  <div>
+    <h2>Typography</h2>
+  </div>
+
+  <div class="content">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <p>Paragraph</p>
+
+    <p>Use the <span class="font-mono text-highlight">content</span> css-class on a container to restrict the width of text and create readable spacing between consecutive paragraphs, lists, etc.</p>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h2>Buttons</h2>
+  </div>
+
+  <div>
+    <p>
+      <a class="btn">Button</a>
+      <a class="btn btn-primary">Primary button</a>
+      <a class="btn btn-secondary">Secondary button</a>
+    </p>
+    <p>
+      <a class="btn btn-pill">Pill button</a>
+      <a class="btn btn-sm">Small button</a>
+      <a class="btn btn-lg">Large button</a>
+    </p>
+    <p>
+      <div class="button-group">
+        <a class="btn">Button 1</a>
+        <a class="btn">Button 2</a>
+        <a class="btn">Button 3</a>
+      </div>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h2>Links</h2>
+  </div>
+
+  <div>
+    <h3>Linking to related content</h3>
+    <p>
+      <a class="link-reference">Reference</a>
+    </p>
+
+    <h3>Paging and navigation in hierarchies</h3>
+    <div class="flex flex-row justify-between w-full">
+
+      <a class="link-prev" href="#">
+        <img role="presentation" src="/images/icons/back.svg" />
+        <div>Previous</div>
+      </a>
+
+      <a class="link-next" href="#">
+        <div>Next</div>
+        <img src="/images/icons/forward.svg" />
+      </a>
+
+    </div>
+
+    <div class="flex flex-row justify-between w-full">
+
+      <a class="link-prev link-small" href="#">
+        <img role="presentation" src="/images/icons/back.svg" />
+        <div>Previous</div>
+      </a>
+
+      <a class="link-next link-small" href="#">
+        <div>Next</div>
+        <img src="/images/icons/forward.svg" />
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2>Pattern preview</h2>
+    </div>
+
+    <div>
+      <p class="mb-12">This works best when the page data includes the pattern that you want to preview.</p>
+      {% patternPreview collections.patternsByTitle[0] %}
+
+    </div>
+  </section>

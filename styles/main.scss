@@ -9,8 +9,9 @@
 // Import Tailwind components
 @tailwind components;
 
-// Import our custom component styles
+// Import our custom component and page styles
 @import "components/all";
+@import "pages/all";
 
 // Import Tailwind utilities
 // TailwindCSS recommends leaving utilities till last to ensure they aren't overwritten.

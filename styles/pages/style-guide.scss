@@ -1,0 +1,32 @@
+#style-guide {
+  section {
+    @apply flex flex-col mb-32;
+
+    // Introduction
+    &:first-of-type {
+      @apply block max-w-xl;
+    }
+
+    @screen lg {
+      @apply flex-row;
+    }
+
+    // Heading
+    div:nth-child(1) {
+      @screen lg {
+        @apply w-1/3 pr-12;
+
+        h2 {
+          @apply mt-0;
+        }
+      }
+    }
+
+    // Content
+    div:nth-child(2) {
+      & > :first-child {
+        @apply mt-0;
+      }
+    }
+  }
+}

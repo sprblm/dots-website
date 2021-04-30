@@ -68,6 +68,14 @@ ol + p {
   }
 }
 
+pre {
+  @apply my-8 pl-4 text-secondary;
+}
+
+code {
+  @apply text-secondary;
+}
+
 .content {
   p,
   ul,

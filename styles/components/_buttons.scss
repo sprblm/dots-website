@@ -1,27 +1,4 @@
 //==========  Buttons ==========//
-// a.button,
-// .buttons a {
-//   display: inline-block;
-//   @apply border-2 border-white py-1 px-2 rounded-lg text-highlight;
-//   font-weight: bold;
-//   border-width: 1px;
-
-//   @screen md {
-//     @apply py-2 px-4;
-//   }
-// }
-
-// .buttons {
-//   @apply my-6;
-
-//   a {
-//     @apply mr-1;
-
-//     @screen md {
-//       @apply mr-2;
-//     }
-//   }
-// }
 
 .button-group {
   @apply flex flex-row;

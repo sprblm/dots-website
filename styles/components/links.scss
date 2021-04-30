@@ -55,7 +55,7 @@
   }
 
   &.link-small {
-    div:last-child {
+    :last-child {
       @apply w-8 h-8;
     }
   }
@@ -78,7 +78,7 @@
   }
 
   &.link-small {
-    div:first-child {
+    :first-child {
       @apply w-8 h-8;
     }
   }
