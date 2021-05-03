@@ -27,7 +27,7 @@ adoption in the future.
 
 ## Dear Decent, Money in my browser!?? 
 
-*33 Questions I have about Web Monetization*
+*32 Questions I have about Web Monetization*
 
 
 <div class="content">
@@ -41,6 +41,31 @@ adoption in the future.
 
 
 ## Barriers to Adoption for Web Monetization: A Report
+
+### Summary
+
+Our research into the current barriers to adoption for the Web Monetization API revealed multiple opportunities to help expand adoption and mitigate end-user issues. If incorporated, the recommendations offered below would help reduce user confusion, increase transparency, and improve overall retention rates. The recommendations are organized by target user groups.
+
+_Streaming platforms such as Coil should_:
+
+*   **Enhance subscription transparency.** Provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members). 
+*   **Provide better wallet support.** Support a more diverse set of options and reduce dependency on a particular type of financial wallet platform. 
+*   **Add creator-friendly documentation.** Provide step-by-step instructions, including screenshots, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
+*   **Include a web extension walkthrough.** Such a walkthrough could be displayed immediately after installation to help explain why and how the web extension is needed.
+*   **Automate the sign-up process.** Implement a self-serve user interface with the ability for users to automatically enable OAuth and receive a developer key as part of a user interface.
+
+_Creators who want to use Web Monetization should_:
+
+*   **Add a payment pointer to their website.** After signing up, creators are provided with a payment pointer -- sometimes called a “Wallet URL” -- which is a series of numbers and letters unique to the creator. The creator should add this to the HTML of their website to start using Web Monetization.
+*   **Provide an ad-free option.** Offer users a button that provides the option to “_Remove advertisements_” as either a banner ad or a blocking pop-up.
+*   **Inform their audience.** Explain how to install the appropriate web extension or browser that supports web monetization by using a step-by-step process and links.
+
+_Maintainers of the Web Monetization API and Interledger Protocol should_:
+
+
+*   **Remember developers are users.** Mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency. 
+*   **Design for built-in tipping.** Enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page.
+*   **Test recommended services.** Creating a process for monitoring the quality for any of the services linked to on the main Web Monetization webpage** **([https://webmonetization.org/](https://webmonetization.org/)).
 
 ### Table of Contents
 
@@ -96,18 +121,17 @@ Our expert research and design team came into this project with little understan
 
 Our research strategy was to first map the ecosystem of stakeholders, and then pinpoint key organizations with significant influence in the space. After completing this initial task, we chose to interview those who had already performed significant on-the-ground research themselves, in order to capture a high-level perspective of their various insights. This approach allowed us to leverage the deep-seated knowledge of these experts as we moved forward with our work. 
 
-Next, we created a stakeholder map for Web Monetization as well as a slightly larger group more broadly defined -- including not only the existing Browser API, but also projects and products that are interested in or impacted by the monetization of websites. This important step allowed us to learn from various approaches in adjacent domains and apply lessons learned. 
+Next, we created a stakeholder map for Web Monetization as well as a slightly larger group more broadly defined -- including not only the existing Browser API, but also projects and products that are interested in or impacted by the monetization of websites. This important step allowed us to learn from various approaches in adjacent domains and apply lessons learned as we moved forward and prepared our analysis and recommendations. 
 
 Core stakeholders (i.e., those who have the most direct influence and control over web monetization) include web browsers, large platforms, and media companies, as well as those who are creating and consuming content on the web. The [Brave](https://brave.com/) web browser (which has tested a new form of payment directly through the browser), and [MetaMask](https://metamask.io/) (a web extension that manages cryptocurrencies and interfaces payments with websites) were included as direct stakeholders in this exercise. 
 
 
-![](image_1.png)
 
+![](image_1.png)
 
 After organizing the core, direct, and indirect stakeholders, we then mapped their relative interests against the power they have over the adoption of web monetization policies and practices. This methodology enabled us to better understand who we should focus on interviewing as part of our research process.
 
 ![](image_2.png)
-
 
 The final phase of qualitative research involved interviewing 12 stakeholders, ranging from web monetization experts to end-user creators with no knowledge of web monetization. We also conducted a workshop for eight designers and product managers with experience in web monetization, decentralized technologies, and web extensions. The workshop focused on challenges that designers face when creating usable decentralized technologies, and the gap between user and developer mental models. This gap is a key challenge to the growth and adoption of the Web Monetization API. 
 
@@ -128,25 +152,23 @@ Ngọc sees design as an intervention to asymmetrical power relations. As a desi
 
 There are four dominant design patterns for using web monetization today: (1) advertisement, (2) tips, (3) subscriptions, and (4) streaming. Each is discussed below.
 
-**(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertisement today is typically invasive from both user experience and privacy standpoints. 
+**(1) Advertisement** is the traditional way to monetize a website. The benefits are considerable, as creators get a reasonable and stable expectation of payment over time and per pageview. As noted above, however, advertising today is typically invasive from both the user experience and privacy standpoints.
 
-* _In the future, we hope to see more websites offer a button that says “_Remove advertisements_” to enable Web Monetization. See more in the [recommendations section for creators](#4.2.-for-creators)._
-
+  * Design Pattern Recommendation: _In the future, we hope to see more websites offer a button that says “Remove advertisements” to enable Web Monetization. See more in the [recommendations section for creators](#4.2.-for-creators)._
 
 ![alt_text](image_3.png "image_tooltip")
 
 
-**(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their  practice by using a service that makes it easy for users to make a donation. 
+**(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their practice by using a service that makes it easy for users to make a donation.
 
-* _In the future, we hope to see more browsers implementing tip buttons directly. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
-
+  * Design Pattern Recommendation: _In the future, we hope to see more browsers directly implementing tip buttons. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
 
 ![alt_text](image_4.png "image_tooltip")
 
 
-**(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). Subscriptions also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants -- which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
+**(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). They also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants – which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
 
-* _In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API's developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
+  * Design Pattern Recommendation: _In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API’s developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
 
 
 ![alt_text](image_5.png "image_tooltip")
@@ -154,7 +176,7 @@ There are four dominant design patterns for using web monetization today: (1) ad
 
 **(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription. 
 
-* _In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms)._
+  *  Design Pattern Recommendation: _In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms)._
 
 
 ![alt_text](image_6.png "image_tooltip")
