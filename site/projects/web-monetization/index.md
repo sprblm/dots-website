@@ -355,7 +355,7 @@ Given the amount and frequency of these questions, streaming platforms should wo
 As noted above in section 3.3. (Mental Models), streaming is a new technology that requires new mental models. Providing real-time tactile feedback can help improve understanding and allows users to feel in control, take appropriate actions to reach their goal, and ultimately trust the brand ([NNGroup](https://www.nngroup.com/articles/visibility-system-status/)). Web Monetization-enabled web extensions should therefore give users direct feedback about how much money they are sending to a website in real time.
 
 
-![Design pattern for streaming feedback](images/image_6.png "Design pattern for streaming feedback")
+![Design pattern for streaming feedback](image_6.png "Design pattern for streaming feedback")
 
 
 **_Provide better wallet support_**
@@ -370,7 +370,7 @@ Many of the existing explanatory resources about Web Monetization are targeted t
 
 **_Include a web extension walkthrough_**
 
-![Design pattern for web extension walkthroughs](images/image_7.png "Design pattern for web extension walkthroughs")
+![Design pattern for web extension walkthroughs](image_7.png "Design pattern for web extension walkthroughs")
 
 All web extensions need thorough in-app walkthroughs to orient users on how to best use the service. Providing a web extension walkthrough would help clarify certain existing points of confusion, such as the fact that the web extension is primarily targeted at audience members -- not creators. This walkthrough could be displayed immediately after installation to help explain why and how the web extension is needed.
 
