@@ -1,0 +1,36 @@
+
+.hero-section  {
+    margin-top: 0px;
+    padding-top: 68px;
+    padding-right: 24px;
+    background-image: url(gftw-hero.png);
+    background-image: url(gftw-hero.png);
+    background-color: transparent;
+    background-position: 100% 50%, 0px 0px;
+    background-size: auto 460px, auto;
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, scroll;
+  }
+
+
+.hero-section-header {
+  max-width: 531px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+      padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero-section {
+    padding-right: 0px;
+  }
+  .hero-section-header {
+    max-width: inherit;
+    background-color: rgb(26 32 44 / 70%);
+  }
+}

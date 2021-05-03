@@ -4,31 +4,35 @@ meta_title: Web Monetization
 body_class: report
 title: Barriers to Adoption for Web Monetization
 ---
+<div class="hero-section">
 
-# Barriers to Adoption for Web Monetization
+<div class="hero-section-header">
+  <h1>Barriers to <br>Adoption for <br>Web Monetization</h1>
 
+  <p> 
+    Karissa McKelvey and Ngọc Triệu
+  <br>
+    <a href="https://simplysecure.org">Simply Secure</a>
+  </p>
 
-Karissa McKelvey and Ngọc Triệu, Simply Secure
+  <p><i>With funding support from <a href="https://grantfortheweb.org">Grant for the Web</a></i></p>
+</div>
 
-<a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
+</div>
 
-_With funding support from Grant for the Web._
-
-
-The innovative Web Monetization API has the potential to create a viable
-alternative to targeted advertising as a means for website content creators to
-generate revenue. Yet despite this promising possibility, confusion and
-significant barriers to adoption remain on behalf of both the sender and
-receiver of payments. In response, this report and accompanying zine work first
-to highlight common questions and challenges encountered by end users, and then
+The Web Monetization API has the potential to create an alternative to targeted
+advertising. Yet despite this promising possibility, confusion and significant
+barriers to adoption remain on behalf of both the sender and receiver of
+payments. In response, this report and accompanying zine work first to
+highlight common questions and challenges encountered by end users, and then
 offer a set of recommendations for opportunities to expand web monetization
 adoption in the future.
 
 
-## Dear Decent, Money in my browser!?? 
+
+### Dear Decent, Money in my browser!?? 
 
 *32 Questions I have about Web Monetization*
-
 
 <div class="content">
   <a class="link-reference" href="/zines/web-monetization">View full-sized in your browser</a>
@@ -40,9 +44,14 @@ adoption in the future.
 </div>
 
 
-## Barriers to Adoption for Web Monetization: A Report
+## Barriers to Adoption for Web Monetization
 
-### Summary
+
+<a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
+
+<a class="link-reference" href="/files/DOTS-webmon-report.txt">Download the PDF</a>
+
+### Report Summary
 
 Our research into the current barriers to adoption for the Web Monetization API revealed multiple opportunities to help expand adoption and mitigate end-user issues. If incorporated, the recommendations offered below would help reduce user confusion, increase transparency, and improve overall retention rates. The recommendations are organized by target user groups.
 
@@ -65,10 +74,11 @@ _Maintainers of the Web Monetization API and Interledger Protocol should_:
 
 *   **Remember developers are users.** Mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency. 
 *   **Design for built-in tipping.** Enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page.
-*   **Test recommended services.** Creating a process for monitoring the quality for any of the services linked to on the main Web Monetization webpage** **([https://webmonetization.org/](https://webmonetization.org/)).
+*   **Test recommended services.** Creating a process for monitoring the quality for any of the services linked to on the main [Web Monetization webpage](https://webmonetization.org/).
 
 ### Table of Contents
 
+<div class="gftw-hero">
 <span class="markdown-toc">
 
 - [Project Overview](#1.-project-overview)
@@ -78,7 +88,7 @@ _Maintainers of the Web Monetization API and Interledger Protocol should_:
   - [Who we are](#1.4.-who-we-are)
 - [Understanding Web Monetization](#2.-understanding-web-monetization)
   - [Four Design Patterns](#2.1.-four-design-patterns)
-  - [Case Studies](#2.2.-the-four-models)
+  - [Case Studies](#2.2.-case-studies)
 - [Challenges](#3.-challenges)
   - [User Journey](#3.1.-user-journey)
   - [Centralized Financial Services](#3.2.-centralized-financial-services)
@@ -91,6 +101,7 @@ _Maintainers of the Web Monetization API and Interledger Protocol should_:
 - [Acknowledgments](#6.-acknowledgments)
 
 </span>
+</div>
 
 
 ## 1.  Project Overview 
@@ -160,14 +171,14 @@ There are four dominant design patterns for using web monetization today: (1) ad
 
 **(2) Tips** are a common and effective method to solicit money in physical spaces. The tip jar concept is therefore one that many websites have incorporated into their practice by using a service that makes it easy for users to make a donation.
 
-  * Design Pattern Recommendation: _In the future, we hope to see more browsers directly implementing tip buttons. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
+  * Design Pattern Recommendation: _In the future, we hope to see more browsers directly implementing tip buttons. See more in the [recommendations section for maintainers](#4.3.-for-maintainers)._
 
 ![alt_text](image_4.png "image_tooltip")
 
 
 **(3) Subscriptions** allow creators to predict a stable amount of income per cycle (typically monthly). They also enable creators to benefit from a sustained creator-reader relationship, by which creators are better able to understand who their subscribers are and what their audience wants – which helps websites grow and retain their subscription bases. Notably, subscription relationships can flourish when audience members can have the interactions they expect. For example, some people may be less likely to create a subscription if they are forced to give up personal information or receive too many emails; while others may be less likely to renew a subscription if they feel disconnected from the creator.
 
-  * Design Pattern Recommendation: _In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API’s developer documentation. See more in the [recommendations section for implementers](#4.3.-for-implementers)._
+  * Design Pattern Recommendation: _In the future, we hope to see subscriptions become easier to create as part of the Web Monetization API’s developer documentation. See more in the [recommendations section for maintainers](#4.3.-for-maintainers)._
 
 
 ![alt_text](image_5.png "image_tooltip")
@@ -314,7 +325,7 @@ Our research revealed a myriad of opportunities that can help expand web monetiz
 
   - [4.1. For Streaming Platforms](#4.1.-for-streaming-platforms) is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
   - [4.2. For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section. 
-  - [4.3. For Implementers](#4.3.-for-implementers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
+  - [4.3. For Maintainers](#4.3.-for-maintainers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
 
 
 ### 4.1. For Streaming Platforms
@@ -382,7 +393,7 @@ For example, here is an [excerpt from COMPOST digital’s instructions](https://
 
 <div class="aside"> 
 
-  1. Visit https://coil.com/signup and signup.
+  1. Visit [Coil](https://coil.com/signup) and signup.
   2. Go to Settings and enter the "Membership" menu item.
   3. Add your credit card and subscribe. It's $5 a month.
   4. Download the extension for any browser of your choice.
@@ -412,6 +423,6 @@ Overall, our research shows that the Web Monetization API retains real interest 
 
 ### 6. Acknowledgments
 
-Thanks to Grant for the Web and Simply Secure for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
+Thanks to [Grant for the Web](https://www.grantfortheweb.org/) and [Simply Secure](https://simplysecure.orga for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
 
 
