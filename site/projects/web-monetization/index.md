@@ -427,6 +427,6 @@ Overall, our research shows that the Web Monetization API retains real interest 
 
 ### 6. Acknowledgments
 
-Thanks to [Grant for the Web](https://www.grantfortheweb.org/) and [Simply Secure](https://simplysecure.orga for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
+Thanks to [Grant for the Web](https://www.grantfortheweb.org/) and [Simply Secure](https://simplysecure.org) a for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
 
 
