@@ -121,10 +121,14 @@ This project, supported by the [Grant for the Web](https://www.grantfortheweb.or
 
 Our expert research and design team came into this project with little understanding about the specifics of Web Monetization. Although this semi-outsider's perspective ultimately helped us see new user adoption pain points with fresh insight, it also meant that to begin we first needed to understand the ecosystem at a deeper level. Therefore, over the course of three months (November 2020 to February 2021) we carried out the following research objectives:
 
+<br>
+
 <div class="take-aways">
-*   **Learn more about design patterns** that already exist in the space; and
-*   **Understand security threats**, privacy threats, and other risks to end-users.
-*   **Recommend ways around the roadblocks** to adoption of decentralized identity and web monetization;
+
+  *   **Learn more about design patterns** that already exist in the space; and
+  *   **Understand security threats**, privacy threats, and other risks to end-users.
+  *   **Recommend ways around the roadblocks** to adoption of decentralized identity and web monetization;
+
 </div>
 
 
