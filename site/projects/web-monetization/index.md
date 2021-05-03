@@ -86,7 +86,7 @@ _Maintainers of the Web Monetization API and Interledger Protocol should_:
 - [Recommendations](#4.-recommendations)
   - [For Streaming Platforms](#4.1.-for-streaming-platforms)
   - [For Creators](#4.2.-for-creators)
-  - [For Implementers](#4.3.-for-implementers)
+  - [For Maintainers](#4.3.-for-maintainers)
 - [Conclusion](#5.-conclusion)
 - [Acknowledgments](#6.-acknowledgments)
 
@@ -126,12 +126,11 @@ Next, we created a stakeholder map for Web Monetization as well as a slightly la
 Core stakeholders (i.e., those who have the most direct influence and control over web monetization) include web browsers, large platforms, and media companies, as well as those who are creating and consuming content on the web. The [Brave](https://brave.com/) web browser (which has tested a new form of payment directly through the browser), and [MetaMask](https://metamask.io/) (a web extension that manages cryptocurrencies and interfaces payments with websites) were included as direct stakeholders in this exercise. 
 
 
-
-![](image_1.png)
+![Stakeholder brainstorm map](image_1.png)
 
 After organizing the core, direct, and indirect stakeholders, we then mapped their relative interests against the power they have over the adoption of web monetization policies and practices. This methodology enabled us to better understand who we should focus on interviewing as part of our research process.
 
-![](image_2.png)
+![Stakeholder power vs interest map](image_2.png)
 
 The final phase of qualitative research involved interviewing 12 stakeholders, ranging from web monetization experts to end-user creators with no knowledge of web monetization. We also conducted a workshop for eight designers and product managers with experience in web monetization, decentralized technologies, and web extensions. The workshop focused on challenges that designers face when creating usable decentralized technologies, and the gap between user and developer mental models. This gap is a key challenge to the growth and adoption of the Web Monetization API. 
 
@@ -140,7 +139,7 @@ The final phase of qualitative research involved interviewing 12 stakeholders, r
 
 [Karissa McKelvey](https://simplysecure.org/who-we-are/karissa.html) and [Ngọc Triệu](https://simplysecure.org/who-we-are/ngoc.html) are core team members of [Simply Secure](https://simplysecure.org/), an international team of experts in research, design, software development, and product management with an emphasis on privacy, security, transparency, and design ethics. Through additional support from a diverse set of advisors and partners, Simply Secure helps practitioners design technology that centers and protects vulnerable populations by providing capacity-building, open research support, and community convening. 
 
- \
+
 Karissa researches technical architecture design and its impact on usability, safety, and resilience. Her contributions to decentralized applications are relied on by at-risk users including human and environmental rights defenders, journalists, and civil society activists. Her background is in political sociology and data science. 
 
 Ngọc sees design as an intervention to asymmetrical power relations. As a design researcher, she imagines the futures of the world through lenses such as decoloniality and decentralization. Ngọc is passionate about user advocacy, co-creation, and equal access to knowledge(s). Her background is in design management, history, and cultures. 
@@ -320,114 +319,68 @@ Our research revealed a myriad of opportunities that can help expand web monetiz
 
 ### 4.1. For Streaming Platforms
 
-*Automate the signup process*
+**_Enhance subscription transparency_**
 
-Right now, integrating through the OAuth API in Coil is ad-hoc and manual.
-Mature implementations of API integration would have a self-serve user
-interface, with the ability to automatically enable OAuth and get a developer
-key as part of a user interface. This has the power to change a weeks or
-months-long process into hours or days.
-
-*Better Wallet Support*
-
-As noted in section 3.3, a "Wallet" is a new concept that requires new mental
-models on the behalf of creators. Currently, streaming platforms require creators
-to integrate with a wallet platform such as Uphold or GateHub before collecting
-money.
-
-Streaming platforms like Coil could make this easier by integrating the KYC
-process directly into their creator platform, so that the streaming platform
-users would not need to maintain multiple accounts. This could be achieved
-through a direct partnership with these companies that allows a seamless user
-experience.
-
-Creators and platform developers who are familiar with cryptocurrency may
-expect to be able to connect an existing browser wallet such as MetaMask, but
-that is not directly possible in Coil. Supporting this as an option may also
-grealy improve conversion rates for early adopters.
-
-*Creator-friendly documentation*
-
-Many of the existing explanatory resources about Web Monetization are targeted
-towards end users or developers, resulting in a gap addressing how to integrate
-the technology into existing creative platforms where creators are already
-making money. This could be improved with step-by-step instructions, including
-screenshots, on how to start making money quickly with existing
-platforms (such as YouTube and Twitch).
-
-*Web extension walkthrough*
-
-Any web extension needs thorough in-app walkthroughs to orient users on how to
-best use their service. It isn't entirely clear that the Coil web extension,
-for example, is primarly targeted at audience members, rather than creators. It
-could be made more clear why and how the web extension is needed immediately
-after installing it.
-
-*Subscription transparency*
-
-In the user journey section and the accompanying zine, we outlined the many
-unanswered questions that creators and audience members have when setting up
-an account with a service such as Coil.  
+In this report’s user journey section and the accompanying zine, we outlined several of the many unanswered questions that creators and audience members routinely have when setting up an account with a service such as Coil. These questions include:
 
 <div class="aside">
 
-  1. How much money does a creator expect to receive over time
-  2. How much am I paying?
-  3. When do I pay?
-  4. How can I pay more or less? 
-  5. How can I refund a payment? 
-  6. How much money will a creator expect to receive over time? 
-  7. How much of my money is going to be spent at which websites? 
-  8. How can I further engage and retain my audience?
+  1. How much am I paying?
+  2. When do I pay?
+  3. How can I pay more or less? 
+  4. How can I refund a payment? 
+  5. How much money will a creator expect to receive over time? 
+  6. How much of my money is going to be spent at which websites? 
+  7. How can I further engage and retain my audience?
 
 </div>
 
-Streaming platforms should improve the transparency in the web extension and on
-the creator's profile. Platforms should provide real-time feedback in the
-streaming platform website (for creators) and in the web extension (for
-audience members). This would help improve trust in the service as well as the Web
-Monetization API. 
+Given the amount and frequency of these questions, streaming platforms should work to improve transparency in the web extension and on the creator’s profile. In doing so, platforms should provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members). These changes would help improve trust in the service as well as the Web Monetization API.
 
-As we noted in 3.3., streaming is a new technology that requires new mental
-models, and real-time tactile feedback can help improve understanding. To
-better communicate these mental models, Web Monetization-enabled web extensions
-should give users direct feedback about how much money they are sending to
-a website in real time. A major goal should be to prevent a situation in which
-a user is unaware that they are giving money to a website.
+As noted above in section 3.3. (Mental Models), streaming is a new technology that requires new mental models. Providing real-time tactile feedback can help improve understanding and allows users to feel in control, take appropriate actions to reach their goal, and ultimately trust the brand ([NNGroup](https://www.nngroup.com/articles/visibility-system-status/)). Web Monetization-enabled web extensions should therefore give users direct feedback about how much money they are sending to a website in real time.
+
+
+![Design pattern for streaming feedback](images/image6.png "Design pattern for streaming feedback")
+
+
+**_Provide better wallet support_**
+
+As noted in section 3.3 (Mental Models), a “wallet” is another new technology that requires new mental models on the behalf of creators. All streaming platforms currently require creators to integrate with a wallet platform such as Uphold or GateHub before collecting money. This required step, however, is not always easy for new users to accomplish. The KYC (“Know Your Customer”) process can be difficult and time-consuming to complete, and requires giving up a significant amount of personal information to a third-party platform. Many creators do not want to maintain multiple online accounts to receive and manage their money, and many users may reasonably expect to be able to connect an existing wallet hosted with a popular financial platform like Paypal, Square, or MetaMask -- but this option is not available in the currently available Web Monetization services.
+
+Streaming platforms should therefore work to support a more diverse set of options and reduce dependency on a particular type of financial wallet platform, or even integrate the KYC process directly. This efficiency-enhancing change would improve adoption drastically, especially with creators that are busy or already make an income online, and could be achievable through a direct partnership with financial companies.
+
+**_Add creator-friendly documentation_**
+
+Many of the existing explanatory resources about Web Monetization are targeted towards end users or developers, resulting in a lack of information explaining how to integrate the technology into existing creative platforms where creators are already making money. This knowledge gap could be addressed by the formulation of creator-friendly documentation that provides step-by-step instructions, including screenshots, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
+
+**_Include a web extension walkthrough_**
+
+![Design pattern for web extension walkthroughs](images/image7.png "Design pattern for web extension walkthroughs")
+
+All web extensions need thorough in-app walkthroughs to orient users on how to best use the service. Providing a web extension walkthrough would help clarify certain existing points of confusion, such as the fact that the web extension is primarily targeted at audience members -- not creators. This walkthrough could be displayed immediately after installation to help explain why and how the web extension is needed.
+
+**_Automate the sign-up process_**
+
+Coil users currently looking to integrate their application through the OAuth API are required to go through an ad-hoc and manual process. In the future, mature implementations of API would ideally have a self-serve user interface, with the ability to automatically enable OAuth and get a developer key as part of a user interface. Implementing this recommendation has the power to change a weeks or months-long process into mere hours or at most days. There should also be better documentation online for when and how (including when _not _to) use the OAuth API.
+
 
 ### 4.2. For Creators
 
-*Add a payment pointer*
+**_Add a payment pointer to your website_**
 
-The most straightforward way to start collecting money immediately is to add
-a payment pointer to your content. After signing up for Uphold or Gatehub, you
-are provided a payment pointer (sometimes called a "Wallet URL") which is
-a series of numbers and letters unique to you. If you add this payment pointer
-to the HTML of your website, you can start collecting money from users. If you
-are collecting money through an existing platform such as YouTube or Twitch,
-you can enable this payment through a platform such as Coil.
+The most straightforward way for creators to start collecting money immediately is to add a payment pointer to their content. After signing up for Uphold or Gatehub, creators are provided with a payment pointer -- sometimes called a “Wallet URL” -- which is a series of numbers and letters unique to the creator. By adding this payment pointer to the HTML of their website, a creator can start collecting money from users. For creators collecting money through an existing platform such as YouTube or Twitch, payment can be enabled by adding the payment pointer to the profile page within a streaming platform such as Coil.
 
-*No ads?*
+**_Provide an ad-free option_**
 
-Offer users a button that says “_Remove advertisements_” in either a banner ad or
-a blocking pop-up upon entering the website. After clicking the "_Remove advertisements_" button, users
-would be sent to a screen that explains how to install the appropriate web
-extension or browser that supports web monetization. Then, offer a button for
-the user to return tothe page they were attempting to view. You can see an
-example of how to integrate this technically in Web Monetization's official
-Getting Started documentation.
+Creators should consider offering users a button that provides the option to “_Remove advertisements_” as either a banner ad or a blocking pop-up. After entering the website and clicking the “_Remove advertisements_” button, users would then be sent to a screen explaining how to install the appropriate web extension or browser that supports web monetization. Upon installation, users should be redirected to return to the page they were attempting to view and begin the ad-free experience. An example of how to integrate this technically is available in Web Monetization’s official [Getting Started documentation](https://webmonetization.org/docs/getting-started/).
 
-*Inform your audience*
+**_Inform your audience_**
 
-If you decide to adopt the Web Monetization, you can inform your users that
-they must download a web extension or browser to properly enable it. This can
-be done by providing a series of steps once the user has decided to opt-in to
-paying you. 
+Creators who decide to adopt the Web Monetization API should inform their users that they must download a web extension or browser to properly enable it. This essential information can be conveyed to users by providing a series of how-to steps once a user has decided to opt-in to pay.
 
-For example, here is an [exerpt from COMPOST digital's
-instructions](https://one.compost.digital/support-us/#web-monetization):
+For example, here is an [excerpt from COMPOST digital’s instructions](https://one.compost.digital/support-us/#web-monetization):
 
-<div class="aside">
+<div class="aside"> 
 
   1. Visit https://coil.com/signup and signup.
   2. Go to Settings and enter the "Membership" menu item.
@@ -437,37 +390,24 @@ instructions](https://one.compost.digital/support-us/#web-monetization):
 </div>
 
 
-### 4.3. For Implementers
+### 4.3. For Maintainers
 
-*Developers Are Users*
+**_Remember developers are users_**
 
-A target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that incorporate these technologies. Going forward, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners. However, it is still difficult for developers to understand how to create and manage payment pointers programmatically. 
+An important target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that already incorporate these technologies. Going forward, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency. 
 
-*Built-in tipping*
+**_Design for built-in tipping_**
 
-If the Web Monetization API is to become more accessible, it needs support to
-be more directly integrated in popular browsers. The Web Monetization API could
-enable tipping directly in the web browser itself by presenting a button that
-would allow for a tip to be sent directly to the creator of the content
-currently on the page. Notably, Brave Browser has
-a [product](https://brave.com/tips/) like this that users can try today
-(although not very many websites currently support Brave tips at this time).
-Web Monetization has an opportunity to fill this gap by making tipping a part
-of web browsers for any creator that includes a payment pointer in their
-website.
+For the Web Monetization API to become more accessible, it needs support to be more directly integrated in popular browsers. As part of this integration process, browsers could use the Web Monetization API to enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. This would help expand the tool’s reach and the creator’s options to receive payment. Notably, Brave Browser has a[ product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time). 
 
-*Quality assurance*
+**_Test recommended services_**
 
-During the process of this research, we found that users had significant
-challenges signing up for GateHub accounts. The maintainers of the Web
-Monetization main website could create a process for monitoring the quality for
-any of the services linked on the main webpage. Services that are unable to
-complete user experience tests at a high standard should not be included as
-recommended services. 
+During our research, we found that users had significant challenges signing up for GateHub accounts due, potentially in part, to a lack of quality assurance. The maintainers of the Web Monetization main website could help address this problem by creating a process for monitoring the quality for any of the services linked on the main webpage. Services that are unable to complete usability tests at a high standard should not be included as recommended services.
 
 ## 5.  Conclusion
 
-Overall, our research shows that the Web Monetization API retains real interest and momentum throughout the community. The innovative tool has the potential to supplement (although not replace) advertising as a means for accessing content and paying creators on the web. In situations where this transition occurs, individual autonomy and agency will be strengthened as users -- not large corporations -- will be able to set their own privacy and payment preferences. Website developers will also benefit through an additional option by which they can monetize their content without relying on invasive surveillance practices. Yet despite this promising potential, significant barriers to adoption remain on behalf of both the sender and receiver of payments. Significant confusion also continues to surround the various contexts in which the Web Monetization API should or _should not_ be used. With time, however, it is our hope that these issues will be addressed through improved documentation, quality control, and increased buy-in from major browsers. 
+Overall, our research shows that the Web Monetization API retains real interest and momentum throughout the community. The innovative tool has the potential to supplement (although not replace) advertising as a means for accessing content and paying creators on the web. In situations where this transition occurs, individual autonomy and agency will be strengthened as users -- not large corporations -- will be able to set their own privacy and payment preferences. Website developers will also benefit through an additional option by which they can monetize their content without relying on invasive surveillance practices. Yet despite this promising potential, significant barriers to adoption remain on behalf of both the sender and receiver of payments. Significant confusion also continues to surround the various contexts in which the Web Monetization API should or _should not _be used. With time, however, it is our hope that these issues will be addressed through improved documentation, quality control, and increased buy-in from major browsers. The recommendations for end-user applications planning to adopt the Web Monetization API and Interledger Protocol offered in this report are intended to be a first step in this important process.
+
 
 
 ### 6. Acknowledgments
