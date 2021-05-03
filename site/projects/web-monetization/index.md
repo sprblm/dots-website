@@ -33,7 +33,7 @@ adoption in the future.
 <div class="content">
   <a class="link-reference" href="/zines/web-monetization">View full-sized in your browser</a>
   <br>
-  <a class="link-reference" href="/zines/web-monetization/zine.pdf">Download as a printable PDF</a>
+  <a class="link-reference" href="/zines/web-monetization/decent-large.png">Download high-quality version</a>
   <br>
   <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
 
