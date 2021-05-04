@@ -14,6 +14,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["prettier"],
+  ignorePatterns: ["public/zines/*/zine.js"],
   rules: {
     "prettier/prettier": "warn",
   },
