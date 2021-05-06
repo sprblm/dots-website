@@ -94,9 +94,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy({ public: "files" });
   eleventyConfig.addPassthroughCopy({ "public/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy({ "public/zines": "zines" });
 
   // Add assets for individual patterns
   eleventyConfig.addPassthroughCopy("site/library/**/*.{svg,png,jpg,jpeg}");
+
+  eleventyConfig.addPassthroughCopy("site/projects/**/*.{svg,png,jpg,jpeg}");
 
   const options = {
     html: true,
