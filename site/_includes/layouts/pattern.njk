@@ -40,17 +40,30 @@ layout: default
       {% endif %}
 
       <div class="pattern-cta">
-        <a class="link-next" href='/contribute'>
-          <span>Want to contribute? Learn more about our library.</span>
-          <img src="/images/icons/forward.svg" />
+        <em>Propose a change</em>
+        <div class="flex">
+          <img src="/images/icons/edit.svg" class="mr-2" />
+        <a class="link-reference sm"
+href='https://github.com/simplysecure/dots-patterns/blob/master/patterns/{{page.fileSlug}}/index.md'>
+          <span>Edit on GitHub</span>
         </a>
+</div>
       </div>
+
     </div>
   </section>
 
   <section class="pattern-main">
     <article class="pattern-content content markdown">
       {{ content | safe }}
+      <div class="flex mt-32">
+          <img src="/images/icons/edit.svg" class="mr-4" />
+          <a class="link-reference"
+      href='https://github.com/simplysecure/dots-patterns/blob/master/patterns/{{page.fileSlug}}/index.md'>
+            <span>Want to propose a change? Edit {{title}} on GitHub</span>
+          </a>
+        </section>
+      </div>
     </article>
 
     <div class="pattern-sidebar">
@@ -69,5 +82,5 @@ layout: default
         </div>
       {% endif %} #}
     </div>
-  </section>
+
 </main>

@@ -1,6 +1,10 @@
 .link-reference {
   @apply text-base text-highlight;
 
+  &.sm {
+    font-size: .75rem;
+  }
+
   &::after {
     content: url("/images/icons/arrow-right.svg");
     vertical-align: middle;
