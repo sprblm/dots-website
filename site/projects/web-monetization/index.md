@@ -32,15 +32,12 @@ adoption in the future.
 
 ### Dear Decent, Money in my browser!?? 
 
-*32 Questions I have about Web Monetization*
+<a class="link-reference" href="/zines/web-monetization/decent-large.png">Download printable version</a>
+
+<a class="link-reference" href="/zines/web-monetization">Full screen</a>
 
 <div class="content">
-  <a class="link-reference" href="/zines/web-monetization">View full-sized in your browser</a>
-  <br>
-  <a class="link-reference" href="/zines/web-monetization/decent-large.png">Download high-quality version</a>
-  <br>
   <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
-
 </div>
 
 
@@ -49,7 +46,7 @@ adoption in the future.
 
 <a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
 
-<a class="link-reference" href="/files/DOTS-webmon-report.txt">Download the PDF</a>
+<a class="link-reference" href="/files/GFTW%20Report%20April%202021.pdf">Download the PDF</a>
 
 ### Report Summary
 
