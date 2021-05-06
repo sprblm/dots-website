@@ -3,6 +3,31 @@ layout: default
 meta_title: About
 body_class: about
 title: About
+timeline:
+  - description: Project scope and research design
+    date: Summer 2019
+    state: done
+  - description: Workshops and interviews
+    date: Winter 2019
+    state: done
+  - description: Publish research report
+    date: Spring 2020
+    state: done
+  - description: Design pattern research
+    date: Summer 2020
+    state: done
+  - description: Pattern library launch
+    date: Winter 2020
+    state: done
+  - description: Shared decentralization glossary
+    date: Spring 2021
+    state: progress
+  - description: Explanatory resources about decentralization
+    date: Summer 2021
+    state: progress
+  - description: Comparative map of decentralization projects
+    date: Fall 2021
+    state: idle
 ---
 
 <main id="main" class="main inner focus:outline-none" tabindex="-1">
@@ -115,5 +140,32 @@ title: About
         </a>
       </p>
     </section>
+
+
+    <section class="content">
+      <h3>Roadmap</h3>
+      <div class="timeline">
+        {% for item in timeline %}
+          <div class="timeline__item">
+            {% if item.state === 'progress' %}
+              <div class="timeline__item {{item.state}}">
+                {% include "components/loading.njk" %}
+              </div>
+            {% elif item.state === 'done' %}
+              <div class="timeline__item {{item.state}}">
+                <img src="/images/icons/check.svg" />
+              </div>
+            {% else %}
+              <div class="timeline__item {{item.state}}"></div>
+            {% endif %}
+            <div class="timeline__item__description {{item.state}}">
+              {{item.description | safe }}
+            </div>
+            <div class="timeline__item__date">{{item.date}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
   </div>
+
 </main>

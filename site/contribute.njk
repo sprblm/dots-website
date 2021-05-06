@@ -3,33 +3,7 @@ layout: default
 meta_title: Contribute
 body_class: contribute
 title: Contribute
-timeline:
-  - description: Project scope and research design
-    date: Summer 2019
-    state: done
-  - description: Workshops and interviews
-    date: Winter 2019
-    state: done
-  - description: Publish research report
-    date: Spring 2020
-    state: done
-  - description: Design pattern research
-    date: Summer 2020
-    state: done
-  - description: Pattern library launch
-    date: Winter 2020
-    state: done
-  - description: Shared decentralization glossary
-    date: Spring 2021
-    state: progress
-  - description: Explanatory resources about decentralization
-    date: Summer 2021
-    state: progress
-  - description: Comparative map of decentralization projects
-    date: Fall 2021
-    state: idle
 ---
-
 <main
   id="main"
   class="main inner flex flex-1 flex-col focus:outline-none"
@@ -45,40 +19,13 @@ timeline:
         <em>Decentralization Off The Shelf</em> is a commons project that helps create tooling and resources by the community, for the community. We actively invite your participation in sharing your specific problems and challenges, as well as offering possible solutions for specific topics.
       </p>
     </section>
-
-    <section class="content">
-      <h3>Roadmap</h3>
-      <div class="timeline">
-        {% for item in timeline %}
-          <div class="timeline__item">
-            {% if item.state === 'progress' %}
-              <div class="timeline__item {{item.state}}">
-                {% include "components/loading.njk" %}
-              </div>
-            {% else %}
-              <div class="timeline__item {{item.state}}"></div>
-            {% endif %}
-            <div class="timeline__item__description {{item.state}}">
-              {{item.description | safe }}
-            </div>
-            <div class="timeline__item__date">{{item.date}}</div>
-          </div>
-        {% endfor %}
-      </div>
-    </section>
-
-    <section class="mb-16 md:mb-24">
-      <h2 class="lg:my-24 xl:mt-48">Get in touch</h2>
+    <section>
 
       <div class="gap-x-20 max-w-6xl lg:grid lg:grid-cols-2">
         <ul class="mb-6 xl:mb-0" style="padding-left: 0">
-          <li>Our design patterns live in a Github repository where you can join our discussion or request/propose a pattern.</li>
+          <li>Our design patterns live in a Github repository where you can join our discussion or propose a new pattern.</li>
           <li>
-            <a href="https://github.com/simplysecure/dots-patterns"
-class="link-reference">DOTS Github repository</a>
-          </li>
-          <li>
-            <a href="https://github.com/simplysecure/dots-patterns/discussions"
+            <a href="https://github.com/simplysecure/dots-patterns/issues"
 class="link-reference">Discuss and propose patterns</a>
           </li>
         </ul>
@@ -86,14 +33,12 @@ class="link-reference">Discuss and propose patterns</a>
         <ul class="mb-6 xl:mb-0" style="padding-left: 0">
           <li class="pt-8 lg:pt-0">We’d love to hear from you! Options to participate in community chat for day-to-day communications and tea time include:</li>
           <li>
-            <a href="https://matrix.to/#/+decentpatterns:matrix.org" class="link-reference">Matrix community</a>
+            <a href="https://matrix.to/#/+decentpatterns:matrix.org"
+class="link-reference" target="_blank">Matrix community</a>
           </li>
-          <li>Bridged on IRC
-            <em>#dots</em>
-            <a class="text-highlight" href="https://webchat.freenode.net/">irc.freenode.net</a>
-          </li>
-          <li>Bridged on
-            <a class="text-highlight" href="https://discord.gg/duPn5wy2pA">Discord</a>
+          <li>
+            <a class="link-reference" href="https://discord.gg/duPn5wy2pA"
+target="_blank">Discord server</a>
           </li>
         </ul>
 
@@ -101,14 +46,15 @@ class="link-reference">Discuss and propose patterns</a>
           <li class="pt-8 lg:pt-12">We also give talks and facilitate invite-only workshops, focus groups, and conference gatherings about decentralization! For speaking engagements, workshops, grants, and partnerships, inquire through our <a href="mailto:team@decentpatterns.xyz">email</a>. To get notified when we release new resources and get invited to events, sign up for our newsletter.
           </li>
           <li>
-            <a href="https://tinyletter.com/decentpatterns" class="link-reference">Newsletter signup</a>
+            <a href="https://tinyletter.com/decentpatterns"
+class="link-reference">E-mail newsletter</a>
           </li>
         </ul>
       </div>
 
     </section>
 
-    <section class="mb-16 md:mb-24 xl:mt-48">
+    <section class="mb-16 md:mb-24 xl:mt-24">
       <div class="lg:grid lg:grid-cols-2 gap-24 max-w-6xl">
         <section>
           <h2>Donate</h2>
