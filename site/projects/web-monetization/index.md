@@ -41,7 +41,7 @@ title: Barriers to Adoption for Web Monetization
 
 <a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
 
-<a class="link-reference" href="/files/GFTW%20Report%20April%202021.pdf">Download the PDF</a>
+<a class="link-reference" href="/files/Barriers%20to%20Adoption%20for%20Web%20Monetization%20(April%202021).pdf">Download the PDF</a>
 
 ### Report Summary
 
