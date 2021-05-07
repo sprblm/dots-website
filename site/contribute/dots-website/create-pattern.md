@@ -25,7 +25,9 @@ Here we are going to create the "Address" pattern as an example.
 
 ### Structure
 
-<span class="text-highlight">Help needed! We need a description of how pattern text should be structured. What are the common elements of our patterns? What are guidelines for writing those? What should be kept in mind when writing or editing patterns?</span>
+Every pattern starts with a general description of the design problem. We first want to quickly answer the question, "What makes the user story particularly interesting or different when the application uses decentralized technology?" Readers should then be able to understand how the pattern solves this problem, why one would choose this pattern (and why not), and real-world examples of where it has been used.
+
+[See the full pattern template here](https://github.com/simplysecure/dots-patterns/issues/new?assignees=&labels=pattern-submission&template=pattern-proposal-template.md&title=%5Bsubmission%5D)
 
 ### Related Patterns and Wikilinks
 
