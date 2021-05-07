@@ -20,28 +20,23 @@ title: Barriers to Adoption for Web Monetization
 
 </div>
 
-The Web Monetization API has the potential to create an alternative to targeted
-advertising. Yet despite this promising possibility, confusion and significant
-barriers to adoption remain on behalf of both the sender and receiver of
-payments. In response, this report and accompanying zine work first to
-highlight common questions and challenges encountered by end users, and then
-offer a set of recommendations for opportunities to expand web monetization
-adoption in the future.
-
+<p>The innovative <a href="https://webmonetization.org/">Web Monetization API</a> has the potential to create a viable alternative to targeted advertising as a means for website content creators to generate revenue. Yet despite this promising possibility, confusion and significant barriers to adoption remain on behalf of both the sender and receiver of payments. In response, this report and accompanying zine work first to highlight common questions and challenges encountered by end users, and then offer a set of recommendations for opportunities to expand web monetization adoption in the future.</p>
 
 
 ### Dear Decent, Money in my browser!?? 
 
-<a class="link-reference" href="/zines/web-monetization/decent-large.png">Download printable version</a>
+<p>33 Questions I have about Web Monetization</p>
 
-<a class="link-reference" href="/zines/web-monetization">Full screen</a>
+<a class="link-reference" href="/zines/web-monetization/decent-large.png">Download printable PDF</a>
+
+<a class="link-reference" href="/zines/web-monetization">View full screen</a>
 
 <div class="content">
   <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
 </div>
 
 
-## Barriers to Adoption for Web Monetization
+## Barriers to Adoption for Web Monetization: A Report
 
 
 <a class="link-reference" href="/files/DOTS-webmon-report.txt">Open as a text file</a>
