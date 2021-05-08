@@ -49,7 +49,7 @@ _Streaming platforms such as Coil should_:
 
 *   **Enhance subscription transparency.** Provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members). 
 *   **Provide better wallet support.** Support a more diverse set of options and reduce dependency on a particular type of financial wallet platform. 
-*   **Add creator-friendly documentation.** Provide step-by-step instructions, including screenshots, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
+*   **Add creator-friendly documentation.** Provide step-by-step instructions, including screenshots or videos, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
 *   **Include a web extension walkthrough.** Such a walkthrough could be displayed immediately after installation to help explain why and how the web extension is needed.
 *   **Automate the sign-up process.** Implement a self-serve user interface with the ability for users to automatically enable OAuth and receive a developer key as part of a user interface.
 
