@@ -29,7 +29,7 @@ title: Barriers to Adoption for Web Monetization
 
 <a class="link-reference" href="/zines/web-monetization">View full screen</a>
 
-<div class="content">
+<div class="sm:hidden md:block">
   <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
 </div>
 
