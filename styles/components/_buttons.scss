@@ -69,6 +69,12 @@ a.btn {
     }
   }
 
+  &.btn-highlight {
+    @apply border-0 bg-highlight text-dark;
+
+  }
+
+
   &.btn-secondary {
     @apply border-0 bg-light text-dark;
 

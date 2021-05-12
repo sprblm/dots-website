@@ -33,13 +33,13 @@ The Maintainers set the community's policies and make decisions for the communit
 
 The Maintainers are responsible for implementing—or delegating implementation of—policies and other decisions.
 
-If Contributors are not happy with the Maintainers' leadership, they are free to voice their concerns directly. An open community forum will be held at least four times a year, (but likely more often), where input will be solicited.
+If Contributors are not happy with the Maintainers' leadership, they are free to voice their concerns directly. An open community forum will be held at least once a year, (but likely more often), where input will be solicited.
 
 ### Process
 
 Access to accounts sit with the Maintainers, and can be shared with Contributors and Advisors as needed.
 
-The Maintainers manage all funds; distribution of funds is made transparent on GitHub and Open Collective.
+The Maintainers manage all funds; distribution of funds is made transparent on Github and Open Collective.
 
 Anyone is free to discuss and debate community policies, practices, and culture.
 
