@@ -31,7 +31,7 @@ title: Barriers to Adoption for Web Monetization
 
 <a class="link-reference" href="/zines/web-monetization">View full screen</a>
 
-<div class="content">
+<div class="sm:hidden md:block">
   <iframe width="100%" height="600px" src="/zines/web-monetization"></iframe>
 </div>
 
@@ -320,7 +320,7 @@ A mental model is an explanation or representation of an individual's thought pr
 Our research revealed a myriad of opportunities that can help expand web monetization adoption. To summarize, we've organized these recommendations into three target groups. To get the most of out of this section, take a moment to recognize what user group you fall into. If you are:
 
   - [4.1. For Streaming Platforms](#4.1.-for-streaming-platforms) is for people who are part of an organization such as Coil, that provides an aggregation or streaming service using the Web Monetization API.
-  - [4.2. For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising, look at the "For Creators" section.
+  - [4.2. For Creators](#4.2.-for-creators) is for people part of a small group or an independent creator looking for other forms of fundraising.
   - [4.3. For Maintainers](#4.3.-for-maintainers) is for people interested in implementing, maintaining, or contributing to the Web Monetization API and surrounding documentation.
 
 
