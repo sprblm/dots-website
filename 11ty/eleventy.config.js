@@ -11,6 +11,7 @@ const dateFilters = require("./filters/dates.js");
 const timestampFilters = require("./filters/timestamp.js");
 const patternPreview = require("./shortcodes/patternPreview.js");
 const renderRelatedPatterns = require("./shortcodes/renderRelatedPatterns.js");
+const renderPatternText = require("./shortcodes/renderPatternText.js");
 const patternListing = require("./shortcodes/patternListing.js");
 
 module.exports = (eleventyConfig) => {
@@ -80,6 +81,7 @@ module.exports = (eleventyConfig) => {
   // Shortcodes
   eleventyConfig.addShortcode("patternPreview", patternPreview);
   eleventyConfig.addShortcode("renderRelatedPatterns", renderRelatedPatterns);
+  eleventyConfig.addShortcode("renderPatternText", renderPatternText);
   eleventyConfig.addShortcode("patternListing", patternListing);
 
   // Layout aliases
