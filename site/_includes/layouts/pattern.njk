@@ -55,7 +55,7 @@ href='https://github.com/simplysecure/dots-patterns/blob/master/patterns/{{page.
 
   <section class="pattern-main">
     <article class="pattern-content content markdown">
-      {{ content | safe }}
+      {% renderPatternText content %}
       <div class="flex mt-32">
           <img src="/images/icons/edit.svg" class="mr-4" />
           <a class="link-reference"
