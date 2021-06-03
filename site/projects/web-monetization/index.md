@@ -9,7 +9,7 @@ title: Barriers to Adoption for Web Monetization
 <div class="hero-section-header">
   <h1>Barriers to <br>Adoption for <br>Web Monetization</h1>
 
-  <p> 
+  <p>
     Karissa McKelvey and Ngọc Triệu
   <br>
     <a href="https://simplysecure.org">Simply Secure</a>
@@ -23,7 +23,9 @@ title: Barriers to Adoption for Web Monetization
 <p>The innovative <a href="https://webmonetization.org/">Web Monetization API</a> has the potential to create a viable alternative to targeted advertising as a means for website content creators to generate revenue. Yet despite this promising possibility, confusion and significant barriers to adoption remain on behalf of both the sender and receiver of payments. In response, this report and accompanying zine work first to highlight common questions and challenges encountered by end users, and then offer a set of recommendations for opportunities to expand web monetization adoption in the future.</p>
 
 
-## Dear Decent, Money in my browser!?? 
+### Dear Decent, Money in my browser!??
+
+<p>33 Questions I have about Web Monetization</p>
 
 <a class="link-reference" href="/zines/web-monetization/decent-large.png">Download printable PDF</a>
 
@@ -47,9 +49,9 @@ Our research into the current barriers to adoption for the Web Monetization API 
 
 _Streaming platforms such as Coil should_:
 
-*   **Enhance subscription transparency.** Provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members). 
-*   **Provide better wallet support.** Support a more diverse set of options and reduce dependency on a particular type of financial wallet platform. 
-*   **Add creator-friendly documentation.** Provide step-by-step instructions, including screenshots or videos, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
+*   **Enhance subscription transparency.** Provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members).
+*   **Provide better wallet support.** Support a more diverse set of options and reduce dependency on a particular type of financial wallet platform.
+*   **Add creator-friendly documentation.** Provide step-by-step instructions, including screenshots, on how to start making money quickly with existing platforms (such as Patreon, YouTube, or Twitch).
 *   **Include a web extension walkthrough.** Such a walkthrough could be displayed immediately after installation to help explain why and how the web extension is needed.
 *   **Automate the sign-up process.** Implement a self-serve user interface with the ability for users to automatically enable OAuth and receive a developer key as part of a user interface.
 
@@ -62,7 +64,7 @@ _Creators who want to use Web Monetization should_:
 _Maintainers of the Web Monetization API and Interledger Protocol should_:
 
 
-*   **Remember developers are users.** Mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency. 
+*   **Remember developers are users.** Mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency.
 *   **Design for built-in tipping.** Enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page.
 *   **Test recommended services.** Creating a process for monitoring the quality for any of the services linked to on the main [Web Monetization webpage](https://webmonetization.org/).
 
@@ -94,14 +96,14 @@ _Maintainers of the Web Monetization API and Interledger Protocol should_:
 </div>
 
 
-## 1.  Project Overview 
+## 1.  Project Overview
 
 
 ### 1.1. Introduction
 
 Businesses routinely use algorithmic insights into who a potential customer might be, and what they might be interested in purchasing, to increase purported ad relevance. From a corporate perspective, this intrusive approach has been a runaway success. The surveillance of users and the subsequent monetization of their data has powered the dramatic rise of many of Silicon Valley’s most profitable companies. Yet from a human-centered design perspective, the process of personalized advertising has been toxic. Users no longer simply consume products on the web -- they have become the product.
 
-Mass targeted advertising has also created a series of societal and safety issues, ranging from coordinated misinformation campaigns to invasive mobile pop-ups. Despite these and other persistent problems, many users have continued to tolerate the current ad-based structure of the internet in an un-bargained-for and unequal exchange to access purportedly “free” information. But as these extractive practices continue to expand their scope, and users across the globe continue to gain awareness of these issues, attention has begun to shift towards finding a new way forward. How can websites continue to get paid for web traffic without employing targeted advertising? 
+Mass targeted advertising has also created a series of societal and safety issues, ranging from coordinated misinformation campaigns to invasive mobile pop-ups. Despite these and other persistent problems, many users have continued to tolerate the current ad-based structure of the internet in an un-bargained-for and unequal exchange to access purportedly “free” information. But as these extractive practices continue to expand their scope, and users across the globe continue to gain awareness of these issues, attention has begun to shift towards finding a new way forward. How can websites continue to get paid for web traffic without employing targeted advertising?
 
 The [Web Monetization API](https://webmonetization.org/) is a new standard that proposes a technical answer to this complicated question. In doing so, it offers a piece of technology that has up to this point been absent in web browsers: the ability for users to transfer miniscule amounts of money as an ad-free means to compensate websites and their creators. Still, for many users, much remains unknown about this innovative technology.
 
@@ -124,11 +126,11 @@ Our expert research and design team came into this project with little understan
 
 ### 1.3. Research Methodology
 
-Our research strategy was to first map the ecosystem of stakeholders, and then pinpoint key organizations with significant influence in the space. After completing this initial task, we chose to interview those who had already performed significant on-the-ground research themselves, in order to capture a high-level perspective of their various insights. This approach allowed us to leverage the deep-seated knowledge of these experts as we moved forward with our work. 
+Our research strategy was to first map the ecosystem of stakeholders, and then pinpoint key organizations with significant influence in the space. After completing this initial task, we chose to interview those who had already performed significant on-the-ground research themselves, in order to capture a high-level perspective of their various insights. This approach allowed us to leverage the deep-seated knowledge of these experts as we moved forward with our work.
 
-Next, we created a stakeholder map for Web Monetization as well as a slightly larger group more broadly defined -- including not only the existing Browser API, but also projects and products that are interested in or impacted by the monetization of websites. This important step allowed us to learn from various approaches in adjacent domains and apply lessons learned as we moved forward and prepared our analysis and recommendations. 
+Next, we created a stakeholder map for Web Monetization as well as a slightly larger group more broadly defined -- including not only the existing Browser API, but also projects and products that are interested in or impacted by the monetization of websites. This important step allowed us to learn from various approaches in adjacent domains and apply lessons learned as we moved forward and prepared our analysis and recommendations.
 
-Core stakeholders (i.e., those who have the most direct influence and control over web monetization) include web browsers, large platforms, and media companies, as well as those who are creating and consuming content on the web. The [Brave](https://brave.com/) web browser (which has tested a new form of payment directly through the browser), and [MetaMask](https://metamask.io/) (a web extension that manages cryptocurrencies and interfaces payments with websites) were included as direct stakeholders in this exercise. 
+Core stakeholders (i.e., those who have the most direct influence and control over web monetization) include web browsers, large platforms, and media companies, as well as those who are creating and consuming content on the web. The [Brave](https://brave.com/) web browser (which has tested a new form of payment directly through the browser), and [MetaMask](https://metamask.io/) (a web extension that manages cryptocurrencies and interfaces payments with websites) were included as direct stakeholders in this exercise.
 
 
 ![Stakeholder brainstorm map](image_1.png)
@@ -137,17 +139,17 @@ After organizing the core, direct, and indirect stakeholders, we then mapped the
 
 ![Stakeholder power vs interest map](image_2.png)
 
-The final phase of qualitative research involved interviewing 12 stakeholders, ranging from web monetization experts to end-user creators with no knowledge of web monetization. We also conducted a workshop for eight designers and product managers with experience in web monetization, decentralized technologies, and web extensions. The workshop focused on challenges that designers face when creating usable decentralized technologies, and the gap between user and developer mental models. This gap is a key challenge to the growth and adoption of the Web Monetization API. 
+The final phase of qualitative research involved interviewing 12 stakeholders, ranging from web monetization experts to end-user creators with no knowledge of web monetization. We also conducted a workshop for eight designers and product managers with experience in web monetization, decentralized technologies, and web extensions. The workshop focused on challenges that designers face when creating usable decentralized technologies, and the gap between user and developer mental models. This gap is a key challenge to the growth and adoption of the Web Monetization API.
 
 
 ### 1.4. Who We Are
 
-[Karissa McKelvey](https://simplysecure.org/who-we-are/karissa.html) and [Ngọc Triệu](https://simplysecure.org/who-we-are/ngoc.html) are core team members of [Simply Secure](https://simplysecure.org/), an international team of experts in research, design, software development, and product management with an emphasis on privacy, security, transparency, and design ethics. Through additional support from a diverse set of advisors and partners, Simply Secure helps practitioners design technology that centers and protects vulnerable populations by providing capacity-building, open research support, and community convening. 
+[Karissa McKelvey](https://simplysecure.org/who-we-are/karissa.html) and [Ngọc Triệu](https://simplysecure.org/who-we-are/ngoc.html) are core team members of [Simply Secure](https://simplysecure.org/), an international team of experts in research, design, software development, and product management with an emphasis on privacy, security, transparency, and design ethics. Through additional support from a diverse set of advisors and partners, Simply Secure helps practitioners design technology that centers and protects vulnerable populations by providing capacity-building, open research support, and community convening.
 
 
-Karissa researches technical architecture design and its impact on usability, safety, and resilience. Her contributions to decentralized applications are relied on by at-risk users including human and environmental rights defenders, journalists, and civil society activists. Her background is in political sociology and data science. 
+Karissa researches technical architecture design and its impact on usability, safety, and resilience. Her contributions to decentralized applications are relied on by at-risk users including human and environmental rights defenders, journalists, and civil society activists. Her background is in political sociology and data science.
 
-Ngọc sees design as an intervention to asymmetrical power relations. As a design researcher, she imagines the futures of the world through lenses such as decoloniality and decentralization. Ngọc is passionate about user advocacy, co-creation, and equal access to knowledge(s). Her background is in design management, history, and cultures. 
+Ngọc sees design as an intervention to asymmetrical power relations. As a design researcher, she imagines the futures of the world through lenses such as decoloniality and decentralization. Ngọc is passionate about user advocacy, co-creation, and equal access to knowledge(s). Her background is in design management, history, and cultures.
 
 ## 2.  Understanding Web Monetization
 
@@ -178,7 +180,7 @@ There are four dominant design patterns for using web monetization today: (1) ad
 ![alt_text](image_5.png "image_tooltip")
 
 
-**(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription. 
+**(4) Streaming** is a new method enabled by the Web Monetization API that allows small quantities of money to be sent to a creator according to how much a user watches or interacts with their website. However, most web browsers do not yet support streaming payments over the Web Monetization API, so in order to utilize streaming services users need to download a web extension or one of the browsers that supports it. Although this innovative space remains largely unexplored, certain prototypes do currently exist that experiment with the method. [Coil](https://coil.com/), for example, is a 5$/mo subscription service that gives a percentage of that subscription fee to creators based on the amount of time users spend on each website. Though this process is likely different from what creators expect from a typical subscription service (under which an agreement is made directly between the producer of the content and the consumer at a predictable rate), it likely creates new streams of revenue from previously untapped sources such as users who would prefer -- due to level of use or privacy preferences -- to not sign-up for a direct subscription.
 
   *  Design Pattern Recommendation: _In the future, we hope to see streaming platforms become more transparent about how much money is given to creators. See more in the [recommendations section for streaming platforms](#4.1.-for-streaming-platforms)._
 
@@ -192,7 +194,7 @@ Our team interviewed five new users of the Web Monetization API and tracked the 
 
 **Case Study #1: COMPOST**
 
-[COMPOST](https://compost.digital)is a magazine working towards forming a cooperative. It is now sharing the bank account of its Open Collective fiscal host. In addition to the editorial team, their magazine consists of contributors who all get paid upfront for creative contributions, and participate in further revenue sharing decisions where they may claim a portion of the total. All of the contributors to the magazine have their own personal bank accounts. They wanted to use the Web Monetization API for two particular purposes.
+[COMPOST](https://compost.digital) is a magazine working towards forming a cooperative. It is now sharing the bank account of its Open Collective fiscal host. In addition to the editorial team, their magazine consists of contributors who all get paid upfront for creative contributions, and participate in further revenue sharing decisions where they may claim a portion of the total. All of the contributors to the magazine have their own personal bank accounts. They wanted to use the Web Monetization API for two particular purposes.
 
 *   **Crowdfunding**: “We wanted to use it to be able to track the real-time balance and feed it back to magazine readers, but access to the account balance doesn't exist -- there is no way to show collective or historical balance. That's something we'd expect.”
 *   **Distribute payments to multiple creators from a single website**: “Ideally each creator, each writer would get their own payment pointer. Then the money would go directly to them.” However, they found it time consuming for every contributor to sign up for a payment pointer individually, so they just have one payment pointer for the entire magazine and then manage the distribution of that money manually.
@@ -203,13 +205,13 @@ Our team interviewed five new users of the Web Monetization API and tracked the 
 
 [Streetmix](https://streetmix.net/) is a collaborative civic engagement platform for urban design. They are developing a two-tiered freemium model, through which users can pay money to access premium features. Patreon is their target payment platform, but the team also wanted to integrate the Web Monetization API as an alternative way for users to pay for subscriptions. The Streetmix team encountered two main challenges in doing so:
 
-* **Fixed subscription rates.** “Can we change the default rate people pay for a subscription? We haven't figured that out. Streetmix's model is not about being trapped in your site as long as possible.” The organization would benefit from a tutorial that provides guidance on how to ask users for a flat rate per month for access to premium content, rather per-visit payments.
-* **Technical mental models.** “We figured that requiring a browser extension wouldn’t work for Streetmix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated Coil and the protocol itself.” 
+* **Fixed subscription rates.** “Can we change the default rate people pay for a subscription? We haven't figured that out. Streetmix's model is not about being trapped in your site as long as possible.” The organization would benefit from a tutorial that provides guidance on how to ask users for a flat rate per month for access to premium content, rather than per-visit payments.
+* **Technical mental models.** “We figured that requiring a browser extension wouldn’t work for Streetmix users. If they have a Coil account they can set up a street mix account and connect them. But it's been a struggle to integrate. Developer friendliness is a more pragmatic priority. In our brains we haven't separated Coil and the protocol itself.”
 
 **Takeaways:** The Streetmix team would appreciate more developer-facing tutorials on how to integrate their platform with Web Monetization. They experienced confusion around the difference between the Interledger Protocol, Web Monetization API, and Coil. These difficulties could be an indication that the provided [introductory materials](https://webmonetization.org/docs) were unclear regarding which level of abstraction developers should be working with. Going forward, developers would benefit from the creation of an introductory checklist that offers insight into when they should, or should not, use an intermediary such as Coil in their platform.
 
 
-## 3.  Challenges 
+## 3.  Challenges
 
 Overall, our research revealed that web monetization is still in an early innovation phase with significant barriers to adoption ahead. Although the ultimate goal of the process is for the end user is to pay the creator, and for the creator to get paid, we found numerous hurdles to accomplishing this goal for either group. These include the unknowns of the user journey, the in-depth identification requirements and variance of centralized financial services, and the incorporation of new mental models.
 
@@ -280,7 +282,7 @@ Monetization must sign up for an account with an approved financial services
 company (at the time of research, two companies were available:
 [Uphold](https://uphold.com/en-us) and [GateHub](https://gatehub.net/)).
 Similar to PayPal, services like Uphold broker payments and allow users to
-exchange between tokens and currencies. 
+exchange between tokens and currencies.
 
 To deposit or withdraw money, users are required to provide verification of
 their identity to the financial service. This includes an operational email and
@@ -299,7 +301,7 @@ Monetization API is at least partially dependent upon the capabilities of these
 third-party companies and their human-centered design practices. This level of
 responsibility -- which is largely beyond the control of the API -- is
 important to acknowledge as the maintenance of these services is subject to
-instability over time. 
+instability over time.
 
 ### 3.3. Mental Models
 
@@ -332,17 +334,17 @@ In this report’s user journey section and the accompanying zine, we outlined s
 
   1. How much am I paying?
   2. When do I pay?
-  3. How can I pay more or less? 
-  4. How can I refund a payment? 
-  5. How much money will a creator expect to receive over time? 
-  6. How much of my money is going to be spent at which websites? 
+  3. How can I pay more or less?
+  4. How can I refund a payment?
+  5. How much money will a creator expect to receive over time?
+  6. How much of my money is going to be spent at which websites?
   7. How can I further engage and retain my audience?
 
 </div>
 
 Given the amount and frequency of these questions, streaming platforms should work to improve transparency in the web extension and on the creator’s profile. In doing so, platforms should provide real-time feedback in the streaming platform website (for creators) and in the web extension (for audience members). These changes would help improve trust in the service as well as the Web Monetization API.
 
-As noted above in section 3.3. (Mental Models), streaming is a new technology that requires new mental models. Providing real-time tactile feedback can help improve understanding and allows users to feel in control, take appropriate actions to reach their goal, and ultimately trust the brand ([NNGroup](https://www.nngroup.com/articles/visibility-system-status/)). Web Monetization-enabled web extensions should therefore give users direct feedback about how much money they are sending to a website in real time.
+As noted above in section 3.3. (Mental Models), streaming is a new technology that requires new mental models. Providing real-time tactile feedback can help improve understanding and allows users to feel in control, take appropriate actions to reach their goal, and ultimately trust the brand ([NNGroup's Usability Heuristic #1](https://www.nngroup.com/articles/visibility-system-status/)). Web Monetization-enabled web extensions should therefore give users direct feedback about how much money they are sending to a website in real time.
 
 
 ![Design pattern for streaming feedback](image_6.png "Design pattern for streaming feedback")
@@ -366,7 +368,7 @@ All web extensions need thorough in-app walkthroughs to orient users on how to b
 
 **_Automate the sign-up process_**
 
-Coil users currently looking to integrate their application through the OAuth API are required to go through an ad-hoc and manual process. In the future, mature implementations of API would ideally have a self-serve user interface, with the ability to automatically enable OAuth and get a developer key as part of a user interface. Implementing this recommendation has the power to change a weeks or months-long process into mere hours or at most days. There should also be better documentation online for when and how (including when _not _to) use the OAuth API.
+Coil users currently looking to integrate their application through the OAuth API are required to go through an ad-hoc and manual process. In the future, mature implementations of API would ideally have a self-serve user interface, with the ability to automatically enable OAuth and get a developer key as part of a user interface. Implementing this recommendation has the power to change a weeks or months-long process into mere hours or at most days. There should also be better documentation online for when and how (including when _not_ to) use the OAuth API.
 
 
 ### 4.2. For Creators
@@ -385,7 +387,7 @@ Creators who decide to adopt the Web Monetization API should inform their users 
 
 For example, here is an [excerpt from COMPOST digital’s instructions](https://one.compost.digital/support-us/#web-monetization):
 
-<div class="aside"> 
+<div class="aside">
 
   1. Visit [Coil](https://coil.com/signup) and signup.
   2. Go to Settings and enter the "Membership" menu item.
@@ -399,11 +401,11 @@ For example, here is an [excerpt from COMPOST digital’s instructions](https://
 
 **_Remember developers are users_**
 
-An important target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that already incorporate these technologies. Going forward, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency. 
+An important target user base for Web Monetization is developers who want to integrate web monetization into their platforms or applications. Yet because Web Monetization and the Interledger Protocol have not yet been adopted by mainstream browsers, the user base is currently limited to those products that already incorporate these technologies. Going forward, mobile and desktop applications that support payee-payer relationships on their platforms could be potential early adoption partners if they are targeted and curated through better communication and transparency.
 
 **_Design for built-in tipping_**
 
-For the Web Monetization API to become more accessible, it needs support to be more directly integrated in popular browsers. As part of this integration process, browsers could use the Web Monetization API to enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. This would help expand the tool’s reach and the creator’s options to receive payment. Notably, Brave Browser has a[ product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time). 
+For the Web Monetization API to become more accessible, it needs support to be more directly integrated in popular browsers. As part of this integration process, browsers could use the Web Monetization API to enable tipping directly in the web browser itself by presenting a button that would allow for a tip to be sent directly to the creator of the content currently on the page. This would help expand the tool’s reach and the creator’s options to receive payment. Notably, Brave Browser has a [product](https://brave.com/tips/) like this that users can try today (although not very many websites currently support Brave tips at this time).
 
 **_Test recommended services_**
 
@@ -417,6 +419,4 @@ Overall, our research shows that the Web Monetization API retains real interest 
 
 ### 6. Acknowledgments
 
-Thanks to [Grant for the Web](https://www.grantfortheweb.org/) and [Simply Secure](https://simplysecure.org) a for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
-
-
+Thanks to [Grant for the Web](https://www.grantfortheweb.org/) and [Simply Secure](https://simplysecure.org) for financial and organizational support of this project. Our gratitude also goes out to all workshop participants and interviewees for sharing their expert analysis, insight, and experience.
