@@ -10,7 +10,7 @@ title: DOTS Assembly
 We invite comments, questions, and new ideas regarding design patterns
 in decentralization and related technologies.
 
-Every second Monday of the month at 16:00 UTC / 18:00 Berlin / 9:00 California.
+Every second Monday of the month at 16:00 UTC / 18:00 Berlin / 9am California.
 
 <p><a class="link-reference" href="https://gather.town/i/4IjGbytC">
   Join us on Gather Town!
