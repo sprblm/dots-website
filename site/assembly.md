@@ -12,9 +12,9 @@ in decentralization and related technologies.
 
 Every second Monday of the month at 16:00 UTC / 18:00 Berlin / 9am California.
 
-<p><a class="link-reference" href="https://gather.town/i/4IjGbytC">
-  Join us on Gather Town!
-</a></p>
+<a class="link-reference" href="https://discord.gg/4uDSbWNPec">
+  Join us on Discord!
+</a>
 
 ## What to expect
 
@@ -25,7 +25,7 @@ Our Assemblies are hour-long, participatory events where we set the agenda depen
 - Presentation and/or breakout sessions
 - Last 10 min: new pattern requests & proposals
 
-We will be hosting the event on [Gather Town](https://gather.town/i/4IjGbytC), which is a virtual space that enables many conversations at once.
+We will be hosting the event on [Discord](https://discord.gg/4uDSbWNPec), a platform that allows community members to communicate over chat, voice, and video. We also use [Miro](https://miro.com/) for collaborative whiteboarding.
 
 <img
       alt="Design sprint illustration"
