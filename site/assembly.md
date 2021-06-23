@@ -16,6 +16,14 @@ Every second Monday of the month at 16:00 UTC / 18:00 Berlin / 9am California.
   Join us on Discord!
 </a>
 
+<a class="link-reference" href="https://calendar.google.com/calendar/ical/ruvtcur6ep8rj858nafr2cdq28%40group.calendar.google.com/public/basic.ics">
+  ICS  
+</a>
+
+<a class="link-reference" href="https://calendar.google.com/calendar/u/0?cid=cnV2dGN1cjZlcDhyajg1OG5hZnIyY2RxMjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+  Google Calendar
+</a>
+
 ## What to expect
 
 Our Assemblies are hour-long, participatory events where we set the agenda depending on the people in the room. Our focus will be on design aspects in decentralization, but we explicitly welcome non-designers and non-developers to join the conversation as well!
