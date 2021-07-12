@@ -15,6 +15,14 @@ Every second Monday of the month at 16:00 UTC / 18:00 Berlin / 9am California.
 <a class="link-reference" href="https://discord.gg/4uDSbWNPec">
   Join us on Discord!
 </a>
+<br>
+<a class="link-reference" href="https://calendar.google.com/calendar/ical/ruvtcur6ep8rj858nafr2cdq28%40group.calendar.google.com/public/basic.ics">
+  ICS  
+</a>
+<br>
+<a class="link-reference" href="https://calendar.google.com/calendar/u/0?cid=cnV2dGN1cjZlcDhyajg1OG5hZnIyY2RxMjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+  Google Calendar
+</a>
 
 ## What to expect
 
