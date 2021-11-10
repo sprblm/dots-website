@@ -1,6 +1,6 @@
 [submodule "dots-patterns"]
 	path = dots-patterns
-	url = https://github.com/decentpatterns/library.git
+	url = https://github.com/simplysecure/dots-patterns.git
 [submodule "site/zine"]
 	path = site/zine
 	url = https://github.com/substack/zine.git
